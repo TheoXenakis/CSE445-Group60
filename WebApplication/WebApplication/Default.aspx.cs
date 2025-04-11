@@ -7,13 +7,12 @@ using System.Web.UI.WebControls;
 
 
 /*
-[Authors]:
+[Authors]: 
 
     John Bostater
 
-    Theo Xenakis
+    //Co-Authors
 
-    Roen Wainscoat
 
 [Creation Date]: 4/9/25
 
@@ -22,8 +21,6 @@ using System.Web.UI.WebControls;
 
   User's are able to navigate to the other web pages from here..
 */
-
-
 
 
 namespace WebApplication
@@ -45,7 +42,7 @@ namespace WebApplication
         {
 
           //Redirect to the Member Page
-            Response.Redirect("StaffPage.aspx");
+            Response.Redirect("MemberPage.aspx");
               
 
         }
@@ -54,6 +51,10 @@ namespace WebApplication
         //[Button]: Staff Page 
         protected void Button2_Click(object sender, EventArgs e)
         {
+
+          //Redirect to the Member Page
+            Response.Redirect("StaffPage.aspx");
+
 
         }
 
