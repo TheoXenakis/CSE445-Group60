@@ -25,9 +25,17 @@ namespace WebApplication
 {
     public partial class CreateAccount : System.Web.UI.Page
     {
+      //Action-Event Handling
+      //---------------------------------------------------------------
+
+        //Executes upon the page loading
+
         protected void Page_Load(object sender, EventArgs e)
         {
 
         }
+
+
+      //---------------------------------------------------------------
     }
 }

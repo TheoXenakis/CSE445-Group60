@@ -12,8 +12,9 @@
             <p style="margin-left: 40px">
                 Login Template</p>
         </div>
-        <p style="margin-left: 40px">
-            &nbsp;</p>
+        <p style="margin-left: 120px">
+            <asp:Label ID="Label1" runat="server" Font-Bold="True"></asp:Label>
+        </p>
         <p style="margin-left: 40px">
             Username</p>
         <p style="margin-left: 40px">
@@ -23,7 +24,7 @@
         <p style="margin-left: 40px">
             &nbsp;</p>
         <p style="margin-left: 120px">
-            <asp:Button ID="Button1" runat="server" Text="Button" />
+            <asp:Button ID="Button1" runat="server" Text="Button" OnClick="Button1_Click" />
         </p>
         <p>
             &nbsp;</p>

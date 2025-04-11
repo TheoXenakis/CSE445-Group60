@@ -35,10 +35,45 @@ namespace WebApplication
         }
 
         
-        //Link to Create an Account
+        //[Link]: to Create an Account
         protected void LinkButton1_Click(object sender, EventArgs e)
         {
+          //Redirect the User to the 'Create an Account' Page
+            Response.Redirect("CreateAccount.aspx");
+        }
 
+
+
+        //[Button]: Log into Account 
+        protected void Button1_Click(object sender, EventArgs e)
+        {
+
+          //[To Do]:
+          //  Call upon backend service/database to verify the Account!
+
+
+          //Code here...
+
+
+          //Successful login, set a local Cookie to true
+            HttpCookie successfulLogin = new HttpCookie("userLoggedIn");
+
+          //Set a time limit for the Cookie: 3 hours
+            successfulLogin.Expires = DateTime.Now.AddHours(3);
+
+          //Add the Cookie to the local environment among the aspx pages
+            Response.Cookies.Add(successfulLogin);
+
+        
+          //DEBUG!!\
+            Console.WriteLine("Cookie Set!");
+
+
+          //Notify the user of succesful login!
+            Label1.Text = "Successful Login!";
+
+          //Also, Update display item in corner of Default page to notify the user that they have successfully logged in 
+            //Code here..
         }
 
 

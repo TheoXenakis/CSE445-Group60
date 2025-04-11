@@ -9,9 +9,9 @@ using System.Web.UI.WebControls;
 /*
 [Authors]: 
 
-    John Bostater
+  John Bostater
 
-    //Co-Authors
+  //Co-Authors
 
 
 [Creation Date]: 4/9/25
@@ -41,10 +41,21 @@ namespace WebApplication
         protected void Button1_Click(object sender, EventArgs e)
         {
 
+          //Implement a statement for redirecting the user to 'LoginPage.aspx'
+          //  If they are not already logged in
+          //    Verify a user's login status via a call to Cookies?!?! (I think)
+
+          //Gather the cookie to see if a user is signed in\
+            HttpCookie userCookie = Request.Cookies["userLoggedIn"];
+
+          //Check if the cookie DNE or is incorrect
+            if(userCookie == null || userCookie.Value != "true"){
+              //Redirect the user to the Login Page
+                Response.Redirect("LoginPage.aspx");
+            }
+
           //Redirect to the Member Page
             Response.Redirect("MemberPage.aspx");
-              
-
         }
 
 
@@ -52,7 +63,7 @@ namespace WebApplication
         protected void Button2_Click(object sender, EventArgs e)
         {
 
-          //Redirect to the Member Page
+          //Redirect to the Staff Page
             Response.Redirect("StaffPage.aspx");
 
 
