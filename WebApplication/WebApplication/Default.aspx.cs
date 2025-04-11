@@ -33,41 +33,18 @@ namespace WebApplication
         //Executes Upon the Page Loading
         protected void Page_Load(object sender, EventArgs e)
         {
-
+          //Code here...
         }
 
 
         //[Button]: Member Page 
-        protected void Button1_Click(object sender, EventArgs e)
-        {
-
-          //Implement a statement for redirecting the user to 'LoginPage.aspx'
-          //  If they are not already logged in
-          //    Verify a user's login status via a call to Cookies?!?! (I think)
-
-          //Gather the cookie to see if a user is signed in\
-            HttpCookie userCookie = Request.Cookies["userLoggedIn"];
-
-          //Check if the cookie DNE or is incorrect
-            if(userCookie == null || userCookie.Value != "true"){
-              //Redirect the user to the Login Page
-                Response.Redirect("LoginPage.aspx");
-            }
-
+        protected void Button1_Click(object sender, EventArgs e){Response.Redirect("MemberPage.aspx");}
           //Redirect to the Member Page
-            Response.Redirect("MemberPage.aspx");
-        }
-
 
         //[Button]: Staff Page 
-        protected void Button2_Click(object sender, EventArgs e)
-        {
-
+        protected void Button2_Click(object sender, EventArgs e){Response.Redirect("StaffPage.aspx");}
           //Redirect to the Staff Page
-            Response.Redirect("StaffPage.aspx");
 
-
-        }
 
 
       //--------------------------------------------------------------------------------------

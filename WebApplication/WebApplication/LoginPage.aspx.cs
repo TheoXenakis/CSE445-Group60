@@ -55,8 +55,12 @@ namespace WebApplication
           //Code here...
 
 
+
+          //Change the name of the cookie set based upon the account the user has made...
+
+
           //Successful login, set a local Cookie to true
-            HttpCookie successfulLogin = new HttpCookie("userLoggedIn");
+            HttpCookie successfulLogin = new HttpCookie("staffLoggedIn");
 
           //Set a time limit for the Cookie: 3 hours
             successfulLogin.Expires = DateTime.Now.AddHours(3);

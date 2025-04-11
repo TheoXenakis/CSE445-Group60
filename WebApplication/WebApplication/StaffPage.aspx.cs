@@ -5,13 +5,48 @@ using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 
+
+/*
+[Authors]: 
+
+    John Bostater
+
+    //Co-Authors
+
+
+[Creation Date]: 4/10/25
+
+[Description]:
+    Staff Page along with the relevant functionality
+*/
+
+
 namespace WebApplication
 {
     public partial class StaffPage : System.Web.UI.Page
     {
+      //Action-Event Handling
+      //----------------------------------------------------------------------------------
+
+        //Executes upon page loading
         protected void Page_Load(object sender, EventArgs e)
         {
+           //Implement a statement for redirecting the user to 'LoginPage.aspx'
+          //  If they are not already logged in
+          //    Verify a user's login status via a call to Cookies?!?! (I think)
+          //Gather the cookie to see if a user is signed in\
+            HttpCookie loginCookie = Request.Cookies["staffLoggedIn"];
 
+          //Check if the cookie DNE or is incorrect
+            if(loginCookie == null || loginCookie.Value != "true"){
+              //Redirect the user to the Login Page
+                Response.Redirect("LoginPage.aspx");
+            }
+          //Else, do nothing
+        
         }
+
+
+      //----------------------------------------------------------------------------------
     }
 }
