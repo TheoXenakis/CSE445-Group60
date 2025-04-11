@@ -29,13 +29,23 @@ namespace WebApplication
       //---------------------------------------------------------------
 
         //Executes upon the page loading
-
         protected void Page_Load(object sender, EventArgs e)
         {
-
+          //Relevant code here...
         }
 
 
-      //---------------------------------------------------------------
+        //[Button]: Create an Account
+        protected void Button1_Click(object sender, EventArgs e)
+        {
+          //Collect the Data from the fields to be sent in a message to the backend server/database
+            //Text here..
+        }
+
+
+        //Utlilize the Encryption Connected Service (ServiceReference#) for encrypting/saving a users password to a backend database!!
+
+
+        //---------------------------------------------------------------
     }
 }

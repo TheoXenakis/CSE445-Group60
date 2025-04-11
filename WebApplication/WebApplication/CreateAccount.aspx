@@ -26,6 +26,9 @@
             Confirm Password:&nbsp;&nbsp;&nbsp;&nbsp;
             <asp:TextBox ID="TextBox3" runat="server"></asp:TextBox>
         </p>
+        <div style="margin-left: 160px">
+            <asp:Button ID="Button1" runat="server" Font-Bold="True" OnClick="Button1_Click" style="height: 26px" Text="Submit" />
+        </div>
     </form>
 </body>
 </html>

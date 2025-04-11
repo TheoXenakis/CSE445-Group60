@@ -10,27 +10,27 @@
     <form id="form1" runat="server">
         <div style="margin-left: 80px">
             <p style="margin-left: 40px">
-                Login Template</p>
+                Log into your account</p>
         </div>
-        <p style="margin-left: 120px">
+        <p style="margin-left: 160px">
             <asp:Label ID="Label1" runat="server" Font-Bold="True"></asp:Label>
         </p>
         <p style="margin-left: 40px">
-            Username</p>
+            Username:&nbsp;&nbsp;&nbsp;&nbsp; <asp:TextBox ID="TextBox1" runat="server"></asp:TextBox>
+        </p>
         <p style="margin-left: 40px">
             &nbsp;</p>
         <p style="margin-left: 40px">
-            Password</p>
-        <p style="margin-left: 40px">
-            &nbsp;</p>
-        <p style="margin-left: 120px">
+            Password:&nbsp;&nbsp;&nbsp;&nbsp; <asp:TextBox ID="TextBox2" runat="server"></asp:TextBox>
+        </p>
+        <p style="margin-left: 160px">
             <asp:Button ID="Button1" runat="server" Text="Button" OnClick="Button1_Click" />
         </p>
         <p>
             &nbsp;</p>
-        <p>
-            Don&#39;t have an account? Create one here</p>
         <p style="margin-left: 80px">
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Don&#39;t have an account? </p>
+        <p style="margin-left: 120px">
             <asp:LinkButton ID="LinkButton1" runat="server" OnClick="LinkButton1_Click">Create an Account</asp:LinkButton>
         </p>
     </form>
