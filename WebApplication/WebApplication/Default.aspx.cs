@@ -41,6 +41,7 @@ namespace WebApplication
         protected void Button1_Click(object sender, EventArgs e){Response.Redirect("MemberPage.aspx");}
           //Redirect to the Member Page
 
+
         //[Button]: Staff Page 
         protected void Button2_Click(object sender, EventArgs e){Response.Redirect("StaffPage.aspx");}
           //Redirect to the Staff Page

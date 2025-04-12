@@ -10,6 +10,7 @@
     <form id="form1" runat="server">
         <div style="margin-left: 80px">
             <p style="margin-left: 40px">
+                &nbsp;&nbsp;
                 Log into your account</p>
         </div>
         <p style="margin-left: 160px">
@@ -24,7 +25,7 @@
             Password:&nbsp;&nbsp;&nbsp;&nbsp; <asp:TextBox ID="TextBox2" runat="server"></asp:TextBox>
         </p>
         <p style="margin-left: 160px">
-            <asp:Button ID="Button1" runat="server" Text="Button" OnClick="Button1_Click" />
+            <asp:Button ID="Button1" runat="server" Text="Submit" OnClick="Button1_Click" />
         </p>
         <p>
             &nbsp;</p>
