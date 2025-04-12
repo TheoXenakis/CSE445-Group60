@@ -25,7 +25,7 @@
             Password:&nbsp;&nbsp;&nbsp;&nbsp; <asp:TextBox ID="TextBox2" runat="server"></asp:TextBox>
         </p>
         <p style="margin-left: 160px">
-            <asp:Button ID="Button1" runat="server" Text="Submit" OnClick="Button1_Click" />
+            <asp:Button ID="Button1" runat="server" Text="Submit" OnClick="Button1_Click" style="font-weight: 700" />
         </p>
         <p>
             &nbsp;</p>

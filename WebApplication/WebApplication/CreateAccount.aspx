@@ -8,11 +8,11 @@
 </head>
 <body>
     <form id="form1" runat="server">
-        <div style="margin-left: 120px">
+        <div style="margin-left: 160px">
             <asp:Label ID="Label1" runat="server" style="font-weight: 700" Text="Create an Account"></asp:Label>
         </div>
-        <p style="margin-left: 160px">
-            <asp:Label ID="Label2" runat="server"></asp:Label>
+        <p style="margin-left: 120px">
+            <asp:Label ID="Label2" runat="server" style="font-style: italic"></asp:Label>
         </p>
         <p style="margin-left: 40px">
             Enter a Username:&nbsp;&nbsp;&nbsp;&nbsp;

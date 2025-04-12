@@ -81,6 +81,7 @@
     <Content Include="LoginPage.aspx" />
     <Content Include="MemberPage.aspx" />
     <Content Include="StaffPage.aspx" />
+    <Content Include="TryItPage.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -124,6 +125,13 @@
     </Compile>
     <Compile Include="StaffPage.aspx.designer.cs">
       <DependentUpon>StaffPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="TryItPage.aspx.cs">
+      <DependentUpon>TryItPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="TryItPage.aspx.designer.cs">
+      <DependentUpon>TryItPage.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>

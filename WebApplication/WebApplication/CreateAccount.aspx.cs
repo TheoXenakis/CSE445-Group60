@@ -25,6 +25,10 @@ namespace WebApplication
 {
     public partial class CreateAccount : System.Web.UI.Page
     {
+      //Global Flag for redirection to Login Page
+        bool successfulAccountCreation = false;
+
+
       //Action-Event Handling
       //---------------------------------------------------------------
 
@@ -42,7 +46,7 @@ namespace WebApplication
             var serviceClient = new ServiceReference1.ServiceClient("BasicHttpsBinding_IService");
 
           //[Note]: 
-          // Later on this can be changed to a regex for username & Password Requirements
+          // Later on this if-branch can be changed to a regex for username & Password Requirements
 
 
           //Make sure all of the text fields have minimum character requirement & are all filled
@@ -60,16 +64,25 @@ namespace WebApplication
 
               //Set up a backend service for storing and logging the files into a backend 
 
-            }            
+
+              //Notify the user of the succesful account creation
+
+              //
+
+
+            }   
+          //Else-If, the user has successfully created a new account
+          //  Redirect the user to the Login Page
+
+
           //Else, User Error Inform them to Fix & resubmit
             else{
-
+              //Use the label to inform the user of their mistake
+                Label2.Text = "Error in form submission";
             }
 
+
         }
-
-
-        //Utlilize the Encryption Connected Service (ServiceReference#) for encrypting/saving a users password to a backend database!!
 
 
       //---------------------------------------------------------------
