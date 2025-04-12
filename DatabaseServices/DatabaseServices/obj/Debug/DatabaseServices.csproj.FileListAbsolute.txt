@@ -1,0 +1,7 @@
+C:\Users\geeki\CodingWorkSpace\CSE445-Group60\DatabaseServices\DatabaseServices\bin\DatabaseServices.dll.config
+C:\Users\geeki\CodingWorkSpace\CSE445-Group60\DatabaseServices\DatabaseServices\bin\DatabaseServices.dll
+C:\Users\geeki\CodingWorkSpace\CSE445-Group60\DatabaseServices\DatabaseServices\bin\DatabaseServices.pdb
+C:\Users\geeki\CodingWorkSpace\CSE445-Group60\DatabaseServices\DatabaseServices\obj\Debug\DatabaseServices.csproj.AssemblyReference.cache
+C:\Users\geeki\CodingWorkSpace\CSE445-Group60\DatabaseServices\DatabaseServices\obj\Debug\DatabaseServices.csproj.CoreCompileInputs.cache
+C:\Users\geeki\CodingWorkSpace\CSE445-Group60\DatabaseServices\DatabaseServices\obj\Debug\DatabaseServices.dll
+C:\Users\geeki\CodingWorkSpace\CSE445-Group60\DatabaseServices\DatabaseServices\obj\Debug\DatabaseServices.pdb

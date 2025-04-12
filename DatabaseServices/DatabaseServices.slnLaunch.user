@@ -1,0 +1,11 @@
+[
+  {
+    "Name": "New Profile",
+    "Projects": [
+      {
+        "Path": "DatabaseServices\\DatabaseServices.csproj",
+        "Action": "StartWithoutDebugging"
+      }
+    ]
+  }
+]

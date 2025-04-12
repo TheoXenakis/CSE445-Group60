@@ -1,9 +1,14 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
-VisualStudioVersion = 17.12.35707.178 d17.12
+VisualStudioVersion = 17.12.35707.178
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebApplication", "WebApplication\WebApplication.csproj", "{89C935D7-54F0-4054-9BA5-C61075415548}"
+	ProjectSection(ProjectDependencies) = postProject
+		{478DA518-DD25-4A07-A41A-DB464EAFF850} = {478DA518-DD25-4A07-A41A-DB464EAFF850}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DatabaseServices", "..\DatabaseServices\DatabaseServices\DatabaseServices.csproj", "{478DA518-DD25-4A07-A41A-DB464EAFF850}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +20,10 @@ Global
 		{89C935D7-54F0-4054-9BA5-C61075415548}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{89C935D7-54F0-4054-9BA5-C61075415548}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{89C935D7-54F0-4054-9BA5-C61075415548}.Release|Any CPU.Build.0 = Release|Any CPU
+		{478DA518-DD25-4A07-A41A-DB464EAFF850}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{478DA518-DD25-4A07-A41A-DB464EAFF850}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{478DA518-DD25-4A07-A41A-DB464EAFF850}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{478DA518-DD25-4A07-A41A-DB464EAFF850}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

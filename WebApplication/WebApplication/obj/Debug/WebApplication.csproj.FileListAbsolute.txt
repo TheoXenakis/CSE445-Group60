@@ -57,3 +57,6 @@ C:\Users\geeki\CodingWorkSpace\CSE445-Group60\WebApplication\WebApplication\obj\
 C:\Users\geeki\CodingWorkSpace\CSE445-Group60\WebApplication\WebApplication\obj\Debug\WebAppli.11721D13.Up2Date
 C:\Users\geeki\CodingWorkSpace\CSE445-Group60\WebApplication\WebApplication\obj\Debug\WebApplication.dll
 C:\Users\geeki\CodingWorkSpace\CSE445-Group60\WebApplication\WebApplication\obj\Debug\WebApplication.pdb
+C:\Users\geeki\CodingWorkSpace\CSE445-Group60\WebApplication\WebApplication\bin\DatabaseServices.dll
+C:\Users\geeki\CodingWorkSpace\CSE445-Group60\WebApplication\WebApplication\bin\DatabaseServices.pdb
+C:\Users\geeki\CodingWorkSpace\CSE445-Group60\WebApplication\WebApplication\bin\DatabaseServices.dll.config
