@@ -19,31 +19,67 @@ using System.Text;
 
 [Description]:
     Definitions for Methods of the WCF Service
+        This File is responsible for the XML data management of the Usernames & Passwords of user accounts
 */
+
+
+//Included Libraries
+//------------------
+  using System.Xml;
+  using System.IO;
+//------------------
 
 
 namespace DatabaseServices
 {
-    // NOTE: You can use the "Rename" command on the "Refactor" menu to change the class name "Service1" in code, svc and config file together.
-    // NOTE: In order to launch WCF Test Client for testing this service, please select Service1.svc or Service1.svc.cs at the Solution Explorer and start debugging.
     public class Service1 : IService1
     {
-        public string GetData(int value)
-        {
-            return string.Format("You entered: {0}", value);
-        }
+      //[Note]:
+      //   Create & Manage an XML file via the Methods Defined here..
 
-        public CompositeType GetDataUsingDataContract(CompositeType composite)
-        {
-            if (composite == null)
-            {
-                throw new ArgumentNullException("composite");
-            }
-            if (composite.BoolValue)
-            {
-                composite.StringValue += "Suffix";
-            }
-            return composite;
-        }
+
+      //Method Definitions
+      //-------------------------------------------------------------------------------
+        
+        //Store incoming user information to the XML file/Database
+          public bool storeUserInfo(string userName, string userPassword){
+
+            //XML file exists, continue to add information
+              if(File.Exists("userData.xml")){
+                //
+
+                //Successful Data operation
+                  return true;
+              }
+            //XML file DNE, create & add parameters
+              else{
+                //Templated content of the XML file
+                  //Code here...
+
+
+                //Create the new file
+                  File.WriteAllText("userData.xml", "It works!!");
+
+
+                //Successful Data operation
+                  return true;
+              }
+
+            //Other Error has occured
+              return false;
+          }
+
+
+        //See if a user exists within the XML file/Database
+          public bool userExists(string userName){
+            //Parse the XML file for the userName
+              //if(){
+
+              //}
+
+              return false;
+
+          }
+      //-------------------------------------------------------------------------------
     }
 }

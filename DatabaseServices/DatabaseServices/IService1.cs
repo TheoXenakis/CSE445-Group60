@@ -18,8 +18,15 @@ using System.Text;
 [Creation Date]: 4/12/25
 
 [Description]:
-    Forward Declartions of the Methods offered by the WCF service
+    Forward Declartions of the Methods offered by the WCF Service Application
 */
+
+
+//Included Libraries
+//------------------
+  using System.Xml;
+  using System.IO;
+//------------------
 
 
 namespace DatabaseServices
@@ -28,37 +35,16 @@ namespace DatabaseServices
     [ServiceContract]
     public interface IService1
     {
-        //Forward Declarations HERE!!
+      //Forward Declarations
+      //-------------------------------------------------------------
 
         [OperationContract]
-        string GetData(int value);
+          bool storeUserInfo(string userName, string userPassword);
+
 
         [OperationContract]
-        CompositeType GetDataUsingDataContract(CompositeType composite);
+          bool userExists(string userName);
+      //-------------------------------------------------------------
 
-        // TODO: Add your service operations here
-    }
-
-
-    // Use a data contract as illustrated in the sample below to add composite types to service operations.
-    [DataContract]
-    public class CompositeType
-    {
-        bool boolValue = true;
-        string stringValue = "Hello ";
-
-        [DataMember]
-        public bool BoolValue
-        {
-            get { return boolValue; }
-            set { boolValue = value; }
-        }
-
-        [DataMember]
-        public string StringValue
-        {
-            get { return stringValue; }
-            set { stringValue = value; }
-        }
     }
 }

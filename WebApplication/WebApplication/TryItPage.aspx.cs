@@ -19,7 +19,7 @@ using System.Web.UI.WebControls;
 [Creation Date]: 4/11/25
 
 [Description]:
-    Try It page for the developed services of the team
+    Try It page for the developed services of our team.
 */
 
 
@@ -27,12 +27,18 @@ namespace WebApplication
 {
     public partial class TryItPage : System.Web.UI.Page
     {
+      //Action-Event Handling
+      //-------------------------------------------------------------------------
 
-        protected void Page_Load(object sender, EventArgs e)
-        {
+        //Executes Upon the page loading
+            protected void Page_Load(object sender, EventArgs e)
+            {
 
-        }
+            }
 
 
+
+
+      //-------------------------------------------------------------------------
     }
 }

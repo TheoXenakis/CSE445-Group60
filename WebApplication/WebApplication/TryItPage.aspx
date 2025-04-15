@@ -11,13 +11,34 @@
         <div>
             <asp:Label ID="Label1" runat="server" style="font-weight: 700" Text="TryIt Page"></asp:Label>
 &nbsp;(Whole Team???)</div>
-    </form>
     <p>
         &nbsp;</p>
     <p>
         John Bostater</p>
     <p style="margin-left: 40px">
-        //List &amp; implement services you have developed here</p>
+        <em>//Service Name</em></p>
+        <p style="margin-left: 80px">
+            Service Description</p>
+        <p style="margin-left: 40px">
+            &nbsp;</p>
+        <p style="margin-left: 120px">
+            Input </p>
+        <p style="margin-left: 120px">
+            <asp:TextBox ID="TextBox1" runat="server"></asp:TextBox>
+        </p>
+        <p style="margin-left: 120px">
+            &nbsp;</p>
+        <p style="margin-left: 120px">
+            Output</p>
+        <p style="margin-left: 120px">
+            <asp:TextBox ID="TextBox2" runat="server"></asp:TextBox>
+        </p>
+        <p style="margin-left: 40px">
+            &nbsp;</p>
+        <p style="margin-left: 160px">
+            <asp:Button ID="Button1" runat="server" Text="Test" />
+        </p>
+    </form>
     <p>
         &nbsp;</p>
     <p>

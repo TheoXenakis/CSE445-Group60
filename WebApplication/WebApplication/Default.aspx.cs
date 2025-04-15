@@ -46,8 +46,6 @@ namespace WebApplication
         protected void Button2_Click(object sender, EventArgs e){Response.Redirect("StaffPage.aspx");}
           //Redirect to the Staff Page
 
-
-
       //--------------------------------------------------------------------------------------
     }
 }
