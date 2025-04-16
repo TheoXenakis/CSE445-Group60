@@ -25,6 +25,31 @@
         <p style="font-style: italic; margin-left: 80px; font-weight: 700;">
             <asp:Button ID="Button2" runat="server" OnClick="Button2_Click" Text="Go To" style="font-weight: 700" />
         </p>
+        <div>
+            <asp:Label ID="Label2" runat="server" style="font-weight: 700" Text="Service Directory"></asp:Label>
+        </div>
+        <p>
+            Provider Name: ex. Theo Xenakis
+        </p>
+        <p>
+            Component Type: (WSDL service, RESTful service, DLL function, user control)
+        </p>
+        <p>
+            Operation/Service Name:
+        </p>
+        <p>
+            Parameters and Types: 
+        </p>
+        <p>
+            Return Type: 
+        </p>
+        <p>
+            Description: 
+        </p>
+        <p>
+            TryIt Page Link:
+        </p>
+
     </form>
 </body>
 </html>
