@@ -5,3 +5,10 @@ C:\Users\geeki\CodingWorkSpace\CSE445-Group60\DatabaseServices\DatabaseServices\
 C:\Users\geeki\CodingWorkSpace\CSE445-Group60\DatabaseServices\DatabaseServices\obj\Debug\DatabaseServices.csproj.CoreCompileInputs.cache
 C:\Users\geeki\CodingWorkSpace\CSE445-Group60\DatabaseServices\DatabaseServices\obj\Debug\DatabaseServices.dll
 C:\Users\geeki\CodingWorkSpace\CSE445-Group60\DatabaseServices\DatabaseServices\obj\Debug\DatabaseServices.pdb
+D:\GitHub Projects\CSE445-Group60\DatabaseServices\DatabaseServices\bin\DatabaseServices.dll.config
+D:\GitHub Projects\CSE445-Group60\DatabaseServices\DatabaseServices\bin\DatabaseServices.dll
+D:\GitHub Projects\CSE445-Group60\DatabaseServices\DatabaseServices\bin\DatabaseServices.pdb
+D:\GitHub Projects\CSE445-Group60\DatabaseServices\DatabaseServices\obj\Debug\DatabaseServices.csproj.AssemblyReference.cache
+D:\GitHub Projects\CSE445-Group60\DatabaseServices\DatabaseServices\obj\Debug\DatabaseServices.csproj.CoreCompileInputs.cache
+D:\GitHub Projects\CSE445-Group60\DatabaseServices\DatabaseServices\obj\Debug\DatabaseServices.dll
+D:\GitHub Projects\CSE445-Group60\DatabaseServices\DatabaseServices\obj\Debug\DatabaseServices.pdb
