@@ -38,15 +38,21 @@
         <p style="margin-left: 200px">
             <asp:Button ID="Button1" runat="server" Text="Test" />
         </p>
-    </form>
     <p>
         &nbsp;</p>
     <p>
         Theo Xenakis
-    </p>
     <p style="margin-left: 40px">
-        //List &amp; implement services you have developed here</p>
-    <p>
+    Image Verification Service
+    <asp:TextBox ID="TextBox3" runat="server" placeholder="Enter length (default: 5)"></asp:TextBox>
+    <asp:Button ID="genImageButton" runat="server" Text="Generate CAPTCHA" 
+                OnClick="gen_Image_Click" />
+    <br />
+    <asp:TextBox ID="TextBox4" runat="server" ReadOnly="true" Width="200px"></asp:TextBox>
+    <br />
+    <asp:Image ID="Image1" runat="server" Visible="false" 
+               Style="border: 1px solid #ddd; margin-top: 10px; max-width: 300px;" />
+</p>
         &nbsp;</p>
     <p>
         Roen Wainscoat</p>
@@ -54,5 +60,6 @@
         //List &amp; implement services you have developed here</p>
     <p>
         &nbsp;</p>
+    </form>
 </body>
 </html>
