@@ -48,9 +48,11 @@ namespace WebApplication
           //  - Account-Type  [Member, Staff]
 
 
-          //[Service Element]: Encryption & Decryption 
+          //[Service]: Encryption & Decryption 
             var serviceClient = new ServiceReference1.ServiceClient("BasicHttpsBinding_IService");
 
+         
+          //[Serivice]: DataBase
             var serviceClient1 = new ServiceReference2.Service1Client();
 
 

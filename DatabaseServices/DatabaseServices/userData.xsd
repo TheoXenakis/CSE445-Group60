@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<!--
+[Author]: John Bostater
+
+[Start Date]: 4/16/25
+
+[Description]:
+    XML file containing User data
+-->
+
+
+<!--Schema Structure Definitions-->
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+  <!--[Accounts]: Central Element-->
+  <xs:element name="Accounts">
+
+    <!--Branching Element(s):  [User]-->
+    <xs:complexType>
+      <xs:sequence>
+
+        <!--[User]-->
+        <xs:element name="User" maxOccurs="unbounded">
+          
+          <!--Branching Elements-->
+          <xs:complexType>
+            <xs:sequence>
+
+                <!--[Username], Required-->
+                <xs:element name="Username" type="xs:string" use="required" />
+
+                <!--[Password], Required-->
+                <xs:element name="Password" type="xs:string" use="required" />
+
+                <!--[AccounType], Required-->
+                <xs:element name="AccountType" type="xs:string" use="required" />
+        
+            </xs:sequence>
+          </xs:complexType>
+        
+        </xs:element>
+
+
+      </xs:sequence>
+    </xs:complexType>
+
+  </xs:element>
+</xs:schema>

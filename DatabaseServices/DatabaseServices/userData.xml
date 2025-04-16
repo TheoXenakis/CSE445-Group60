@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+[Author]: John Bostater
+
+[Start Date]: 4/2/25
+
+[Description]:
+    XML file containing the defined hotel data
+-->
+
+
+<Accounts xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+   xsi:noNamespaceSchemaLocation="https://john-bostater.github.io/cse445-a4/Hotels.xsd">
+
+  <!--User #1 (Sample)-->
+  <User>
+    <Username>SampleUser</Username>
+    <Password>1234abc=</Password>
+    <AccountType>Staff</AccountType>
+  </User>
+
+
+</Accounts>
