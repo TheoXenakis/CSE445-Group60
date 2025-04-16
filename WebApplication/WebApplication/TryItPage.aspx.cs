@@ -4,10 +4,16 @@ using System.IO; // Add this for stream operations
 using System.Web.UI;
 using WebApplication.CaptchaService;
 
+//Author: John Bostater
+
+//Co-Author: Theo Xenakis
+
+
 namespace WebApplication
 {
     public partial class TryItPage : System.Web.UI.Page
     {
+        //-------------------------GENERATE CAPTCHA IMAGE FUNCTION--------------------------//
         protected void gen_Image_Click(object sender, EventArgs e)
         {
             using (var client = new CaptchaService.ServiceClient("BasicHttpsBinding_IService1"))
@@ -15,7 +21,7 @@ namespace WebApplication
                 try
                 {
                     // Get verification string
-                    string length = "5"; // by default
+                    string length = "5"; //by default 5
                     if (string.IsNullOrEmpty(TextBox3.Text))
                     {
                         Debug.WriteLine("TextBox is empty, settig to default: 5");
@@ -24,7 +30,7 @@ namespace WebApplication
                     }
                     else
                     {
-                        length = TextBox3.Text;
+                        length = TextBox3.Text; //set the length
                     }
                     string verifierStr = client.GetVerifierString(length);
                     Debug.WriteLine("Verifier String:", verifierStr);
@@ -33,7 +39,7 @@ namespace WebApplication
                     // Get image stream
                     var imageStream = client.GetImage(verifierStr);
 
-                    // Convert stream to base64 (without using Length)
+                    // Convert stream to base64
                     using (var memoryStream = new MemoryStream())
                     {
                         byte[] buffer = new byte[4096];
@@ -46,7 +52,7 @@ namespace WebApplication
 
                         string base64String = Convert.ToBase64String(memoryStream.ToArray());
 
-                        // Display image (use PNG instead of JPEG)
+                        // Display image (uses PNG NOT JPEG aghhhhhhhhhh)
                         Image1.ImageUrl = "data:image/png;base64," + base64String;
                         Image1.Visible = true;
                     }
@@ -55,6 +61,33 @@ namespace WebApplication
                 {
                     TextBox4.Text = $"Error: {ex.GetType().Name} - {ex.Message}";
                     Image1.Visible = false;
+                }
+            }
+        }
+        //------------------------VALIDATE CAPTCHA GUESS WITH CORRECT VALUE--------------------------//
+        protected void subCaptchaGuess(object sender, EventArgs e)
+        {
+            captchaResult.Visible = true;
+            using (var client = new CaptchaService.ServiceClient("BasicHttpsBinding_IService1"))
+            {
+                try
+                {
+                    //check if invalid
+                    if (answerBox.Text == null || answerBox.Text.Length == 0 || answerBox.Text != TextBox4.Text)
+                    {
+                        Debug.WriteLine("Answer does not match Captcha or Text Field is empty");
+                        captchaResult.Text = "Answer does not match Captcha or Text Field is empty";
+                    }
+                    else
+                    //match captcha, update textbox as such
+                    {
+                        Debug.WriteLine("Answer matches Captcha");
+                        captchaResult.Text = "Answer matches Captcha";
+                    }
+                }
+                catch (Exception ex)
+                {
+                    TextBox4.Text = $"Error: {ex.GetType().Name} - {ex.Message}";
                 }
             }
         }
