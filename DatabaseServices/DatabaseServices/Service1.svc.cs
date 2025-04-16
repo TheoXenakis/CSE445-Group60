@@ -42,36 +42,52 @@ namespace DatabaseServices
       //-------------------------------------------------------------------------------
         
         //Store incoming user information to the XML file/Database
-          public bool storeUserInfo(string userName, string userPassword){
+          public bool createAccount(string userName, string userPassword, string accountType){
 
             //XML file exists, continue to add information
               if(File.Exists("userData.xml")){
-                //
+                
+  
 
-                //Successful Data operation
-                  return true;
               }
             //XML file DNE, create & add parameters
               else{
-                //Templated content of the XML file
-                  //Code here...
+
+                //Write the contents into the new file(s) necessary for XML
+                  try{
+                    //Define the path for [XSD]
+                      string xsdPath = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "userData.xsd");
+    
+
+                    //Define the path for [XML]
+                      string xmlPath = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "userData.xml");
+    
+
+                    //Set-up/Write to the .XSD (Defines the XML document)
+                    //  File.WriteAllText(xsdPath, "Hello!");
 
 
-                //Create the new file
-                  File.WriteAllText("userData.xml", "It works!!");
-
-
-                //Successful Data operation
-                  return true;
+                    //Set-up/Write to the .XML  (Stores data)
+                    //  File.WriteAllText(xmlPath, "Hello!");
+                  }
+                //Catch any Errors in creation
+                  catch(Exception e){
+                    //Print error  
+                      Console.WriteLine("Error!");
+                  
+                    //Unsuccessful operation
+                      return false;
+                  }
               }
 
-            //Other Error has occured
-              return false;
+
+            //Successful Data Operation
+              return true;
           }
 
 
         //See if a user exists within the XML file/Database
-          public bool userExists(string userName){
+          public bool userNameExists(string userName){
             //Parse the XML file for the userName
               //if(){
 

@@ -10,13 +10,13 @@
     <form id="form1" runat="server">
         <div>
             <asp:Label ID="Label1" runat="server" style="font-weight: 700" Text="TryIt Page"></asp:Label>
-&nbsp;(Whole Team???)</div>
+        </div>
     <p>
         &nbsp;</p>
     <p>
         John Bostater</p>
-    <p style="margin-left: 40px">
-        <em>//Service Name</em></p>
+    <p style="margin-left: 40px; font-style: italic;">
+        Debug!</p>
         <p style="margin-left: 80px">
             Service Description</p>
         <p style="margin-left: 40px">
@@ -35,7 +35,7 @@
         </p>
         <p style="margin-left: 40px">
             &nbsp;</p>
-        <p style="margin-left: 160px">
+        <p style="margin-left: 200px">
             <asp:Button ID="Button1" runat="server" Text="Test" />
         </p>
     </form>

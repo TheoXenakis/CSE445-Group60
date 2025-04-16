@@ -29,9 +29,21 @@
             Confirm Password:&nbsp;&nbsp;&nbsp;&nbsp;
             <asp:TextBox ID="TextBox3" runat="server"></asp:TextBox>
         </p>
-        <div style="margin-left: 160px">
-            <asp:Button ID="Button1" runat="server" Font-Bold="True" OnClick="Button1_Click" style="height: 26px" Text="Submit" />
+        <p style="margin-left: 40px">
+            &nbsp;</p>
+        <p style="margin-left: 80px">
+            <em>Select Account Type</em></p>
+        <div style="margin-left: 200px">
+            <asp:RadioButtonList ID="RadioButtonList1" runat="server" BorderStyle="None">
+                <asp:ListItem>Member</asp:ListItem>
+                <asp:ListItem>Staff</asp:ListItem>
+            </asp:RadioButtonList>
         </div>
+        <p style="margin-left: 200px">
+            &nbsp;</p>
+        <p style="margin-left: 200px">
+            <asp:Button ID="Button1" runat="server" Font-Bold="True" OnClick="Button1_Click" style="height: 26px" Text="Submit" />
+        </p>
     </form>
 </body>
 </html>

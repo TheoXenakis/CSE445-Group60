@@ -36,15 +36,15 @@ namespace DatabaseServices
     public interface IService1
     {
       //Forward Declarations
-      //-------------------------------------------------------------
+      //---------------------------------------------------------------------------------
 
         [OperationContract]
-          bool storeUserInfo(string userName, string userPassword);
+        bool createAccount(string userName, string userPassword, string accountType);
 
 
         [OperationContract]
-          bool userExists(string userName);
-      //-------------------------------------------------------------
+        bool userNameExists(string userName);
+      //---------------------------------------------------------------------------------
 
     }
 }

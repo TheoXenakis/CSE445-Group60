@@ -42,8 +42,17 @@ namespace WebApplication
         //[Button]: Create an Account
         protected void Button1_Click(object sender, EventArgs e)
         {
-          //Create a Service Client to call upon the Encryption services
+          //[Account Info]:
+          //  - Username
+          //  - Password      [Encrypted]
+          //  - Account-Type  [Member, Staff]
+
+
+          //[Service Element]: Encryption & Decryption 
             var serviceClient = new ServiceReference1.ServiceClient("BasicHttpsBinding_IService");
+
+            var serviceClient1 = new ServiceReference2.Service1Client();
+
 
           //[Note]: 
           // Later on this if-branch can be changed to a regex for username & Password Requirements
@@ -62,19 +71,13 @@ namespace WebApplication
               //  [PASSWORD VERIFICATION WILL BE DONE BY PASSING PLAINTEXT INTO 'Encrypt' function & making sure the result is the same as what is stored on the backend DB]
 
 
-              //Set up a backend service for storing and logging the files into a backend 
+              //Set up a backend service for storing and logging account information
 
 
-              //Notify the user of the succesful account creation
-
-              //
-
+              //Notify the user of the succesful account creation [Via the server's response!]
+                //Label2.Text = createAccount(userName, password, accountType)
 
             }   
-          //Else-If, the user has successfully created a new account
-          //  Redirect the user to the Login Page
-
-
           //Else, User Error Inform them to Fix & resubmit
             else{
               //Use the label to inform the user of their mistake
@@ -82,9 +85,12 @@ namespace WebApplication
             }
 
 
+          Label2.Text = serviceClient1.createAccount("a", "b", "c").ToString();
+
+
         }
 
-
-      //---------------------------------------------------------------
+    
+        //---------------------------------------------------------------
     }
 }
