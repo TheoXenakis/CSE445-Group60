@@ -95,10 +95,12 @@
     </None>
     <Content Include="CreateAccount.aspx" />
     <Content Include="Default.aspx" />
+    <Content Include="Global.asax" />
     <Content Include="LoginPage.aspx" />
     <Content Include="MemberPage.aspx" />
     <Content Include="StaffPage.aspx" />
-    <Content Include="TryItPage.aspx" />
+    <Content Include="TryItCaptchaTheo.aspx" />
+    <Content Include="TryItEncryptionJohn.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -131,6 +133,9 @@
     <Compile Include="Default.aspx.designer.cs">
       <DependentUpon>Default.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
     <Compile Include="LoginPage.aspx.cs">
       <DependentUpon>LoginPage.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -153,12 +158,19 @@
     <Compile Include="StaffPage.aspx.designer.cs">
       <DependentUpon>StaffPage.aspx</DependentUpon>
     </Compile>
-    <Compile Include="TryItPage.aspx.cs">
-      <DependentUpon>TryItPage.aspx</DependentUpon>
+    <Compile Include="TryItCaptchaTheo.aspx.cs">
+      <DependentUpon>TryItCaptchaTheo.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="TryItPage.aspx.designer.cs">
-      <DependentUpon>TryItPage.aspx</DependentUpon>
+    <Compile Include="TryItCaptchaTheo.aspx.designer.cs">
+      <DependentUpon>TryItCaptchaTheo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="TryItEncryptionJohn.aspx.cs">
+      <DependentUpon>TryItEncryptionJohn.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="TryItEncryptionJohn.aspx.designer.cs">
+      <DependentUpon>TryItEncryptionJohn.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
