@@ -15,11 +15,11 @@ namespace WebApplication.ServiceReference2 {
     [System.ServiceModel.ServiceContractAttribute(ConfigurationName="ServiceReference2.IService1")]
     public interface IService1 {
         
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/createAccount", ReplyAction="http://tempuri.org/IService1/createAccountResponse")]
-        bool createAccount(string userName, string userPassword, string accountType);
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/createUser", ReplyAction="http://tempuri.org/IService1/createUserResponse")]
+        bool createUser(string userName, string userPassword, string accountType);
         
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/createAccount", ReplyAction="http://tempuri.org/IService1/createAccountResponse")]
-        System.Threading.Tasks.Task<bool> createAccountAsync(string userName, string userPassword, string accountType);
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/createUser", ReplyAction="http://tempuri.org/IService1/createUserResponse")]
+        System.Threading.Tasks.Task<bool> createUserAsync(string userName, string userPassword, string accountType);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/userNameExists", ReplyAction="http://tempuri.org/IService1/userNameExistsResponse")]
         bool userNameExists(string userName);
@@ -55,12 +55,12 @@ namespace WebApplication.ServiceReference2 {
                 base(binding, remoteAddress) {
         }
         
-        public bool createAccount(string userName, string userPassword, string accountType) {
-            return base.Channel.createAccount(userName, userPassword, accountType);
+        public bool createUser(string userName, string userPassword, string accountType) {
+            return base.Channel.createUser(userName, userPassword, accountType);
         }
         
-        public System.Threading.Tasks.Task<bool> createAccountAsync(string userName, string userPassword, string accountType) {
-            return base.Channel.createAccountAsync(userName, userPassword, accountType);
+        public System.Threading.Tasks.Task<bool> createUserAsync(string userName, string userPassword, string accountType) {
+            return base.Channel.createUserAsync(userName, userPassword, accountType);
         }
         
         public bool userNameExists(string userName) {

@@ -39,7 +39,7 @@ namespace DatabaseServices
       //---------------------------------------------------------------------------------
 
         [OperationContract]
-        bool createAccount(string userName, string userPassword, string accountType);
+        bool createUser(string userName, string userPassword, string accountType);
 
 
         [OperationContract]

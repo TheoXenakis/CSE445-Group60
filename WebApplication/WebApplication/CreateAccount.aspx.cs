@@ -43,56 +43,60 @@ namespace WebApplication
         protected void Button1_Click(object sender, EventArgs e)
         {
           //[Account Info]:
-          //  - Username
-          //  - Password      [Encrypted]
-          //  - Account-Type  [Member, Staff]
+          //  - Username      {TextBox1}
+          //  - Password      {TextBox2}   [Encrypted]
+          //  - Account-Type  {TextBox3}   [Member, Staff]
 
 
-          //[Service]: Encryption & Decryption 
+          //[Service]: Encryption & Decryption  {External} 
             var serviceClient = new ServiceReference1.ServiceClient("BasicHttpsBinding_IService");
 
          
-          //[Serivice]: DataBase
+          //[Service]: DataBase  {Local}
             var serviceClient1 = new ServiceReference2.Service1Client();
+
+
+          //[Service]: Captcha  {External}
+            //Theo Xenakis
 
 
           //[Note]: 
           // Later on this if-branch can be changed to a regex for username & Password Requirements
 
 
-          //Make sure all of the text fields have minimum character requirement & are all filled
-            if(    (TextBox1.Text.Length >= 3 && TextBox1.Text.Length <= 16)
-                && (TextBox2.Text.Length >= 3 && TextBox2.Text.Length <= 16)
-                && (TextBox3.Text.Length >= 3 && TextBox3.Text.Length <= 16)
-                && (TextBox2.Text == TextBox3.Text) //Confirm Password Check
+          //Create an Account
+            if(    (TextBox1.Text.Length >= 3 && TextBox1.Text.Length <= 16)  //Username
+                && (TextBox2.Text.Length >= 3 && TextBox2.Text.Length <= 16)  //Password
+                && (TextBox3.Text.Length >= 3 && TextBox3.Text.Length <= 16)  //Confirm Password
+                && (TextBox2.Text == TextBox3.Text)                //Confirm Password Check
+                && !(serviceClient1.userNameExists(TextBox1.Text)) //Account Does Not Already Exist
             ){
               //Collect the Data from the fields to be sent in a message to the backend server/database
-                //Text here..
+                string username = TextBox1.Text;
 
-              //[ENCRYPT PASSWORDS FOR STORAGE ON THE BACKEND!!, DO NOT SAVE RAW PASSWORDS TO THE BACKEND DB!!]
-              //  [PASSWORD VERIFICATION WILL BE DONE BY PASSING PLAINTEXT INTO 'Encrypt' function & making sure the result is the same as what is stored on the backend DB]
-
-
-              //Set up a backend service for storing and logging account information
+              //Encrypt the password the user has entered
+                string encryptedPassword = serviceClient.Encrypt(TextBox1.Text);
 
 
-              //Notify the user of the succesful account creation [Via the server's response!]
-                //Label2.Text = createAccount(userName, password, accountType)
+              //[Account Creation] Place result into bool
+                bool accountCreation = serviceClient1.createUser(username, encryptedPassword, RadioButtonList1.SelectedItem.Text);
 
-            }   
-          //Else, User Error Inform them to Fix & resubmit
-            else{
-              //Use the label to inform the user of their mistake
-                Label2.Text = "Error in form submission";
+              //Successful Account Creation
+                if(accountCreation){
+                  //Notify the user
+                    Label2.Text = "Account Succesfully Created, Proceed to the Login Page";
+
+
+                //[IMPLEMENT]
+                  //Create a timer that will redirect the user back to the login page & fill in their credentials for them!
+                }
+              //Unsuccessful Account Creation, account already exists
+                else{Label2.Text = "Account Already Exists, please use another UserName";}
+
             }
-
-
-          Label2.Text = serviceClient1.createAccount("a", "b", "c").ToString();
-
-
+          //Else, User Error Inform them to Fix & resubmit
+            else{Label2.Text = "Error in form submission ";}
         }
-
-    
-        //---------------------------------------------------------------
+      //---------------------------------------------------------------
     }
 }

@@ -61,7 +61,7 @@ namespace DatabaseServices
       //-------------------------------------------------------------------------------
         
         //Store incoming user information to the XML file/Database
-          public bool createAccount(string userName, string userPassword, string accountType){
+          public bool createUser(string userName, string userPassword, string accountType){
             
             //If the userName doesn't already exist, proceed
               if(!userNameExists(userName)){

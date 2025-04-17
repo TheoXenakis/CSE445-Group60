@@ -6,11 +6,11 @@
       <xsd:import schemaLocation="http://localhost:64223/Service1.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
     </xsd:schema>
   </wsdl:types>
-  <wsdl:message name="IService1_createAccount_InputMessage">
-    <wsdl:part name="parameters" element="tns:createAccount" />
+  <wsdl:message name="IService1_createUser_InputMessage">
+    <wsdl:part name="parameters" element="tns:createUser" />
   </wsdl:message>
-  <wsdl:message name="IService1_createAccount_OutputMessage">
-    <wsdl:part name="parameters" element="tns:createAccountResponse" />
+  <wsdl:message name="IService1_createUser_OutputMessage">
+    <wsdl:part name="parameters" element="tns:createUserResponse" />
   </wsdl:message>
   <wsdl:message name="IService1_userNameExists_InputMessage">
     <wsdl:part name="parameters" element="tns:userNameExists" />
@@ -19,9 +19,9 @@
     <wsdl:part name="parameters" element="tns:userNameExistsResponse" />
   </wsdl:message>
   <wsdl:portType name="IService1">
-    <wsdl:operation name="createAccount">
-      <wsdl:input wsaw:Action="http://tempuri.org/IService1/createAccount" message="tns:IService1_createAccount_InputMessage" />
-      <wsdl:output wsaw:Action="http://tempuri.org/IService1/createAccountResponse" message="tns:IService1_createAccount_OutputMessage" />
+    <wsdl:operation name="createUser">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/createUser" message="tns:IService1_createUser_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/createUserResponse" message="tns:IService1_createUser_OutputMessage" />
     </wsdl:operation>
     <wsdl:operation name="userNameExists">
       <wsdl:input wsaw:Action="http://tempuri.org/IService1/userNameExists" message="tns:IService1_userNameExists_InputMessage" />
@@ -30,8 +30,8 @@
   </wsdl:portType>
   <wsdl:binding name="BasicHttpBinding_IService1" type="tns:IService1">
     <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
-    <wsdl:operation name="createAccount">
-      <soap:operation soapAction="http://tempuri.org/IService1/createAccount" style="document" />
+    <wsdl:operation name="createUser">
+      <soap:operation soapAction="http://tempuri.org/IService1/createUser" style="document" />
       <wsdl:input>
         <soap:body use="literal" />
       </wsdl:input>
