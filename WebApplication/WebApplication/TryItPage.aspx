@@ -16,10 +16,12 @@
     <p>
         John Bostater</p>
     <p style="margin-left: 40px; font-style: italic;">
-        Debug!</p>
+        Encryption Decryption Services</p>
         <p style="margin-left: 80px">
-            Service Description</p>
-        <p style="margin-left: 40px">
+            Encrypt &amp; Decrypt Text</p>
+        <p style="margin-left: 80px">
+            [Used for Password Storage on backend server]</p>
+        <p style="margin-left: 120px">
             &nbsp;</p>
         <p style="margin-left: 120px">
             Input </p>
@@ -35,11 +37,42 @@
         </p>
         <p style="margin-left: 40px">
             &nbsp;</p>
-        <p style="margin-left: 200px">
-            <asp:Button ID="Button1" runat="server" Text="Test" />
+        <p style="margin-left: 120px">
+            <asp:Button ID="Button1" runat="server" Text="Encrypt" OnClick="Button1_Click" />
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <asp:Button ID="Button3" runat="server" Text="Decrypt" OnClick="Button3_Click" />
         </p>
     <p>
         &nbsp;</p>
+        <p>
+            &nbsp;</p>
+    <p style="margin-left: 40px; font-style: italic;">
+        Create Account &amp; Login Services</p>
+        <p style="margin-left: 80px">
+            Create an account to be stored on the backend server &amp; be able to log into that account.</p>
+        <p style="margin-left: 80px">
+            &nbsp;</p>
+        <p style="margin-left: 120px">
+            Input </p>
+        <p style="margin-left: 120px">
+            <asp:TextBox ID="TextBox5" runat="server"></asp:TextBox>
+        </p>
+        <p style="margin-left: 120px">
+            &nbsp;</p>
+        <p style="margin-left: 120px">
+            Output</p>
+        <p style="margin-left: 120px">
+            <asp:TextBox ID="TextBox6" runat="server"></asp:TextBox>
+        </p>
+        <p style="margin-left: 40px">
+            &nbsp;</p>
+        <p style="margin-left: 200px">
+            <asp:Button ID="Button2" runat="server" Text="Test" />
+        </p>
+        <p>
+            &nbsp;</p>
+        <p>
+            &nbsp;</p>
     <p>
         Theo Xenakis
     <p style="margin-left: 40px">
