@@ -19,17 +19,18 @@
             <asp:TextBox ID="TextBox1" runat="server"></asp:TextBox>
         </p>
         <p style="margin-left: 40px">
-            &nbsp;</p>
-        <p style="margin-left: 40px">
             Enter a Password:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <asp:TextBox ID="TextBox2" runat="server"></asp:TextBox>
         </p>
-        <p style="margin-left: 40px">
-            &nbsp;</p>
         <p style="margin-left: 40px">
             Confirm Password:&nbsp;&nbsp;&nbsp;&nbsp;
             <asp:TextBox ID="TextBox3" runat="server"></asp:TextBox>
         </p>
         <p style="margin-left: 40px">
+            &nbsp;</p>
+        <p style="margin-left: 160px; height: 32px; width: 146px;">
+            <asp:Label ID="Label3" runat="server" Text="*16 character max for username &amp; password"></asp:Label>
+        </p>
+        <p style="margin-left: 80px">
             &nbsp;</p>
         <p style="margin-left: 80px">
             <em>Select Account Type</em></p>
@@ -40,6 +41,13 @@
             </asp:RadioButtonList>
         </div>
         <p style="margin-left: 200px">
+            <asp:Label ID="Label6" runat="server" ForeColor="Red"></asp:Label>
+        </p>
+        <p style="margin-left: 200px">
+            &nbsp;</p>
+        <p style="margin-left: 80px">
+            //Insert Captcha Services here!! (Last Verification Step)</p>
+        <p style="margin-left: 80px">
             &nbsp;</p>
         <p style="margin-left: 200px">
             <asp:Button ID="Button1" runat="server" Font-Bold="True" OnClick="Button1_Click" style="height: 26px" Text="Submit" />

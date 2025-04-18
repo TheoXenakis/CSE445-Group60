@@ -4,6 +4,13 @@ using System.Web;
 using System.Web.Security;
 using System.Web.SessionState;
 
+
+//Author: Theo Xenakis
+
+//Co-Author: John Bostater
+//   [Additon]: Cookies
+
+
 namespace WebApplication
 {
     public class Global : HttpApplication
@@ -24,6 +31,28 @@ namespace WebApplication
 
         protected void Session_Start(object sender, EventArgs e)
         {
+          //Initialize Cookies that do not exist or have not been already set here
+            //[To Do - John]:
+            /*
+                - Have checks for Cookies as to whether they are null to initialize new ones if necessary
+
+                - Example:
+
+                Check for
+                    "userLogin" = null         (Default Value)    
+                    "accountUsername" = null   (Default Value)    
+                    "accountPassword" = null   (Default Value)    
+                    "accountType" = null       (Default Value)    
+            
+                If not Null, then these values exist already and do not need to be intialized 
+                (i.e. set to their default values)
+            
+            */         
+         
+          //Description here
+            //Add code here...
+
+
             // Update visitor counter
             System.Threading.Interlocked.Increment(ref _activeVisitors);
             HttpContext.Current.Application.Lock();
@@ -63,6 +92,10 @@ namespace WebApplication
 
         protected void Session_End(object sender, EventArgs e)
         {
+          //Unitialize Cookies here (if we see fit)
+            //Code here...
+
+
             // Update visitor counter
             System.Threading.Interlocked.Decrement(ref _activeVisitors);
             HttpContext.Current.Application.Lock();

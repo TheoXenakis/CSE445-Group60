@@ -19,13 +19,17 @@
         <p style="margin-left: 40px">
             Username:&nbsp;&nbsp;&nbsp;&nbsp; <asp:TextBox ID="TextBox1" runat="server"></asp:TextBox>
         </p>
-        <p style="margin-left: 40px">
-            &nbsp;</p>
+        <p style="margin-left: 160px">
+            <asp:Label ID="Label2" runat="server" style="font-weight: 700"></asp:Label>
+        </p>
         <p style="margin-left: 40px">
             Password:&nbsp;&nbsp;&nbsp;&nbsp; <asp:TextBox ID="TextBox2" runat="server"></asp:TextBox>
         </p>
         <p style="margin-left: 160px">
-            <asp:Button ID="Button1" runat="server" Text="Submit" OnClick="Button1_Click" style="font-weight: 700" />
+            <asp:Label ID="Label3" runat="server" style="font-weight: 700"></asp:Label>
+        </p>
+        <p style="margin-left: 160px">
+            &nbsp;<asp:Button ID="Button1" runat="server" Text="Submit" OnClick="Button1_Click" style="font-weight: 700" />
         </p>
         <p>
             &nbsp;</p>

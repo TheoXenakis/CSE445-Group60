@@ -65,18 +65,18 @@ namespace WebApplication
 
 
           //Create an Account
-            if(    (TextBox1.Text.Length >= 3 && TextBox1.Text.Length <= 16)  //Username
-                && (TextBox2.Text.Length >= 3 && TextBox2.Text.Length <= 16)  //Password
-                && (TextBox3.Text.Length >= 3 && TextBox3.Text.Length <= 16)  //Confirm Password
+            if(    (TextBox1.Text.Length >= 4 && TextBox1.Text.Length <= 16)  //Username
+                && (TextBox2.Text.Length >= 4 && TextBox2.Text.Length <= 16)  //Password
+                && (TextBox3.Text.Length >= 4 && TextBox3.Text.Length <= 16)  //Confirm Password
                 && (TextBox2.Text == TextBox3.Text)                //Confirm Password Check
                 && !(serviceClient1.userNameExists(TextBox1.Text)) //Account Does Not Already Exist
+                && (RadioButtonList1.SelectedItem.Text != "")  //Select Account Check
             ){
               //Collect the Data from the fields to be sent in a message to the backend server/database
                 string username = TextBox1.Text;
 
               //Encrypt the password the user has entered
                 string encryptedPassword = serviceClient.Encrypt(TextBox1.Text);
-
 
               //[Account Creation] Place result into bool
                 bool accountCreation = serviceClient1.createUser(username, encryptedPassword, RadioButtonList1.SelectedItem.Text);
@@ -87,12 +87,15 @@ namespace WebApplication
                     Label2.Text = "Account Succesfully Created, Proceed to the Login Page";
 
 
-                //[IMPLEMENT]
-                  //Create a timer that will redirect the user back to the login page & fill in their credentials for them!
+                  //Set local Cookies for the user's information: userName, password, accountType
+
+
+                  //[IMPLEMENT]
+                    //Create a timer that will redirect the user back to the login page & fill in their credentials for them!
+
                 }
               //Unsuccessful Account Creation, account already exists
                 else{Label2.Text = "Account Already Exists, please use another UserName";}
-
             }
           //Else, User Error Inform them to Fix & resubmit
             else{Label2.Text = "Error in form submission ";}

@@ -44,7 +44,10 @@ namespace DatabaseServices
 
         [OperationContract]
         bool userNameExists(string userName);
-      //---------------------------------------------------------------------------------
 
+
+        [OperationContract]
+        bool userLogin(string userName, string encryptedPassword);
+      //---------------------------------------------------------------------------------
     }
 }

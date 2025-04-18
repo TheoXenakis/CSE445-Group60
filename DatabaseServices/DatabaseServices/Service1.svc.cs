@@ -48,13 +48,12 @@ namespace DatabaseServices
 
 
       //Global Variables
-      //----------------------------------
-        //Path to the XML file
-          string xmlPath = "";
+      //--------------------------------------------------------------------------------------------------
 
-        //Path to the XSD file
-          string xsdPath = "";
-      //----------------------------------
+//[FIX THIS PATH]!!
+        //Path to the XML file
+          string xmlPath = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "App_Data", "userData.xml");
+      //--------------------------------------------------------------------------------------------------
 
 
       //Method Definitions
@@ -62,10 +61,10 @@ namespace DatabaseServices
         
         //Store incoming user information to the XML file/Database
           public bool createUser(string userName, string userPassword, string accountType){
-            
+
             //If the userName doesn't already exist, proceed
               if(!userNameExists(userName)){
-                //Code here...
+                //Insert/Inject the user's information into the XML file!
 
 
                 //Successful operation
@@ -86,7 +85,27 @@ namespace DatabaseServices
                   XmlDocument xmlDoc = new XmlDocument();
 
                 //Load the XML doc via the Path
-                //  xmlDoc.Load(xmlPath);
+                  xmlDoc.Load(xmlPath);
+
+                //Get a list of nodes from the XML document
+                  XmlNodeList userNodes = xmlDoc.SelectNodes("/Accounts/User");
+
+
+                //Parse Each 'User' until the corresponding username is hit
+                  foreach(XmlNode parsedUser in userNodes){
+
+                    //Collect the information from the selected user
+                      string accountUsername = parsedUser.SelectSingleNode("Username").InnerText;
+                      string accountPassword = parsedUser.SelectSingleNode("Password").InnerText;
+                      string accountType = parsedUser.SelectSingleNode("AccountType").InnerText;
+
+
+                    //DEBUG!!
+                      //Return the information as a string!! (TEMPORARY FOR DEBUG!!)
+                      
+
+
+                  }
 
 
               }
@@ -97,6 +116,30 @@ namespace DatabaseServices
             //Else, username does NOT exist
               return false;
           }
+
+
+      //User Login
+        public bool userLogin(string userName, string encryptedPassword){
+          
+          //Proceed if the username exists
+            if(userNameExists(userName)){
+
+              //Password Correctness check
+                bool correctPassword = true;
+
+              //Correct Password
+               // if(){
+                  //User Successfully logged in
+                //    return true;
+               // }
+
+              //Incorrect password, proceeds until 'return false below'
+            }
+
+
+          //Unsucessful login
+            return false;
+        }
       //-------------------------------------------------------------------------------
     }
 }

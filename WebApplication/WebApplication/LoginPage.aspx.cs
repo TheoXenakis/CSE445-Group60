@@ -18,7 +18,26 @@ using System.Web.UI.WebControls;
 
 [Description]:
     Login Page for users to login and create accounts.
+
 */
+
+
+/*
+[Boiler Code]:
+
+  - {Setting Cookies}
+
+    //Successful login, set a local Cookie to true
+      HttpCookie successfulLogin = new HttpCookie("staffLoggedIn");
+
+    //Set a time limit for the Cookie: 3 hours
+      successfulLogin.Expires = DateTime.Now.AddHours(3);
+
+    //Add the Cookie to the local environment among the aspx pages
+      Response.Cookies.Add(successfulLogin);
+
+*/
+
 
 
 namespace WebApplication
@@ -47,20 +66,9 @@ namespace WebApplication
         //[Button]: Log into Account 
         protected void Button1_Click(object sender, EventArgs e)
         {
-          //[Service]: DataBase
+          //[Service]: DataBase Services
             var serviceClient1 = new ServiceReference2.Service1Client();
 
-          //
-
-
-            //Successful login, set a local Cookie to true
-              HttpCookie successfulLogin = new HttpCookie("staffLoggedIn");
-
-            //Set a time limit for the Cookie: 3 hours
-              successfulLogin.Expires = DateTime.Now.AddHours(3);
-
-            //Add the Cookie to the local environment among the aspx pages
-              Response.Cookies.Add(successfulLogin);
 
           
             //DEBUG!!\

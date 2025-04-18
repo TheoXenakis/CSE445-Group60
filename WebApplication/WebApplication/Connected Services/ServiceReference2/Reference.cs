@@ -26,6 +26,12 @@ namespace WebApplication.ServiceReference2 {
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/userNameExists", ReplyAction="http://tempuri.org/IService1/userNameExistsResponse")]
         System.Threading.Tasks.Task<bool> userNameExistsAsync(string userName);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/userLogin", ReplyAction="http://tempuri.org/IService1/userLoginResponse")]
+        bool userLogin(string userName, string encryptedPassword);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/userLogin", ReplyAction="http://tempuri.org/IService1/userLoginResponse")]
+        System.Threading.Tasks.Task<bool> userLoginAsync(string userName, string encryptedPassword);
     }
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
@@ -69,6 +75,14 @@ namespace WebApplication.ServiceReference2 {
         
         public System.Threading.Tasks.Task<bool> userNameExistsAsync(string userName) {
             return base.Channel.userNameExistsAsync(userName);
+        }
+        
+        public bool userLogin(string userName, string encryptedPassword) {
+            return base.Channel.userLogin(userName, encryptedPassword);
+        }
+        
+        public System.Threading.Tasks.Task<bool> userLoginAsync(string userName, string encryptedPassword) {
+            return base.Channel.userLoginAsync(userName, encryptedPassword);
         }
     }
 }

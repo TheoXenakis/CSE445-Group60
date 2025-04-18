@@ -4,9 +4,8 @@ using System.IO; // Add this for stream operations
 using System.Web.UI;
 using WebApplication.CaptchaService;
 
-//Author: John Bostater
 
-//Co-Author: Theo Xenakis
+//[Author]: John Bostater
 
 
 namespace WebApplication
@@ -21,8 +20,8 @@ namespace WebApplication
 
           //Make sure the Text box is not empty before proceeding
             if(TextBox1.Text.Length != 0){
-                //Encrypt the text from 'Input' [TextBox1]
-                    TextBox2.Text = serviceClient.Encrypt(TextBox1.Text);
+              //Encrypt the text from 'Input' [TextBox1]
+                TextBox2.Text = serviceClient.Encrypt(TextBox1.Text);
             }
           //Else, Notify the user to enter text!
             else{
