@@ -36,10 +36,10 @@ namespace DatabaseServices
     public interface IService1
     {
       //Forward Declarations
-      //---------------------------------------------------------------------------------
+      //-----------------------------------------------------------------------------------------------
 
         [OperationContract]
-        bool createUser(string userName, string userPassword, string accountType);
+        bool createUser(string userName, string userPassword, string userType, string userLoggedIn);
 
 
         [OperationContract]
@@ -48,6 +48,12 @@ namespace DatabaseServices
 
         [OperationContract]
         bool userLogin(string userName, string encryptedPassword);
-      //---------------------------------------------------------------------------------
+     
+
+
+      //DEBUG FUNCTION!!  [Remove for final version/after developments]
+        [OperationContract]
+        string debugFunct();
+      //-----------------------------------------------------------------------------------------------
     }
 }

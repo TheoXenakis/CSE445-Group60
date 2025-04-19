@@ -16,10 +16,10 @@ namespace WebApplication.ServiceReference2 {
     public interface IService1 {
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/createUser", ReplyAction="http://tempuri.org/IService1/createUserResponse")]
-        bool createUser(string userName, string userPassword, string accountType);
+        bool createUser(string userName, string userPassword, string userType, string userLoggedIn);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/createUser", ReplyAction="http://tempuri.org/IService1/createUserResponse")]
-        System.Threading.Tasks.Task<bool> createUserAsync(string userName, string userPassword, string accountType);
+        System.Threading.Tasks.Task<bool> createUserAsync(string userName, string userPassword, string userType, string userLoggedIn);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/userNameExists", ReplyAction="http://tempuri.org/IService1/userNameExistsResponse")]
         bool userNameExists(string userName);
@@ -32,6 +32,12 @@ namespace WebApplication.ServiceReference2 {
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/userLogin", ReplyAction="http://tempuri.org/IService1/userLoginResponse")]
         System.Threading.Tasks.Task<bool> userLoginAsync(string userName, string encryptedPassword);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/debugFunct", ReplyAction="http://tempuri.org/IService1/debugFunctResponse")]
+        string debugFunct();
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/debugFunct", ReplyAction="http://tempuri.org/IService1/debugFunctResponse")]
+        System.Threading.Tasks.Task<string> debugFunctAsync();
     }
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
@@ -61,12 +67,12 @@ namespace WebApplication.ServiceReference2 {
                 base(binding, remoteAddress) {
         }
         
-        public bool createUser(string userName, string userPassword, string accountType) {
-            return base.Channel.createUser(userName, userPassword, accountType);
+        public bool createUser(string userName, string userPassword, string userType, string userLoggedIn) {
+            return base.Channel.createUser(userName, userPassword, userType, userLoggedIn);
         }
         
-        public System.Threading.Tasks.Task<bool> createUserAsync(string userName, string userPassword, string accountType) {
-            return base.Channel.createUserAsync(userName, userPassword, accountType);
+        public System.Threading.Tasks.Task<bool> createUserAsync(string userName, string userPassword, string userType, string userLoggedIn) {
+            return base.Channel.createUserAsync(userName, userPassword, userType, userLoggedIn);
         }
         
         public bool userNameExists(string userName) {
@@ -83,6 +89,14 @@ namespace WebApplication.ServiceReference2 {
         
         public System.Threading.Tasks.Task<bool> userLoginAsync(string userName, string encryptedPassword) {
             return base.Channel.userLoginAsync(userName, encryptedPassword);
+        }
+        
+        public string debugFunct() {
+            return base.Channel.debugFunct();
+        }
+        
+        public System.Threading.Tasks.Task<string> debugFunctAsync() {
+            return base.Channel.debugFunctAsync();
         }
     }
 }

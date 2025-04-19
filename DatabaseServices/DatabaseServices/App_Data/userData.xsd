@@ -37,6 +37,9 @@
                 <!--[AccounType], Required-->
                 <xs:element name="AccountType" type="xs:string" use="required" />
         
+                <!--[LoggedIn], Required-->
+                <xs:element name="LoggedIn" type="xs:boolean" use="required" />
+        
             </xs:sequence>
           </xs:complexType>
         

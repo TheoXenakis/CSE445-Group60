@@ -69,16 +69,15 @@ namespace WebApplication
           //[Service]: DataBase Services
             var serviceClient1 = new ServiceReference2.Service1Client();
 
+          //Attempt a Login to the user account using the services
+            //if(serviceClient1.userLogin(TextBox1.Text)){
 
-          
-            //DEBUG!!\
-              Console.WriteLine("Cookie Set!");
-
-
+            //}
+        
             //Notify the user of succesful login!
               Label1.Text = "Successful Login!";
 
-          //Also, Update display item in corner of Default page to notify the user that they have successfully logged in 
+          //Also, Update display item in corner of Default page to notify the user that they have successfully logged in (do this via a cookie!?!?) 
             //Code here..
         }
 

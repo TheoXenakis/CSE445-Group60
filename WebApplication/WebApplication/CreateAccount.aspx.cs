@@ -60,10 +60,14 @@ namespace WebApplication
             //Theo Xenakis
 
 
+//DEBUG 
+//Label2.Text = serviceClient1.userLogin("SampleUser");
+
           //[Note]: 
           // Later on this if-branch can be changed to a regex for username & Password Requirements
 
-
+//Uncomment to 
+///*
           //Create an Account
             if(    (TextBox1.Text.Length >= 4 && TextBox1.Text.Length <= 16)  //Username
                 && (TextBox2.Text.Length >= 4 && TextBox2.Text.Length <= 16)  //Password
@@ -79,15 +83,15 @@ namespace WebApplication
                 string encryptedPassword = serviceClient.Encrypt(TextBox1.Text);
 
               //[Account Creation] Place result into bool
-                bool accountCreation = serviceClient1.createUser(username, encryptedPassword, RadioButtonList1.SelectedItem.Text);
+                bool accountCreation = serviceClient1.createUser(username, encryptedPassword, RadioButtonList1.SelectedItem.Text, "false");
 
               //Successful Account Creation
                 if(accountCreation){
                   //Notify the user
                     Label2.Text = "Account Succesfully Created, Proceed to the Login Page";
 
-
                   //Set local Cookies for the user's information: userName, password, accountType
+                    //Code here..
 
 
                   //[IMPLEMENT]
@@ -99,6 +103,7 @@ namespace WebApplication
             }
           //Else, User Error Inform them to Fix & resubmit
             else{Label2.Text = "Error in form submission ";}
+//*/
         }
       //---------------------------------------------------------------
     }

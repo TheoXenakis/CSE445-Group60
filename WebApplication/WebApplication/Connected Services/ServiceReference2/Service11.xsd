@@ -5,7 +5,8 @@
       <xs:sequence>
         <xs:element minOccurs="0" name="userName" nillable="true" type="xs:string" />
         <xs:element minOccurs="0" name="userPassword" nillable="true" type="xs:string" />
-        <xs:element minOccurs="0" name="accountType" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="userType" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="userLoggedIn" nillable="true" type="xs:string" />
       </xs:sequence>
     </xs:complexType>
   </xs:element>
@@ -42,6 +43,18 @@
     <xs:complexType>
       <xs:sequence>
         <xs:element minOccurs="0" name="userLoginResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="debugFunct">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="debugFunctResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="debugFunctResult" nillable="true" type="xs:string" />
       </xs:sequence>
     </xs:complexType>
   </xs:element>

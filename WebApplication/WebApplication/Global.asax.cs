@@ -49,8 +49,15 @@ namespace WebApplication
             
             */         
          
-          //Description here
-            //Add code here...
+          //Check of Cookies
+            //HttpCookie userLogin = Request.Cookies["userLoggedIn"];
+
+
+          //Initialization of Cookies that Do not exist
+           // if(){
+              //Description here..
+                //Code here..
+            //}
 
 
             // Update visitor counter
