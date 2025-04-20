@@ -1,12 +1,13 @@
-﻿using BookApplication.Models;
+﻿// Services/BookService.svc.cs
+using BookServiceApplication.Models;
 using System.Collections.Generic;
 
-namespace BookApplication.Services
+namespace BookServiceApplication.Services
 {
     public class BookService : IBookService
     {
-        //Uses static list for now (connect with database later)
-
+        // In a real application, you'd use a database
+        // For now, we'll use a static list as an example
         private static List<Book> _books = new List<Book>();
         private static int _nextId = 1;
 

@@ -1,4 +1,5 @@
-﻿namespace BookApplication.Models
+﻿// Models/Book.cs
+namespace BookServiceApplication.Models
 {
     public class Book
     {
@@ -16,7 +17,6 @@
             Id = id;
             Title = title;
             Author = author;
-            //Add more parameters later (genre, publish date, etc)
         }
     }
 }

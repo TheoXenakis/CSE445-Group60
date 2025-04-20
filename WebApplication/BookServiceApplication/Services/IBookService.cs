@@ -1,9 +1,9 @@
 ﻿// Services/IBookService.cs
-using BookApplication.Models;
+using BookServiceApplication.Models;
 using System.Collections.Generic;
 using System.ServiceModel;
 
-namespace BookApplication.Services
+namespace BookServiceApplication.Services
 {
     [ServiceContract]
     public interface IBookService
