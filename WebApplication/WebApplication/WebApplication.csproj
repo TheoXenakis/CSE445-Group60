@@ -99,6 +99,7 @@
     <Content Include="LoginPage.aspx" />
     <Content Include="MemberPage.aspx" />
     <Content Include="StaffPage.aspx" />
+    <Content Include="TryItDatabaseJohn.aspx" />
     <Content Include="TryItGlobalFuncts.aspx" />
     <Content Include="TryItCaptchaTheo.aspx" />
     <Content Include="TryItEncryptionJohn.aspx" />
@@ -158,6 +159,13 @@
     </Compile>
     <Compile Include="StaffPage.aspx.designer.cs">
       <DependentUpon>StaffPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="TryItDatabaseJohn.aspx.cs">
+      <DependentUpon>TryItDatabaseJohn.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="TryItDatabaseJohn.aspx.designer.cs">
+      <DependentUpon>TryItDatabaseJohn.aspx</DependentUpon>
     </Compile>
     <Compile Include="TryItGlobalFuncts.aspx.cs">
       <DependentUpon>TryItGlobalFuncts.aspx</DependentUpon>

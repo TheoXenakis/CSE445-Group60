@@ -9,7 +9,7 @@
 <body>
     <form id="form1" runat="server">
         <div>
-            <asp:Label ID="Label1" runat="server" style="font-weight: 700" Text="TryIt Page"></asp:Label>
+            <asp:Label ID="Label1" runat="server" style="font-weight: 700" Text="TryIt Page #1"></asp:Label>
         </div>
     <p>
         &nbsp;</p>
@@ -44,33 +44,6 @@
         </p>
     <p>
         &nbsp;</p>
-        <p>
-            &nbsp;</p>
-    <p style="margin-left: 40px; font-style: italic;">
-        Create Account &amp; Login Services</p>
-        <p style="margin-left: 80px">
-            Create an account to be stored on the backend server &amp; be able to log into that account.</p>
-        <p style="margin-left: 80px">
-            &nbsp;</p>
-        <p style="margin-left: 120px">
-            Input </p>
-        <p style="margin-left: 120px">
-            <asp:TextBox ID="TextBox5" runat="server"></asp:TextBox>
-        </p>
-        <p style="margin-left: 120px">
-            &nbsp;</p>
-        <p style="margin-left: 120px">
-            Output</p>
-        <p style="margin-left: 120px">
-            <asp:TextBox ID="TextBox6" runat="server"></asp:TextBox>
-        </p>
-        <p style="margin-left: 40px">
-            &nbsp;</p>
-        <p style="margin-left: 200px">
-            <asp:Button ID="Button2" runat="server" Text="Test" />
-        </p>
-        <p>
-            &nbsp;</p>
         <p>
             &nbsp;</p>
     </form>

@@ -10,6 +10,7 @@ using System.Web.UI.WebControls;
 
 //Co-Author: John Bostater
 //   [Additon]: Cookies
+
 // Co-Author: Roen Wainscoat
 //   [Addition]: Logout function
 
