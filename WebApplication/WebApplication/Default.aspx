@@ -25,11 +25,27 @@
         <p style="font-style: italic; margin-left: 80px; font-weight: 700;">
             <asp:Button ID="Button2" runat="server" OnClick="Button2_Click" Text="Go To" style="font-weight: 700" />
         </p>
-        <p style="font-style: italic; font-weight: 700;">
-            &nbsp;</p>
-        <div>
-            <asp:Label ID="Label2" runat="server" style="font-weight: 700" Text="Services Directory"></asp:Label>
+
+        <br />
+        <br />
+
+        <p>
+            <u>Application Description:</u> This will be a simple E-Commerce website for a bookstore. Users will be able to register, login, and add books to their cart and checkout to place an order.
+        </p>
+
+		<br />
+
+		<p>
+			Percentage of overall contribution: <br />
+				Roen Wainscoat: 33.33333% <br />
+				Theo Xenakis: 33.33333% <br />
+				John Bostater: 33.33333% <br />
+		</p>
+
+		<div>
+            <asp:Label ID="Label3" runat="server" style="font-weight: 700" Text="Service Directory"></asp:Label>
         </div>
+
         <p>
             &nbsp;</p>
         <p style="margin-left: 40px">
