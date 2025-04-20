@@ -27,33 +27,39 @@ namespace WebApplication
 {
     public partial class Default : System.Web.UI.Page
     {
-      //Action-Event Handling
-      //--------------------------------------------------------------------------------------
+        //Action-Event Handling
+        //--------------------------------------------------------------------------------------
 
         //Executes Upon the Page Loading
         protected void Page_Load(object sender, EventArgs e)
         {
-          //Code Here...          
+            //Code Here...          
         }
 
 
         //[Button]: Member Page 
-        protected void Button1_Click(object sender, EventArgs e){Response.Redirect("MemberPage.aspx");}
+        protected void Button1_Click(object sender, EventArgs e) { Response.Redirect("MemberPage.aspx"); }
 
 
         //[Button]: Staff Page 
-        protected void Button2_Click(object sender, EventArgs e){Response.Redirect("StaffPage.aspx");}
+        protected void Button2_Click(object sender, EventArgs e) { Response.Redirect("StaffPage.aspx"); }
 
 
         //[Link]: John's (1st) TryItPage Link  {Remove for Final Web Application}
-        protected void LinkButton1_Click(object sender, EventArgs e){Response.Redirect("TryItEncryptionJohn.aspx");}
+        protected void LinkButton1_Click(object sender, EventArgs e) { Response.Redirect("TryItEncryptionJohn.aspx"); }
 
 
         //[Link]: John's (2nd) TryItPage Link   {Remove for Final Web Application}
-        protected void LinkButton3_Click(object sender, EventArgs e){Response.Redirect("TryItDatabaseJohn.aspx");}
+        protected void LinkButton3_Click(object sender, EventArgs e) { Response.Redirect("TryItDatabaseJohn.aspx"); }
+
+        //[Link]: Theo's TryItPage Link - Book Service
+        protected void BookServiceBtn_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("https://localhost:44321/BookManager.aspx");
 
 
 
-      //--------------------------------------------------------------------------------------
+            //--------------------------------------------------------------------------------------
+        }
     }
 }

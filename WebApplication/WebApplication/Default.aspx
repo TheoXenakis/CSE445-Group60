@@ -89,6 +89,17 @@
 				    <td>Need to have a WCF service, with the functions able to be called between the WebApplication and this backend service.</td>
 			    </tr>
 		    </tbody>
+			<tbody>
+				<tr>
+					<td>Theo Xenakis</td>
+					<td>Book Services</td>
+					<td>
+			<asp:LinkButton ID="bookServiceBtn" runat="server" OnClick="BookServiceBtn_Click">TryItPage Link</asp:LinkButton>
+					</td>
+					<td>This service is used for adding books with several parameters such as title, author, etc. It includes functionality to display all books once they have been added.</td>
+					<td>Needs to have a WCF service allowing users to utilize the addBooks function to add books and display the list, as well as integrate with the database.</td>
+				</tr>
+			</tbody>
 	    </table>
 
 		<p style="margin-left: 40px">

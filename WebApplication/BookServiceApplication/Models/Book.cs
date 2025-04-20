@@ -1,5 +1,4 @@
-﻿// Models/Book.cs
-namespace BookServiceApplication.Models
+﻿namespace BookServiceApplication.Models
 {
     public class Book
     {

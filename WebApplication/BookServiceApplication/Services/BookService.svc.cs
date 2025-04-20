@@ -1,13 +1,11 @@
-﻿// Services/BookService.svc.cs
-using BookServiceApplication.Models;
+﻿using BookServiceApplication.Models;
 using System.Collections.Generic;
 
 namespace BookServiceApplication.Services
 {
     public class BookService : IBookService
     {
-        // In a real application, you'd use a database
-        // For now, we'll use a static list as an example
+        //Static List for now (update to database)
         private static List<Book> _books = new List<Book>();
         private static int _nextId = 1;
 
@@ -20,7 +18,7 @@ namespace BookServiceApplication.Services
         {
             // Assign an ID if not provided
             if (book.Id <= 0)
-            {
+            { 
                 book.Id = _nextId++;
             }
 
