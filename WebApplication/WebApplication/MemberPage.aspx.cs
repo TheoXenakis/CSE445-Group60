@@ -35,16 +35,15 @@ namespace WebApplication
           //  If they are not already logged in
           //    Verify a user's login status via a call to Cookies?!?! (I think)
           //Gather the cookie to see if a user is signed in\
-            HttpCookie loginCookie = Request.Cookies["memberLoggedIn"];
+          HttpCookie loginCookie = Request.Cookies["memberLoggedIn"];
 
           //Check if the cookie DNE or is incorrect
-            if(loginCookie == null || loginCookie.Value != "true"){
-              //Redirect the user to the Login Page
+            if (loginCookie == null){
+                //Redirect the user to the Login Page
                 Response.Redirect("LoginPage.aspx");
             }
 
-          //Redirect to the Member Page
-            Response.Redirect("MemberPage.aspx");
+            Label1.Text = "Welcome to the Member Page, " + loginCookie["Username"];
         }
 
 
