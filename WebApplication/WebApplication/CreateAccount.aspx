@@ -45,8 +45,12 @@
         </p>
         <p style="margin-left: 200px">
             &nbsp;</p>
-        <p style="margin-left: 80px">
-            //Insert Captcha Services here!! (Last Verification Step)</p>
+        <br />
+        <asp:Image ID="capImage" runat="server" Visible="true" Style="border: 1px solid #000; margin-left:200px; max-width: 600px;" />
+
+        Please Enter the Captcha:&nbsp;&nbsp;&nbsp;&nbsp;
+        <asp:TextBox ID="capTextBox" runat="server"></asp:TextBox>
+
         <p style="margin-left: 80px">
             &nbsp;</p>
         <p style="margin-left: 200px">
