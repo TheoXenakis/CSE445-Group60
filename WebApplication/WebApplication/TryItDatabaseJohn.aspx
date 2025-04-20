@@ -16,25 +16,15 @@
         <p style="margin-left: 40px; font-style: italic;">
         Create Account &amp; Login Services</p>
         <p style="margin-left: 80px">
-            Create an account to be stored on the backend server &amp; be able to log into that account.</p>
+            Create an account to be stored on the backend server &amp; be able to log into that account. </p>
+        <p style="margin-left: 80px">
+            CreateAccount page will redirect the user to the Login Page upon a successful account creation. </p>
+        <p style="margin-left: 80px">
+            Upon redirect the user&#39;s data will be entered into the LoginPage&#39;s text fields for them automatically via Cookies.</p>
         <p style="margin-left: 80px">
             &nbsp;</p>
-        <p style="margin-left: 120px">
-            Input </p>
-        <p style="margin-left: 120px">
-            <asp:TextBox ID="TextBox5" runat="server"></asp:TextBox>
-        </p>
-        <p style="margin-left: 120px">
-            &nbsp;</p>
-        <p style="margin-left: 120px">
-            Output</p>
-        <p style="margin-left: 120px">
-            <asp:TextBox ID="TextBox6" runat="server"></asp:TextBox>
-        </p>
-        <p style="margin-left: 40px">
-            &nbsp;</p>
-        <p style="margin-left: 200px">
-            <asp:Button ID="Button2" runat="server" Text="Test" />
+        <p style="margin-left: 280px">
+            <asp:Button ID="Button2" runat="server" Text="Create a New Account" OnClick="Button2_Click" style="font-weight: 700" />
         </p>
     </form>
 </body>

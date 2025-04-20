@@ -116,6 +116,13 @@ namespace WebApplication
                   //Notify the user
                     Label2.Text = "Account Succesfully Created, Proceed to the Login Page";
 
+
+                  //Create Cookies & Set them to be used in "LoginPage.aspx" for entering the user's credentials for them
+                  //  [Therefore they only have to press "Submit" to proceed to their Account Type's page]
+                    //Code here..
+
+
+                  //Redirect the user to the Login Page
                     Response.Redirect("LoginPage.aspx");
 
                 }
