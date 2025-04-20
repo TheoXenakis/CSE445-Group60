@@ -35,12 +35,50 @@
 
 		<br />
 
-		<p>
-			Percentage of overall contribution: <br />
-				Roen Wainscoat: 33.33333% <br />
-				Theo Xenakis: 33.33333% <br />
-				John Bostater: 33.33333% <br />
-		</p>
+                	<style>
+		        table {
+			        border:1px solid #b3adad;
+			        border-collapse:collapse;
+			        padding:5px;
+		        }
+		        table th {
+			        border:1px solid #b3adad;
+			        padding:5px;
+			        background: #f0f0f0;
+			        color: #313030;
+		        }
+		        table td {
+			        border:1px solid #b3adad;
+			        text-align:center;
+			        padding:5px;
+			        background: #ffffff;
+			        color: #313030;
+		        }
+	        </style>
+        </head>
+
+        <h2>Service Directory</h2>
+
+	    <table>
+		    <thead>
+			    <tr>
+                    <th>Service provider name</th>
+				    <th>Service name, with input and output types</th>
+				    <th>Try It Page</th>
+				    <th>Sercice description</th>
+				    <th>Planned resources need to implement the service</th>
+			    </tr>
+		    </thead>
+		    <tbody>
+			    <tr>
+                    <td>Roen Wainscoat</td>
+                    <td>TODO</td>
+				    <td>TotalAndTaxSvc <br /> calculateTotal(ArrayList prices) : float <br /> calculateTax(float subtotal, float taxRate) : float</td>
+				    <td>This service is used in the cart/checkout process of the website where the total (addition of all the product prices) and total with tax are calculated by calling the calculateTotal and calculateTax methods respectively.</td>
+				    <td>Will need to implement a rudimentary WCF service with the basic methods described previously. calculateTotal will include a loop/iterator which iterates through the products and adds the total.</td>
+			    </tr>
+		    </tbody>
+	    </table>
 
 		<div>
             <asp:Label ID="Label3" runat="server" style="font-weight: 700" Text="Service Directory"></asp:Label>
@@ -90,6 +128,7 @@
 
         <p style="margin-left: 120px">
             &nbsp;</p>
+
         <p style="margin-left: 40px">
             <strong>[Provider Name]:</strong> John Bostater</p>
         <p style="margin-left: 40px">
