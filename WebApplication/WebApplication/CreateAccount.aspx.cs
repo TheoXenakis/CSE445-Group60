@@ -11,10 +11,9 @@ using System.Web.UI.WebControls;
 [Authors]: 
     
     John Bostater
+   
     Roen Wainscoat
-        // [Addition] : Implemented User Control by adding Captcha challenge to the Create Account Page
-
-    //Co-Author
+      // [Addition] : Implemented User Control by adding Captcha challenge to the Create Account Page
 
 
 [Creation Date]: 4/10/25
@@ -91,14 +90,10 @@ namespace WebApplication
                 return;
             }
 
-            //DEBUG 
-            //Label2.Text = serviceClient1.userLogin("SampleUser");
 
             //[Note]: 
             // Later on this if-branch can be changed to a regex for username & Password Requirements
-
-            //Uncomment to 
-            ///*
+          
             //Create an Account
             if (    (TextBox1.Text.Length >= 4 && TextBox1.Text.Length <= 16)  //Username
                 && (TextBox2.Text.Length >= 4 && TextBox2.Text.Length <= 16)  //Password
@@ -129,7 +124,6 @@ namespace WebApplication
             }
           //Else, User Error Inform them to Fix & resubmit
             else{Label2.Text = "Error in form submission ";}
-//*/
         }
       //---------------------------------------------------------------
     }

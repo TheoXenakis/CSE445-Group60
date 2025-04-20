@@ -3,39 +3,55 @@
   "WorkspaceRootPath": "C:\\Users\\geeki\\CodingWorkSpace\\CSE445-Group60\\WebApplication\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{478DA518-DD25-4A07-A41A-DB464EAFF850}|..\\DatabaseServices\\DatabaseServices\\DatabaseServices.csproj|c:\\users\\geeki\\codingworkspace\\cse445-group60\\databaseservices\\databaseservices\\service1.svc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{89C935D7-54F0-4054-9BA5-C61075415548}|WebApplication\\WebApplication.csproj|C:\\Users\\geeki\\CodingWorkSpace\\CSE445-Group60\\WebApplication\\webapplication\\default.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "RelativeMoniker": "D:0:0:{89C935D7-54F0-4054-9BA5-C61075415548}|WebApplication\\WebApplication.csproj|solutionrelative:webapplication\\default.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{89C935D7-54F0-4054-9BA5-C61075415548}|WebApplication\\WebApplication.csproj|C:\\Users\\geeki\\CodingWorkSpace\\CSE445-Group60\\WebApplication\\webapplication\\default.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{89C935D7-54F0-4054-9BA5-C61075415548}|WebApplication\\WebApplication.csproj|solutionrelative:webapplication\\default.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{89C935D7-54F0-4054-9BA5-C61075415548}|WebApplication\\WebApplication.csproj|c:\\users\\geeki\\codingworkspace\\cse445-group60\\webapplication\\webapplication\\tryitdatabasejohn.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "RelativeMoniker": "D:0:0:{89C935D7-54F0-4054-9BA5-C61075415548}|WebApplication\\WebApplication.csproj|solutionrelative:webapplication\\tryitdatabasejohn.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{89C935D7-54F0-4054-9BA5-C61075415548}|WebApplication\\WebApplication.csproj|c:\\users\\geeki\\codingworkspace\\cse445-group60\\webapplication\\webapplication\\tryitdatabasejohn.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{89C935D7-54F0-4054-9BA5-C61075415548}|WebApplication\\WebApplication.csproj|solutionrelative:webapplication\\tryitdatabasejohn.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{89C935D7-54F0-4054-9BA5-C61075415548}|WebApplication\\WebApplication.csproj|C:\\Users\\geeki\\CodingWorkSpace\\CSE445-Group60\\WebApplication\\webapplication\\connected services\\servicereference2\\reference.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{89C935D7-54F0-4054-9BA5-C61075415548}|WebApplication\\WebApplication.csproj|solutionrelative:webapplication\\connected services\\servicereference2\\reference.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{89C935D7-54F0-4054-9BA5-C61075415548}|WebApplication\\WebApplication.csproj|c:\\users\\geeki\\codingworkspace\\cse445-group60\\webapplication\\webapplication\\createaccount.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{89C935D7-54F0-4054-9BA5-C61075415548}|WebApplication\\WebApplication.csproj|solutionrelative:webapplication\\createaccount.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{89C935D7-54F0-4054-9BA5-C61075415548}|WebApplication\\WebApplication.csproj|C:\\Users\\geeki\\CodingWorkSpace\\CSE445-Group60\\WebApplication\\webapplication\\createaccount.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
-      "RelativeMoniker": "D:0:0:{89C935D7-54F0-4054-9BA5-C61075415548}|WebApplication\\WebApplication.csproj|solutionrelative:webapplication\\createaccount.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{89C935D7-54F0-4054-9BA5-C61075415548}|WebApplication\\WebApplication.csproj|C:\\Users\\geeki\\CodingWorkSpace\\CSE445-Group60\\WebApplication\\webapplication\\createaccount.aspx.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{89C935D7-54F0-4054-9BA5-C61075415548}|WebApplication\\WebApplication.csproj|solutionrelative:webapplication\\createaccount.aspx.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{89C935D7-54F0-4054-9BA5-C61075415548}|WebApplication\\WebApplication.csproj|C:\\Users\\geeki\\CodingWorkSpace\\CSE445-Group60\\WebApplication\\webapplication\\default.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
-      "RelativeMoniker": "D:0:0:{89C935D7-54F0-4054-9BA5-C61075415548}|WebApplication\\WebApplication.csproj|solutionrelative:webapplication\\default.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
+      "AbsoluteMoniker": "D:0:0:{89C935D7-54F0-4054-9BA5-C61075415548}|WebApplication\\WebApplication.csproj|c:\\users\\geeki\\codingworkspace\\cse445-group60\\webapplication\\webapplication\\createaccount.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "RelativeMoniker": "D:0:0:{89C935D7-54F0-4054-9BA5-C61075415548}|WebApplication\\WebApplication.csproj|solutionrelative:webapplication\\createaccount.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{89C935D7-54F0-4054-9BA5-C61075415548}|WebApplication\\WebApplication.csproj|C:\\Users\\geeki\\CodingWorkSpace\\CSE445-Group60\\WebApplication\\webapplication\\loginpage.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
-      "RelativeMoniker": "D:0:0:{89C935D7-54F0-4054-9BA5-C61075415548}|WebApplication\\WebApplication.csproj|solutionrelative:webapplication\\loginpage.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
+      "AbsoluteMoniker": "D:0:0:{89C935D7-54F0-4054-9BA5-C61075415548}|WebApplication\\WebApplication.csproj|C:\\Users\\geeki\\CodingWorkSpace\\CSE445-Group60\\WebApplication\\webapplication\\global.asax.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{89C935D7-54F0-4054-9BA5-C61075415548}|WebApplication\\WebApplication.csproj|solutionrelative:webapplication\\global.asax.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{89C935D7-54F0-4054-9BA5-C61075415548}|WebApplication\\WebApplication.csproj|C:\\Users\\geeki\\CodingWorkSpace\\CSE445-Group60\\WebApplication\\webapplication\\createaccount.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{89C935D7-54F0-4054-9BA5-C61075415548}|WebApplication\\WebApplication.csproj|solutionrelative:webapplication\\createaccount.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{89C935D7-54F0-4054-9BA5-C61075415548}|WebApplication\\WebApplication.csproj|C:\\Users\\geeki\\CodingWorkSpace\\CSE445-Group60\\WebApplication\\webapplication\\loginpage.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{89C935D7-54F0-4054-9BA5-C61075415548}|WebApplication\\WebApplication.csproj|solutionrelative:webapplication\\loginpage.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{89C935D7-54F0-4054-9BA5-C61075415548}|WebApplication\\WebApplication.csproj|C:\\Users\\geeki\\CodingWorkSpace\\CSE445-Group60\\WebApplication\\webapplication\\default.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{89C935D7-54F0-4054-9BA5-C61075415548}|WebApplication\\WebApplication.csproj|solutionrelative:webapplication\\default.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{89C935D7-54F0-4054-9BA5-C61075415548}|WebApplication\\WebApplication.csproj|C:\\Users\\geeki\\CodingWorkSpace\\CSE445-Group60\\WebApplication\\webapplication\\memberpage.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{89C935D7-54F0-4054-9BA5-C61075415548}|WebApplication\\WebApplication.csproj|solutionrelative:webapplication\\memberpage.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{89C935D7-54F0-4054-9BA5-C61075415548}|WebApplication\\WebApplication.csproj|C:\\Users\\geeki\\CodingWorkSpace\\CSE445-Group60\\WebApplication\\webapplication\\loginpage.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "RelativeMoniker": "D:0:0:{89C935D7-54F0-4054-9BA5-C61075415548}|WebApplication\\WebApplication.csproj|solutionrelative:webapplication\\loginpage.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{478DA518-DD25-4A07-A41A-DB464EAFF850}|..\\DatabaseServices\\DatabaseServices\\DatabaseServices.csproj|c:\\users\\geeki\\codingworkspace\\cse445-group60\\databaseservices\\databaseservices\\service1.svc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{89C935D7-54F0-4054-9BA5-C61075415548}|WebApplication\\WebApplication.csproj|C:\\Users\\geeki\\CodingWorkSpace\\CSE445-Group60\\WebApplication\\webapplication\\web.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
@@ -44,10 +60,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{89C935D7-54F0-4054-9BA5-C61075415548}|WebApplication\\WebApplication.csproj|C:\\Users\\geeki\\CodingWorkSpace\\CSE445-Group60\\WebApplication\\webapplication\\web.release.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
       "RelativeMoniker": "D:0:0:{89C935D7-54F0-4054-9BA5-C61075415548}|WebApplication\\WebApplication.csproj|solutionrelative:webapplication\\web.release.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{89C935D7-54F0-4054-9BA5-C61075415548}|WebApplication\\WebApplication.csproj|C:\\Users\\geeki\\CodingWorkSpace\\CSE445-Group60\\WebApplication\\webapplication\\memberpage.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{89C935D7-54F0-4054-9BA5-C61075415548}|WebApplication\\WebApplication.csproj|solutionrelative:webapplication\\memberpage.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{00000000-0000-0000-0000-000000000000}|\u003CSolution\u003E|WebApplication||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
@@ -65,10 +77,6 @@
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\GitHub Projects\\CSE445-Group60\\DatabaseServices\\DatabaseServices\\IService1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\geeki\\CodingWorkSpace\\CSE445-Group60\\WebApplication\\WebApplication\\TryItPage.aspx.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:WebApplication\\TryItPage.aspx.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\geeki\\CodingWorkSpace\\CSE445-Group60\\WebApplication\\WebApplication\\TryItPage.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:WebApplication\\TryItPage.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
     },
@@ -84,24 +92,37 @@
       "DocumentGroups": [
         {
           "DockedHeight": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 14,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Service1.svc.cs",
-              "DocumentMoniker": "C:\\Users\\geeki\\CodingWorkSpace\\CSE445-Group60\\DatabaseServices\\DatabaseServices\\Service1.svc.cs",
-              "RelativeDocumentMoniker": "..\\DatabaseServices\\DatabaseServices\\Service1.svc.cs",
-              "ToolTip": "C:\\Users\\geeki\\CodingWorkSpace\\CSE445-Group60\\DatabaseServices\\DatabaseServices\\Service1.svc.cs",
-              "RelativeToolTip": "..\\DatabaseServices\\DatabaseServices\\Service1.svc.cs",
-              "ViewState": "AgIAAF0AAAAAAAAAAIAwwGYAAAAtAAAAAAAAAA==",
+              "DocumentIndex": 3,
+              "Title": "TryItDatabaseJohn.aspx.cs",
+              "DocumentMoniker": "C:\\Users\\geeki\\CodingWorkSpace\\CSE445-Group60\\WebApplication\\WebApplication\\TryItDatabaseJohn.aspx.cs",
+              "RelativeDocumentMoniker": "WebApplication\\TryItDatabaseJohn.aspx.cs",
+              "ToolTip": "C:\\Users\\geeki\\CodingWorkSpace\\CSE445-Group60\\WebApplication\\WebApplication\\TryItDatabaseJohn.aspx.cs",
+              "RelativeToolTip": "WebApplication\\TryItDatabaseJohn.aspx.cs",
+              "ViewState": "AgIAABQAAAAAAAAAAAApwBkAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-19T00:01:03.927Z",
+              "WhenOpened": "2025-04-20T05:09:07.556Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 2,
+              "Title": "TryItDatabaseJohn.aspx",
+              "DocumentMoniker": "C:\\Users\\geeki\\CodingWorkSpace\\CSE445-Group60\\WebApplication\\WebApplication\\TryItDatabaseJohn.aspx",
+              "RelativeDocumentMoniker": "WebApplication\\TryItDatabaseJohn.aspx",
+              "ToolTip": "C:\\Users\\geeki\\CodingWorkSpace\\CSE445-Group60\\WebApplication\\WebApplication\\TryItDatabaseJohn.aspx",
+              "RelativeToolTip": "WebApplication\\TryItDatabaseJohn.aspx",
+              "LogicalView": "7651a702-06e5-11d1-8ebd-00a0c90f26ea",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
+              "WhenOpened": "2025-04-20T05:08:52.76Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
               "Title": "Web.config",
               "DocumentMoniker": "D:\\GitHub Projects\\CSE445-Group60\\DatabaseServices\\DatabaseServices\\Web.config",
               "ToolTip": "D:\\GitHub Projects\\CSE445-Group60\\DatabaseServices\\DatabaseServices\\Web.config",
@@ -110,7 +131,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 17,
               "Title": "Web.Release.config",
               "DocumentMoniker": "D:\\GitHub Projects\\CSE445-Group60\\DatabaseServices\\DatabaseServices\\Web.Release.config",
               "ToolTip": "D:\\GitHub Projects\\CSE445-Group60\\DatabaseServices\\DatabaseServices\\Web.Release.config",
@@ -119,7 +140,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 18,
               "Title": "Web.Debug.config",
               "DocumentMoniker": "D:\\GitHub Projects\\CSE445-Group60\\DatabaseServices\\DatabaseServices\\Web.Debug.config",
               "ToolTip": "D:\\GitHub Projects\\CSE445-Group60\\DatabaseServices\\DatabaseServices\\Web.Debug.config",
@@ -128,7 +149,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 19,
               "Title": "IService1.cs",
               "DocumentMoniker": "D:\\GitHub Projects\\CSE445-Group60\\DatabaseServices\\DatabaseServices\\IService1.cs",
               "ToolTip": "D:\\GitHub Projects\\CSE445-Group60\\DatabaseServices\\DatabaseServices\\IService1.cs",
@@ -137,18 +158,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
-              "Title": "TryItPage.aspx.designer.cs",
-              "DocumentMoniker": "C:\\Users\\geeki\\CodingWorkSpace\\CSE445-Group60\\WebApplication\\WebApplication\\TryItPage.aspx.designer.cs",
-              "RelativeDocumentMoniker": "WebApplication\\TryItPage.aspx.designer.cs",
-              "ToolTip": "C:\\Users\\geeki\\CodingWorkSpace\\CSE445-Group60\\WebApplication\\WebApplication\\TryItPage.aspx.designer.cs",
-              "RelativeToolTip": "WebApplication\\TryItPage.aspx.designer.cs",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-16T21:38:58.217Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 20,
               "Title": "TryItPage.aspx",
               "DocumentMoniker": "C:\\Users\\geeki\\CodingWorkSpace\\CSE445-Group60\\WebApplication\\WebApplication\\TryItPage.aspx",
               "RelativeDocumentMoniker": "WebApplication\\TryItPage.aspx",
@@ -159,7 +169,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 21,
               "Title": "TryItPage.aspx.cs",
               "DocumentMoniker": "C:\\Users\\geeki\\CodingWorkSpace\\CSE445-Group60\\WebApplication\\WebApplication\\TryItPage.aspx.cs",
               "RelativeDocumentMoniker": "WebApplication\\TryItPage.aspx.cs",
@@ -171,33 +181,72 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 6,
+              "Title": "CreateAccount.aspx",
+              "DocumentMoniker": "C:\\Users\\geeki\\CodingWorkSpace\\CSE445-Group60\\WebApplication\\WebApplication\\CreateAccount.aspx",
+              "RelativeDocumentMoniker": "WebApplication\\CreateAccount.aspx",
+              "ToolTip": "C:\\Users\\geeki\\CodingWorkSpace\\CSE445-Group60\\WebApplication\\WebApplication\\CreateAccount.aspx",
+              "RelativeToolTip": "WebApplication\\CreateAccount.aspx",
+              "LogicalView": "7651a702-06e5-11d1-8ebd-00a0c90f26ea",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
+              "WhenOpened": "2025-04-11T00:25:05.75Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Global.asax.cs",
+              "DocumentMoniker": "C:\\Users\\geeki\\CodingWorkSpace\\CSE445-Group60\\WebApplication\\WebApplication\\Global.asax.cs",
+              "RelativeDocumentMoniker": "WebApplication\\Global.asax.cs",
+              "ToolTip": "C:\\Users\\geeki\\CodingWorkSpace\\CSE445-Group60\\WebApplication\\WebApplication\\Global.asax.cs",
+              "RelativeToolTip": "WebApplication\\Global.asax.cs",
+              "ViewState": "AgIAAD0AAAAAAAAAAIAwwD4AAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-20T00:53:49.983Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "Service1.svc.cs",
+              "DocumentMoniker": "C:\\Users\\geeki\\CodingWorkSpace\\CSE445-Group60\\DatabaseServices\\DatabaseServices\\Service1.svc.cs",
+              "RelativeDocumentMoniker": "..\\DatabaseServices\\DatabaseServices\\Service1.svc.cs",
+              "ToolTip": "C:\\Users\\geeki\\CodingWorkSpace\\CSE445-Group60\\DatabaseServices\\DatabaseServices\\Service1.svc.cs",
+              "RelativeToolTip": "..\\DatabaseServices\\DatabaseServices\\Service1.svc.cs",
+              "ViewState": "AgIAAF4AAAAAAAAAAIAwwGcAAAAtAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-19T00:01:03.927Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
               "Title": "CreateAccount.aspx.cs",
               "DocumentMoniker": "C:\\Users\\geeki\\CodingWorkSpace\\CSE445-Group60\\WebApplication\\WebApplication\\CreateAccount.aspx.cs",
               "RelativeDocumentMoniker": "WebApplication\\CreateAccount.aspx.cs",
               "ToolTip": "C:\\Users\\geeki\\CodingWorkSpace\\CSE445-Group60\\WebApplication\\WebApplication\\CreateAccount.aspx.cs",
               "RelativeToolTip": "WebApplication\\CreateAccount.aspx.cs",
-              "ViewState": "AgIAAFgAAAAAAAAAAAASwGsAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAHIAAAAAAAAAAAASwH8AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-04-11T10:02:29.827Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 4,
               "Title": "Reference.cs",
               "DocumentMoniker": "C:\\Users\\geeki\\CodingWorkSpace\\CSE445-Group60\\WebApplication\\WebApplication\\Connected Services\\ServiceReference2\\Reference.cs",
               "RelativeDocumentMoniker": "WebApplication\\Connected Services\\ServiceReference2\\Reference.cs",
               "ToolTip": "C:\\Users\\geeki\\CodingWorkSpace\\CSE445-Group60\\WebApplication\\WebApplication\\Connected Services\\ServiceReference2\\Reference.cs",
               "RelativeToolTip": "WebApplication\\Connected Services\\ServiceReference2\\Reference.cs",
-              "ViewState": "AgIAAD8AAAAAAAAAAAAswE0AAAARAAAAAAAAAA==",
+              "ViewState": "AgIAAD8AAAAAAAAAAAA7wE0AAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-04-18T16:27:06.362Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "CreateAccount.aspx.designer.cs",
               "DocumentMoniker": "C:\\Users\\geeki\\CodingWorkSpace\\CSE445-Group60\\WebApplication\\WebApplication\\CreateAccount.aspx.designer.cs",
               "RelativeDocumentMoniker": "WebApplication\\CreateAccount.aspx.designer.cs",
@@ -205,43 +254,34 @@
               "RelativeToolTip": "WebApplication\\CreateAccount.aspx.designer.cs",
               "ViewState": "AgIAABEAAAAAAAAAAAAQwAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-18T16:24:46.39Z"
+              "WhenOpened": "2025-04-18T16:24:46.39Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 0,
               "Title": "Default.aspx",
               "DocumentMoniker": "C:\\Users\\geeki\\CodingWorkSpace\\CSE445-Group60\\WebApplication\\WebApplication\\Default.aspx",
               "RelativeDocumentMoniker": "WebApplication\\Default.aspx",
               "ToolTip": "C:\\Users\\geeki\\CodingWorkSpace\\CSE445-Group60\\WebApplication\\WebApplication\\Default.aspx",
               "RelativeToolTip": "WebApplication\\Default.aspx",
-              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
+              "LogicalView": "7651a702-06e5-11d1-8ebd-00a0c90f26ea",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
-              "WhenOpened": "2025-04-10T18:11:56.49Z"
+              "WhenOpened": "2025-04-10T18:11:56.49Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 1,
               "Title": "Default.aspx.cs",
               "DocumentMoniker": "C:\\Users\\geeki\\CodingWorkSpace\\CSE445-Group60\\WebApplication\\WebApplication\\Default.aspx.cs",
               "RelativeDocumentMoniker": "WebApplication\\Default.aspx.cs",
               "ToolTip": "C:\\Users\\geeki\\CodingWorkSpace\\CSE445-Group60\\WebApplication\\WebApplication\\Default.aspx.cs",
               "RelativeToolTip": "WebApplication\\Default.aspx.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABoAAAABAAAAAAAAAA==",
+              "ViewState": "AgIAADMAAAAAAAAAAAAowDIAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-10T18:19:09.576Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "CreateAccount.aspx",
-              "DocumentMoniker": "C:\\Users\\geeki\\CodingWorkSpace\\CSE445-Group60\\WebApplication\\WebApplication\\CreateAccount.aspx",
-              "RelativeDocumentMoniker": "WebApplication\\CreateAccount.aspx",
-              "ToolTip": "C:\\Users\\geeki\\CodingWorkSpace\\CSE445-Group60\\WebApplication\\WebApplication\\CreateAccount.aspx",
-              "RelativeToolTip": "WebApplication\\CreateAccount.aspx",
-              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
-              "WhenOpened": "2025-04-11T00:25:05.75Z"
+              "WhenOpened": "2025-04-10T18:19:09.576Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Bookmark",
@@ -249,7 +289,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 15,
               "Title": "WebApplication",
               "DocumentMoniker": "C:\\Users\\geeki\\CodingWorkSpace\\CSE445-Group60\\WebApplication\\WebApplication\\WebApplication.csproj",
               "RelativeDocumentMoniker": "WebApplication\\WebApplication.csproj",
@@ -260,7 +300,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 14,
               "Title": "Web.Release.config",
               "DocumentMoniker": "C:\\Users\\geeki\\CodingWorkSpace\\CSE445-Group60\\WebApplication\\WebApplication\\Web.Release.config",
               "RelativeDocumentMoniker": "WebApplication\\Web.Release.config",
@@ -272,7 +312,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 13,
               "Title": "Web.config",
               "DocumentMoniker": "C:\\Users\\geeki\\CodingWorkSpace\\CSE445-Group60\\WebApplication\\WebApplication\\Web.config",
               "RelativeDocumentMoniker": "WebApplication\\Web.config",
@@ -285,7 +325,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 10,
               "Title": "MemberPage.aspx.cs",
               "DocumentMoniker": "C:\\Users\\geeki\\CodingWorkSpace\\CSE445-Group60\\WebApplication\\WebApplication\\MemberPage.aspx.cs",
               "RelativeDocumentMoniker": "WebApplication\\MemberPage.aspx.cs",
@@ -297,24 +337,24 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 9,
               "Title": "LoginPage.aspx.cs",
               "DocumentMoniker": "C:\\Users\\geeki\\CodingWorkSpace\\CSE445-Group60\\WebApplication\\WebApplication\\LoginPage.aspx.cs",
               "RelativeDocumentMoniker": "WebApplication\\LoginPage.aspx.cs",
               "ToolTip": "C:\\Users\\geeki\\CodingWorkSpace\\CSE445-Group60\\WebApplication\\WebApplication\\LoginPage.aspx.cs",
               "RelativeToolTip": "WebApplication\\LoginPage.aspx.cs",
-              "ViewState": "AgIAAE4AAAAAAAAAAAArwFQAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAIgAAAAAAAAAAAArwIsAAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-04-11T00:15:57.674Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 11,
               "Title": "LoginPage.aspx",
               "DocumentMoniker": "C:\\Users\\geeki\\CodingWorkSpace\\CSE445-Group60\\WebApplication\\WebApplication\\LoginPage.aspx",
               "RelativeDocumentMoniker": "WebApplication\\LoginPage.aspx",
-              "ToolTip": "C:\\Users\\geeki\\CodingWorkSpace\\CSE445-Group60\\WebApplication\\WebApplication\\LoginPage.aspx",
-              "RelativeToolTip": "WebApplication\\LoginPage.aspx",
+              "ToolTip": "C:\\Users\\geeki\\CodingWorkSpace\\CSE445-Group60\\WebApplication\\WebApplication\\LoginPage.aspx*",
+              "RelativeToolTip": "WebApplication\\LoginPage.aspx*",
               "LogicalView": "7651a702-06e5-11d1-8ebd-00a0c90f26ea",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
               "WhenOpened": "2025-04-16T19:16:30.647Z"

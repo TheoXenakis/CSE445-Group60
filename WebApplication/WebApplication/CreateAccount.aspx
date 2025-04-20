@@ -48,6 +48,9 @@
         <br />
         <asp:Image ID="capImage" runat="server" Visible="true" Style="border: 1px solid #000; margin-left:200px; max-width: 600px;" />
 
+        <br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
         Please Enter the Captcha:&nbsp;&nbsp;&nbsp;&nbsp;
         <asp:TextBox ID="capTextBox" runat="server"></asp:TextBox>
 
