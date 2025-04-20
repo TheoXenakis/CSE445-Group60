@@ -3,12 +3,15 @@ using System.Collections.Generic;
 using System.Web;
 using System.Web.Security;
 using System.Web.SessionState;
+using System.Web.UI.WebControls;
 
 
 //Author: Theo Xenakis
 
 //Co-Author: John Bostater
 //   [Additon]: Cookies
+// Co-Author: Roen Wainscoat
+//   [Addition]: Logout function
 
 
 namespace WebApplication
@@ -99,8 +102,20 @@ namespace WebApplication
 
         protected void Session_End(object sender, EventArgs e)
         {
-          //Unitialize Cookies here (if we see fit)
-            //Code here...
+            //Unitialize Cookies here to log the user out
+            if (Request.Cookies["memberLoggedIn"] != null)
+            {
+                // Expire the cookie
+                HttpCookie loginCookie = new HttpCookie("memberLoggedIn")
+                {
+                    Expires = DateTime.Now.AddDays(-1), // New expiration date is in the past
+                    ["LoggedIn"] = string.Empty,
+                    ["Username"] = string.Empty,
+                    ["Type"] = string.Empty,
+                };
+
+                Response.Cookies.Add(loginCookie);
+            }
 
 
             // Update visitor counter

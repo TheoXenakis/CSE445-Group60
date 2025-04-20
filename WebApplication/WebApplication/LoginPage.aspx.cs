@@ -10,6 +10,7 @@ using System.Web.UI.WebControls;
 [Authors]: 
 
     John Bostater
+    Roen Wainscoat
 
     //Co-Authors
 
@@ -50,10 +51,24 @@ namespace WebApplication
         //Executes Upon the Page Loading
         protected void Page_Load(object sender, EventArgs e)
         {
+            HttpCookie loginCookie = Request.Cookies["memberLoggedIn"];
 
+            if (loginCookie != null)
+            {
+                string type = loginCookie["Type"];
+
+                if (type == "Staff")
+                {
+                    Response.Redirect("StaffPage.aspx");
+                }
+                else 
+                {
+                    Response.Redirect("MemberPage.aspx");
+                }
+            }
         }
 
-        
+
         //[Link]: to Create an Account
         protected void LinkButton1_Click(object sender, EventArgs e)
         {
@@ -94,7 +109,21 @@ namespace WebApplication
 
                     // Redirect to member page page
                     Label1.Text = "Logged in!";
-                    Response.Redirect("MemberPage.aspx");
+
+                    switch (userType) 
+                    {
+                        case "User":
+                            Response.Redirect("MemberPage.aspx");
+                            break;
+                        case "Staff":
+                            Response.Redirect("StaffPage.aspx");
+                            break;
+                        default:
+                            Response.Redirect("MemberPage.aspx");
+                            break;
+                    }
+
+                    
                 }
                 else 
                 {

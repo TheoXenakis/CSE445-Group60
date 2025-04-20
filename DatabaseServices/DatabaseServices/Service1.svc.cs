@@ -11,6 +11,7 @@ using System.Text;
 [Authors]: 
     
     John Bostater
+    Roen Wainscoat
 
     //Co-Author
 
@@ -190,43 +191,41 @@ namespace DatabaseServices
 
         public string getUserType(string userName)
         {
-            //Parse the XML file for the username, if it exists [True]
             try
             {
-                //Create an XML Document Object
                 XmlDocument xmlDoc = new XmlDocument();
 
-                //Load the XML doc via the Path
                 xmlDoc.Load(xmlPath);
-
-                //Get a list of nodes from the XML document
                 XmlNodeList userNodes = xmlDoc.SelectNodes("/Accounts/User");
 
-
-                //Parse Each 'User' until the corresponding username is hit
                 foreach (XmlNode parsedUser in userNodes)
                 {
+                    string accountUsername = parsedUser.SelectSingleNode("Username")?.InnerText;
+                    string accountType = parsedUser.SelectSingleNode("AccountType")?.InnerText;
 
-                    //Collect the information from the selected user
-                    string accountUsername = parsedUser.SelectSingleNode("Username").InnerText;
-                    string accountType = parsedUser.SelectSingleNode("AccountType").InnerText;
+                    if (accountUsername == null || accountType == null)
+                    {
+                        continue;
+                    }
 
-                    //Matching Username & Password, return True!
-                    return accountType;
+                    if (accountUsername == userName)
+                    {
+                        return accountType;
+                    }
                 }
             }
-            //Error
             catch (Exception e)
             {
-                Console.WriteLine("Username Exists, Error!");
+                Console.WriteLine($"Error: {e.Message}");
             }
 
-            return "Error";
+            return "UserNotFoundError";
         }
 
 
 
-//DEBUG FUNCTION` [Delete before final version/before developments]
+
+        //DEBUG FUNCTION` [Delete before final version/before developments]
         public string debugFunct(){
 
            //Parse the XML file for the username, if it exists [True]

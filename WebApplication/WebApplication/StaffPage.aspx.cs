@@ -10,6 +10,7 @@ using System.Web.UI.WebControls;
 [Authors]: 
 
     John Bostater
+    Roen Wainscoat    
 
     //Co-Authors
 
@@ -35,15 +36,19 @@ namespace WebApplication
           //  If they are not already logged in
           //    Verify a user's login status via a call to Cookies?!?! (I think)
           //Gather the cookie to see if a user is signed in\
-            HttpCookie loginCookie = Request.Cookies["staffLoggedIn"];
+            HttpCookie loginCookie = Request.Cookies["memberLoggedIn"];
 
-          //Check if the cookie DNE or is incorrect
-            if(loginCookie == null || loginCookie.Value != "true"){
-              //Redirect the user to the Login Page
+            //Check if the cookie DNE or is incorrect
+            if (loginCookie == null)
+            {
+                //Redirect the user to the Login Page
                 Response.Redirect("LoginPage.aspx");
             }
-          //Else, do nothing
-        
+            //Else, do nothing
+
+            Label1.Text = "Welcome to the Staff Page, " + loginCookie["Username"];
+            Label2.Text = "User Type: " + loginCookie["Type"];
+
         }
 
 
