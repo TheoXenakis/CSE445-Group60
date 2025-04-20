@@ -6,9 +6,12 @@ MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebApplication", "WebApplication\WebApplication.csproj", "{89C935D7-54F0-4054-9BA5-C61075415548}"
 	ProjectSection(ProjectDependencies) = postProject
 		{478DA518-DD25-4A07-A41A-DB464EAFF850} = {478DA518-DD25-4A07-A41A-DB464EAFF850}
+		{B8A5847C-6A25-4F2D-8390-35C0DE8DA9A4} = {B8A5847C-6A25-4F2D-8390-35C0DE8DA9A4}
 	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DatabaseServices", "..\DatabaseServices\DatabaseServices\DatabaseServices.csproj", "{478DA518-DD25-4A07-A41A-DB464EAFF850}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BookServiceApplication", "BookServiceApplication\BookServiceApplication.csproj", "{B8A5847C-6A25-4F2D-8390-35C0DE8DA9A4}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -24,8 +27,15 @@ Global
 		{478DA518-DD25-4A07-A41A-DB464EAFF850}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{478DA518-DD25-4A07-A41A-DB464EAFF850}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{478DA518-DD25-4A07-A41A-DB464EAFF850}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B8A5847C-6A25-4F2D-8390-35C0DE8DA9A4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B8A5847C-6A25-4F2D-8390-35C0DE8DA9A4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B8A5847C-6A25-4F2D-8390-35C0DE8DA9A4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B8A5847C-6A25-4F2D-8390-35C0DE8DA9A4}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {D0CD15A5-DFE5-4AF6-A36A-0CC9A906FF1E}
 	EndGlobalSection
 EndGlobal
