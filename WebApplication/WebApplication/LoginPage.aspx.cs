@@ -66,22 +66,46 @@ namespace WebApplication
         //[Button]: Log into Account 
         protected void Button1_Click(object sender, EventArgs e)
         {
-          //[Service]: DataBase Services
+            //[Service]: DataBase Services
             var serviceClient1 = new ServiceReference2.Service1Client();
+            var serviceClient2 = new ServiceReference1.ServiceClient("BasicHttpsBinding_IService");
 
-          //Attempt a Login to the user account using the services
-            //if(serviceClient1.userLogin(TextBox1.Text)){
+            // Attempt a Login to the user account using the services
 
-            //}
-        
-            //Notify the user of succesful login!
-              Label1.Text = "Successful Login!";
+            if (TextBox1.Text.Length > 0 && TextBox2.Text.Length > 0) {
 
-          //Also, Update display item in corner of Default page to notify the user that they have successfully logged in (do this via a cookie!?!?) 
-            //Code here..
+                string encryptedPassword = serviceClient2.Encrypt(TextBox2.Text);
+
+                if (serviceClient1.userLogin(TextBox1.Text, encryptedPassword))
+                {
+                    Label1.Text = "Login successful";
+
+                    HttpCookie loginCookie = new HttpCookie("memberLoggedIn")
+                    {
+                        ["LoggedIn"] = "true",
+                        ["Username"] = TextBox1.Text,
+                        Expires = DateTime.Now.AddHours(12)
+                    };
+
+                    Response.Cookies.Add(loginCookie);
+
+                    // Redirect to member page page
+                    Label1.Text = "Logged in!";
+                    // Response.Redirect("MemberPage.aspx");
+                }
+                else 
+                {
+                    Label1.Text = "Login unsuccessful, please try again.";
+                }
+            }
+            else
+            {
+                Label1.Text = "Don't leave the text boxes blank";
+            }
         }
 
 
-      //--------------------------------------------------------------------------------------
+
+        //--------------------------------------------------------------------------------------
     }
 }

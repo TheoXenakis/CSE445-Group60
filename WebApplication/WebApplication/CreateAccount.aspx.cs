@@ -80,7 +80,7 @@ namespace WebApplication
                 string username = TextBox1.Text;
 
               //Encrypt the password the user has entered
-                string encryptedPassword = serviceClient.Encrypt(TextBox1.Text);
+                string encryptedPassword = serviceClient.Encrypt(TextBox2.Text);
 
               //[Account Creation] Place result into bool
                 bool accountCreation = serviceClient1.createUser(username, encryptedPassword, RadioButtonList1.SelectedItem.Text, "false");
@@ -90,11 +90,13 @@ namespace WebApplication
                   //Notify the user
                     Label2.Text = "Account Succesfully Created, Proceed to the Login Page";
 
-                  //Set local Cookies for the user's information: userName, password, accountType
+                    Response.Redirect("LoginPage.aspx");
+
+                    //Set local Cookies for the user's information: userName, password, accountType
                     //Code here..
 
 
-                  //[IMPLEMENT]
+                    //[IMPLEMENT]
                     //Create a timer that will redirect the user back to the login page & fill in their credentials for them!
 
                 }

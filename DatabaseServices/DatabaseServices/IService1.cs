@@ -48,8 +48,6 @@ namespace DatabaseServices
 
         [OperationContract]
         bool userLogin(string userName, string encryptedPassword);
-     
-
 
       //DEBUG FUNCTION!!  [Remove for final version/after developments]
         [OperationContract]
