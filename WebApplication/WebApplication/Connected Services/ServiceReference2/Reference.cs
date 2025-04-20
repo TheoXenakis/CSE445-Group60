@@ -33,6 +33,12 @@ namespace WebApplication.ServiceReference2 {
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/userLogin", ReplyAction="http://tempuri.org/IService1/userLoginResponse")]
         System.Threading.Tasks.Task<bool> userLoginAsync(string userName, string encryptedPassword);
         
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/getUserType", ReplyAction="http://tempuri.org/IService1/getUserTypeResponse")]
+        string getUserType(string userName);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/getUserType", ReplyAction="http://tempuri.org/IService1/getUserTypeResponse")]
+        System.Threading.Tasks.Task<string> getUserTypeAsync(string userName);
+        
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/debugFunct", ReplyAction="http://tempuri.org/IService1/debugFunctResponse")]
         string debugFunct();
         
@@ -89,6 +95,14 @@ namespace WebApplication.ServiceReference2 {
         
         public System.Threading.Tasks.Task<bool> userLoginAsync(string userName, string encryptedPassword) {
             return base.Channel.userLoginAsync(userName, encryptedPassword);
+        }
+        
+        public string getUserType(string userName) {
+            return base.Channel.getUserType(userName);
+        }
+        
+        public System.Threading.Tasks.Task<string> getUserTypeAsync(string userName) {
+            return base.Channel.getUserTypeAsync(userName);
         }
         
         public string debugFunct() {

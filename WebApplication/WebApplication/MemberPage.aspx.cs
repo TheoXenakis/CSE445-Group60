@@ -44,6 +44,7 @@ namespace WebApplication
             }
 
             Label1.Text = "Welcome to the Member Page, " + loginCookie["Username"];
+            Label2.Text = "User Type: " + loginCookie["Type"];
         }
 
 

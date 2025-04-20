@@ -150,8 +150,8 @@ namespace DatabaseServices
 
 
       //User Login
-        public bool userLogin(string userName, string encryptedPassword){
-          
+        public bool userLogin(string userName, string encryptedPassword)
+        {
           //Proceed if the username exists
             if(userNameExists(userName)){
 
@@ -181,12 +181,47 @@ namespace DatabaseServices
                 }
               //Error
                 catch(Exception e){Console.WriteLine("Username Exists, Error!");}
-
             }
 
 
           //Unsucessful login
             return false;
+        }
+
+        public string getUserType(string userName)
+        {
+            //Parse the XML file for the username, if it exists [True]
+            try
+            {
+                //Create an XML Document Object
+                XmlDocument xmlDoc = new XmlDocument();
+
+                //Load the XML doc via the Path
+                xmlDoc.Load(xmlPath);
+
+                //Get a list of nodes from the XML document
+                XmlNodeList userNodes = xmlDoc.SelectNodes("/Accounts/User");
+
+
+                //Parse Each 'User' until the corresponding username is hit
+                foreach (XmlNode parsedUser in userNodes)
+                {
+
+                    //Collect the information from the selected user
+                    string accountUsername = parsedUser.SelectSingleNode("Username").InnerText;
+                    string accountType = parsedUser.SelectSingleNode("AccountType").InnerText;
+
+                    //Matching Username & Password, return True!
+                    return accountType;
+                }
+            }
+            //Error
+            catch (Exception e)
+            {
+                Console.WriteLine("Username Exists, Error!");
+            }
+
+            return "Error";
         }
 
 

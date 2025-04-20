@@ -24,6 +24,12 @@
   <wsdl:message name="IService1_userLogin_OutputMessage">
     <wsdl:part name="parameters" element="tns:userLoginResponse" />
   </wsdl:message>
+  <wsdl:message name="IService1_getUserType_InputMessage">
+    <wsdl:part name="parameters" element="tns:getUserType" />
+  </wsdl:message>
+  <wsdl:message name="IService1_getUserType_OutputMessage">
+    <wsdl:part name="parameters" element="tns:getUserTypeResponse" />
+  </wsdl:message>
   <wsdl:message name="IService1_debugFunct_InputMessage">
     <wsdl:part name="parameters" element="tns:debugFunct" />
   </wsdl:message>
@@ -42,6 +48,10 @@
     <wsdl:operation name="userLogin">
       <wsdl:input wsaw:Action="http://tempuri.org/IService1/userLogin" message="tns:IService1_userLogin_InputMessage" />
       <wsdl:output wsaw:Action="http://tempuri.org/IService1/userLoginResponse" message="tns:IService1_userLogin_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="getUserType">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/getUserType" message="tns:IService1_getUserType_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/getUserTypeResponse" message="tns:IService1_getUserType_OutputMessage" />
     </wsdl:operation>
     <wsdl:operation name="debugFunct">
       <wsdl:input wsaw:Action="http://tempuri.org/IService1/debugFunct" message="tns:IService1_debugFunct_InputMessage" />
@@ -70,6 +80,15 @@
     </wsdl:operation>
     <wsdl:operation name="userLogin">
       <soap:operation soapAction="http://tempuri.org/IService1/userLogin" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getUserType">
+      <soap:operation soapAction="http://tempuri.org/IService1/getUserType" style="document" />
       <wsdl:input>
         <soap:body use="literal" />
       </wsdl:input>

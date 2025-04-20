@@ -80,10 +80,13 @@ namespace WebApplication
                 {
                     Label1.Text = "Login successful";
 
+                    string userType = serviceClient1.getUserType(TextBox1.Text);
+
                     HttpCookie loginCookie = new HttpCookie("memberLoggedIn")
                     {
                         ["LoggedIn"] = "true",
                         ["Username"] = TextBox1.Text,
+                        ["Type"] = userType,
                         Expires = DateTime.Now.AddHours(12)
                     };
 
@@ -91,7 +94,7 @@ namespace WebApplication
 
                     // Redirect to member page page
                     Label1.Text = "Logged in!";
-                    // Response.Redirect("MemberPage.aspx");
+                    Response.Redirect("MemberPage.aspx");
                 }
                 else 
                 {
