@@ -72,8 +72,10 @@
 		    <tbody>
 			    <tr>
                     <td>Roen Wainscoat</td>
-                    <td>TODO</td>
-				    <td>TotalAndTaxSvc <br /> calculateTotal(ArrayList prices) : float <br /> calculateTax(float subtotal, float taxRate) : float</td>
+                    <td>TotalAndTaxSvc <br /> calculateTotal(ArrayList prices) : float <br /> calculateTax(float subtotal, float taxRate) : float</td>
+				    <td>
+						<a href="TryItTotalTaxRoen.aspx">TryItPage Link</a>
+				    </td>
 				    <td>This service is used in the cart/checkout process of the website where the total (addition of all the product prices) and total with tax are calculated by calling the calculateTotal and calculateTax methods respectively.</td>
 				    <td>Will need to implement a rudimentary WCF service with the basic methods described previously. calculateTotal will include a loop/iterator which iterates through the products and adds the total.</td>
 			    </tr>
