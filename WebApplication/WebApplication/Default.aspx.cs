@@ -56,10 +56,8 @@ namespace WebApplication
         protected void BookServiceBtn_Click(object sender, EventArgs e)
         {
             Response.Redirect("https://localhost:44321/BookManager.aspx");
-
-
-
-            //--------------------------------------------------------------------------------------
         }
+
+      //--------------------------------------------------------------------------------------
     }
 }

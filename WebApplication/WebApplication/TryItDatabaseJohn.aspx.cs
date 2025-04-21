@@ -28,5 +28,9 @@ namespace WebApplication
 
         //[Button]: Create an Account
         protected void Button2_Click(object sender, EventArgs e){Response.Redirect("CreateAccount.aspx");}
+
+
+        //[Button]: Log into Account
+        protected void Button5_Click(object sender, EventArgs e){Response.Redirect("LoginPage.aspx");}
     }
 }

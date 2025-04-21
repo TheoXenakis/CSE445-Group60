@@ -16,5 +16,40 @@
     <LoggedIn>false</LoggedIn>
   </User>
   <!--New Accounts Below...-->
-  
+  <User>
+    <Username>ABCDE</Username>
+    <Password>p2R8LofsHkw=</Password>
+    <AccountType>Member</AccountType>
+    <LoggedIn>false</LoggedIn>
+  </User>
+  <User>
+    <Username>ABCDEF</Username>
+    <Password>p2R8LofsHkw=</Password>
+    <AccountType>Member</AccountType>
+    <LoggedIn>false</LoggedIn>
+  </User>
+  <User>
+    <Username>ABCDED</Username>
+    <Password>p2R8LofsHkw=</Password>
+    <AccountType>Member</AccountType>
+    <LoggedIn>false</LoggedIn>
+  </User>
+  <User>
+    <Username>ABCDEA</Username>
+    <Password>p2R8LofsHkw=</Password>
+    <AccountType>Staff</AccountType>
+    <LoggedIn>false</LoggedIn>
+  </User>
+  <User>
+    <Username>ABCDEC</Username>
+    <Password>p2R8LofsHkw=</Password>
+    <AccountType>Staff</AccountType>
+    <LoggedIn>false</LoggedIn>
+  </User>
+  <User>
+    <Username>4231</Username>
+    <Password>iQQQQZvzKx4=</Password>
+    <AccountType>Member</AccountType>
+    <LoggedIn>false</LoggedIn>
+  </User>
 </Accounts>

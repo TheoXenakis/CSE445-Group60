@@ -26,6 +26,11 @@
         <p style="margin-left: 280px">
             <asp:Button ID="Button2" runat="server" Text="Create a New Account" OnClick="Button2_Click" style="font-weight: 700" />
         </p>
+        <p style="margin-left: 280px">
+            &nbsp;</p>
+        <div style="margin-left: 280px">
+&nbsp;<asp:Button ID="Button5" runat="server" OnClick="Button5_Click" style="font-weight: 700" Text="Log into Account" />
+        </div>
     </form>
 </body>
 </html>

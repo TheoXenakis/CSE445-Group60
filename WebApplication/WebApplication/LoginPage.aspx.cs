@@ -50,20 +50,25 @@ namespace WebApplication
         //Executes Upon the Page Loading
         protected void Page_Load(object sender, EventArgs e)
         {
-            HttpCookie loginCookie = Request.Cookies["memberLoggedIn"];
-
-            if (loginCookie != null)
+/*
+            // Existing dark mode cookie check
+            HttpCookie darkModeCookie = Request.Cookies["DarkMode"];
+            if (darkModeCookie != null)
             {
-                string type = loginCookie["Type"];
+                Session["DarkMode"] = darkModeCookie.Value == "true";
+            }
+*/
 
-                if (type == "Staff")
-                {
-                    Response.Redirect("StaffPage.aspx");
-                }
-                else 
-                {
-                    Response.Redirect("MemberPage.aspx");
-                }
+          //Request accountUsername & accountPassword Cookies to place into the Text-Fields they exist
+            HttpCookie usernameCookie = Request.Cookies["accountUsername"];
+            HttpCookie passwordCookie = Request.Cookies["accountPassword"];
+        
+
+          //Cookie Check
+            if(usernameCookie != null && passwordCookie != null){
+              //Place the user's information into the corresponding text fields
+                TextBox1.Text = usernameCookie.Value;
+                TextBox2.Text = passwordCookie.Value;
             }
         }
 

@@ -119,12 +119,27 @@ namespace WebApplication
 
                   //Create Cookies & Set them to be used in "LoginPage.aspx" for entering the user's credentials for them
                   //  [Therefore they only have to press "Submit" to proceed to their Account Type's page]
-                    //Code here..
 
+                  //[Username Cookie]
+                    HttpCookie usernameCookie = new HttpCookie("accountUsername");
+                      //Set the cookies value
+                        usernameCookie.Value = username;
+                        //Set cookie to expire in 1 second
+                          usernameCookie.Expires = DateTime.Now.AddSeconds(1);
+
+                  //[Password Cookie]
+                    HttpCookie passwordCookie = new HttpCookie("accountPassword");
+                      //Set the cookies value
+                        passwordCookie.Value = TextBox2.Text;
+                        //Set cookie to expire in 1 seconds
+                          passwordCookie.Expires = DateTime.Now.AddSeconds(1);
+
+                  //Add the Cookies to the Application
+                    Response.Cookies.Add(usernameCookie);
+                    Response.Cookies.Add(passwordCookie);
 
                   //Redirect the user to the Login Page
                     Response.Redirect("LoginPage.aspx");
-
                 }
               //Unsuccessful Account Creation, account already exists
                 else{Label2.Text = "Account Already Exists, please use another username";}
