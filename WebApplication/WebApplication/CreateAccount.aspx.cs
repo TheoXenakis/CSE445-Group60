@@ -116,7 +116,6 @@ namespace WebApplication
                   //Notify the user
                     Label2.Text = "Account Succesfully Created, Proceed to the Login Page";
 
-
                   //Create Cookies & Set them to be used in "LoginPage.aspx" for entering the user's credentials for them
                   //  [Therefore they only have to press "Submit" to proceed to their Account Type's page]
 
@@ -124,15 +123,15 @@ namespace WebApplication
                     HttpCookie usernameCookie = new HttpCookie("accountUsername");
                       //Set the cookies value
                         usernameCookie.Value = username;
-                        //Set cookie to expire in 1 second
-                          usernameCookie.Expires = DateTime.Now.AddSeconds(1);
+                        //Set cookie to expire in 1 hours
+                          usernameCookie.Expires = DateTime.Now.AddHours(1);
 
                   //[Password Cookie]
                     HttpCookie passwordCookie = new HttpCookie("accountPassword");
                       //Set the cookies value
                         passwordCookie.Value = TextBox2.Text;
-                        //Set cookie to expire in 1 seconds
-                          passwordCookie.Expires = DateTime.Now.AddSeconds(1);
+                        //Set cookie to expire in 1 hours
+                          passwordCookie.Expires = DateTime.Now.AddHours(1);
 
                   //Add the Cookies to the Application
                     Response.Cookies.Add(usernameCookie);

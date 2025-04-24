@@ -30,21 +30,15 @@ namespace WebApplication
   
         //Executes upon the page loading
         protected void Page_Load(object sender, EventArgs e)
-        {
-          //Implement a statement for redirecting the user to 'LoginPage.aspx'
-          //  If they are not already logged in
-          //    Verify a user's login status via a call to Cookies?!?! (I think)
-          //Gather the cookie to see if a user is signed in\
-          HttpCookie loginCookie = Request.Cookies["memberLoggedIn"];
-
-          //Check if the cookie DNE or is incorrect
-            if (loginCookie == null){
-                //Redirect the user to the Login Page
-                Response.Redirect("LoginPage.aspx");
+        {    
+          //Check for the cookie, if it DNE redirect the user to the Login Page
+            if(Request.Cookies["memberLoggedIn"] != null){
+              //False value, redirect 
+                if(Request.Cookies["memberLoggedIn"].Value == "false"){Response.Redirect("LoginPage.aspx");}
+              //Else, do nothing (allow the user to stay on the page)
             }
-
-            Label1.Text = "Welcome to the Member Page, " + loginCookie["Username"];
-            Label2.Text = "User Type: " + loginCookie["Type"];
+          //Cookie DNE & credentials are bad, redirect
+            else{Response.Redirect("LoginPage.aspx");}
         }
 
 

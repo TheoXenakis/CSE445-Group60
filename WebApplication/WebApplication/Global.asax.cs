@@ -35,34 +35,26 @@ namespace WebApplication
 
         protected void Session_Start(object sender, EventArgs e)
         {
-          //Initialize Cookies that do not exist or have not been already set here
-            //[To Do - John]:
-            /*
-                - Have checks for Cookies as to whether they are null to initialize new ones if necessary
 
-                - Example:
+          //[Unitialize any Cookies from a previous user session]
 
-                Check for
-                    "userLogin" = null         (Default Value)    
-                    "accountUsername" = null   (Default Value)    
-                    "accountPassword" = null   (Default Value)    
-                    "accountType" = null       (Default Value)    
-            
-                If not Null, then these values exist already and do not need to be intialized 
-                (i.e. set to their default values)
-            
-            */         
-         
-          //Check of Cookies
-            //HttpCookie userLogin = Request.Cookies["userLoggedIn"];
+            //Create the Cookies to be unitialized
+                HttpCookie staffCookie = new HttpCookie("staffLoggedIn");            
+                HttpCookie memberCookie = new HttpCookie("memberLoggedIn");            
+                HttpCookie usernameCookie = new HttpCookie("accountUsername");            
+                HttpCookie passwordCookie = new HttpCookie("accountPassword");            
 
+            //Expire/Delete the Cookies
+                staffCookie.Expires = DateTime.Now.AddSeconds(-1);
+                memberCookie.Expires = DateTime.Now.AddSeconds(-1);
+                usernameCookie.Expires = DateTime.Now.AddSeconds(-1);
+                passwordCookie.Expires = DateTime.Now.AddSeconds(-1);
 
-          //Initialization of Cookies that Do not exist
-           // if(){
-              //Description here..
-                //Code here..
-            //}
-
+            //Add the cookies to the Application
+                Response.Cookies.Add(staffCookie);
+                Response.Cookies.Add(memberCookie);
+                Response.Cookies.Add(usernameCookie);
+                Response.Cookies.Add(passwordCookie);
 
             // Update visitor counter
             System.Threading.Interlocked.Increment(ref _activeVisitors);
@@ -101,6 +93,11 @@ namespace WebApplication
             }
         }
 
+        protected void Application_End(object sender, EventArgs e){
+        
+        }
+
+
         protected void Session_End(object sender, EventArgs e)
         {
             //Unitialize Cookies here to log the user out
@@ -117,8 +114,7 @@ namespace WebApplication
 
                 Response.Cookies.Add(loginCookie);
             }
-
-
+    
             // Update visitor counter
             System.Threading.Interlocked.Decrement(ref _activeVisitors);
             HttpContext.Current.Application.Lock();

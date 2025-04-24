@@ -63,7 +63,6 @@ namespace WebApplication
             HttpCookie usernameCookie = Request.Cookies["accountUsername"];
             HttpCookie passwordCookie = Request.Cookies["accountPassword"];
         
-
           //Cookie Check
             if(usernameCookie != null && passwordCookie != null){
               //Place the user's information into the corresponding text fields
@@ -85,63 +84,57 @@ namespace WebApplication
         //[Button]: Log into Account 
         protected void Button1_Click(object sender, EventArgs e)
         {
-            //[Service]: DataBase Services
+          //[Service]: DataBase Services
             var serviceClient1 = new ServiceReference2.Service1Client();
+         
+          //[Service]: Encryption & Decryption
             var serviceClient2 = new ServiceReference1.ServiceClient("BasicHttpsBinding_IService");
 
-            // Attempt a Login to the user account using the services
+          //[Below has been Rewritten by John Bostater]
 
-            if (TextBox1.Text.Length > 0 && TextBox2.Text.Length > 0) {
+          //Successful Sign In, redirect to relevant page
+            if(serviceClient1.userLogin(TextBox1.Text, serviceClient2.Encrypt(TextBox2.Text))){
 
-                string encryptedPassword = serviceClient2.Encrypt(TextBox2.Text);
+              //Collect the user's type, redirect them to that page and update their relevant cookies
+                string userType = serviceClient1.getUserType(TextBox1.Text);
 
-                if (serviceClient1.userLogin(TextBox1.Text, encryptedPassword))
-                {
-                    Label1.Text = "Login successful";
+              //Redirect the user based on their Account Type
+                switch(userType){
 
-                    string userType = serviceClient1.getUserType(TextBox1.Text);
+                  //Staff
+                    case "Staff":
+                      //Create a new Cookie for the relevant Account type
+                        HttpCookie staffCookie = new HttpCookie("staffLoggedIn");
+                          //Set value & duration
+                            staffCookie.Value = "true";
+                            staffCookie.Expires = DateTime.MinValue;
 
-                    HttpCookie loginCookie = new HttpCookie("memberLoggedIn")
-                    {
-                        ["LoggedIn"] = "true",
-                        ["Username"] = TextBox1.Text,
-                        ["Type"] = userType,
-                        Expires = DateTime.Now.AddHours(12)
-                    };
+                      //Add the Cookie to the Application
+                        Response.Cookies.Add(staffCookie); 
 
-                    Response.Cookies.Add(loginCookie);
+                      //Redirection
+                        Response.Redirect("StaffPage.aspx");
+                    break;
 
-                    // Redirect to member page page
-                    Label1.Text = "Logged in!";
+                  //Member
+                    case "Member":
+                      //Create a new Cookie for the relevant Account type
+                        HttpCookie memberCookie = new HttpCookie("memberLoggedIn");
+                          //Set value & duration
+                            memberCookie.Value = "true";
+                            memberCookie.Expires = DateTime.MinValue;
 
-                    switch (userType) 
-                    {
-                        case "User":
-                            Response.Redirect("MemberPage.aspx");
-                            break;
-                        case "Staff":
-                            Response.Redirect("StaffPage.aspx");
-                            break;
-                        default:
-                            Response.Redirect("MemberPage.aspx");
-                            break;
-                    }
+                      //Add the Cookie to the Application
+                        Response.Cookies.Add(memberCookie); 
 
-                    
-                }
-                else 
-                {
-                    Label1.Text = "Login unsuccessful, please try again.";
+                      //Redirection
+                        Response.Redirect("MemberPage.aspx");
+                    break;
                 }
             }
-            else
-            {
-                Label1.Text = "Don't leave the text boxes blank";
-            }
+          //Else, Unsuccessful Sign in (inform user)
+            Label1.Text = "Unsuccessful login, please check credentials.";
         }
-
-
-
-        //--------------------------------------------------------------------------------------
+      //--------------------------------------------------------------------------------------
     }
 }

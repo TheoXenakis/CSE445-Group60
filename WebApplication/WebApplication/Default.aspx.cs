@@ -33,21 +33,18 @@ namespace WebApplication
         //Executes Upon the Page Loading
         protected void Page_Load(object sender, EventArgs e)
         {
-            //Code Here...          
+          //Code here...
         }
 
 
         //[Button]: Member Page 
         protected void Button1_Click(object sender, EventArgs e) { Response.Redirect("MemberPage.aspx"); }
 
-
         //[Button]: Staff Page 
         protected void Button2_Click(object sender, EventArgs e) { Response.Redirect("StaffPage.aspx"); }
 
-
         //[Link]: John's (1st) TryItPage Link  {Remove for Final Web Application}
         protected void LinkButton1_Click(object sender, EventArgs e) { Response.Redirect("TryItEncryptionJohn.aspx"); }
-
 
         //[Link]: John's (2nd) TryItPage Link   {Remove for Final Web Application}
         protected void LinkButton3_Click(object sender, EventArgs e) { Response.Redirect("TryItDatabaseJohn.aspx"); }
