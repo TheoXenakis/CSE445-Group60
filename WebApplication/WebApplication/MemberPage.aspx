@@ -17,14 +17,14 @@
         <p style="margin-left: 40px">
             View Books for Sale in Library</p>
         <p style="margin-left: 80px">
-            <asp:Button ID="Button1" runat="server" OnClick="Button1_Click" Text="Button" />
+            <asp:Button ID="Button1" runat="server" OnClick="Button1_Click" Text="View Books For Sale" />
         </p>
         <p>
             &nbsp;</p>
         <p style="margin-left: 40px">
             View Purchased Books</p>
         <p style="margin-left: 80px">
-            <asp:Button ID="Button2" runat="server" OnClick="Button2_Click" Text="Button" />
+            <asp:Button ID="Button2" runat="server" OnClick="Button2_Click" Text="View Purchased Books" />
         </p>
         <p style="margin-left: 80px">
             &nbsp;</p>

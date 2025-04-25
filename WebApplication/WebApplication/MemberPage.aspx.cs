@@ -48,15 +48,14 @@ namespace WebApplication
         //[Button]: View Library & Books for sale
         protected void Button1_Click(object sender, EventArgs e)
         {
-          
-
+            Response.Redirect("BookLibrary.aspx");
         }
 
 
         //[Button]: View Books the user has purchased
         protected void Button2_Click(object sender, EventArgs e)
         {
-
+            Response.Redirect("MyPurchases.aspx");
         }
 
 
