@@ -98,6 +98,15 @@ namespace WebApplication
               //Collect the user's type, redirect them to that page and update their relevant cookies
                 string userType = serviceClient1.getUserType(TextBox1.Text);
 
+              //Create a Cookie for the user's username (Displayed in Staff/Member page [Top-Right corner])
+                HttpCookie accountUsername = new HttpCookie("accountUsername");
+                  //Set the value & duration
+                    accountUsername.Value = TextBox1.Text;
+                    accountUsername.Expires = DateTime.MinValue;
+                  
+              //Add the Cookie to the page
+                Response.Cookies.Add(accountUsername);
+
               //Redirect the user based on their Account Type
                 switch(userType){
 

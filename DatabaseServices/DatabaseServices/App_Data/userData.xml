@@ -22,22 +22,4 @@
     <AccountType>Member</AccountType>
     <LoggedIn>false</LoggedIn>
   </User>
-  <User>
-    <Username>ABCDEF</Username>
-    <Password>p2R8LofsHkw=</Password>
-    <AccountType>Member</AccountType>
-    <LoggedIn>false</LoggedIn>
-  </User>
-  <User>
-    <Username>ABCDEG</Username>
-    <Password>p2R8LofsHkw=</Password>
-    <AccountType>Staff</AccountType>
-    <LoggedIn>false</LoggedIn>
-  </User>
-  <User>
-    <Username>WWWW</Username>
-    <Password>sUOIi/4Hkkk=</Password>
-    <AccountType>Member</AccountType>
-    <LoggedIn>false</LoggedIn>
-  </User>
 </Accounts>

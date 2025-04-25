@@ -8,9 +8,8 @@
 </head>
 <body>
     <form id="form1" runat="server">
-        <div>
-            <asp:Label ID="Label1" runat="server" style="font-weight: 700" Text="Navigation"></asp:Label>
-        </div>
+        <p style="font-style: italic">
+            <strong>Book Store</strong></p>
         <p style="font-style: italic">
             &nbsp;</p>
         <p style="font-style: italic">

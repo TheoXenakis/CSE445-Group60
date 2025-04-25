@@ -9,9 +9,25 @@
 <body>
     <form id="form1" runat="server">
         <div>
-            <asp:Label ID="Label1" runat="server" Text="Member Page"></asp:Label>
-            <asp:Label ID="Label2" runat="server" Text=""></asp:Label>
+            <strong>Member:</strong>
+            <asp:Label ID="Label4" runat="server"></asp:Label>
         </div>
+        <p style="margin-left: 80px">
+            &nbsp;</p>
+        <p style="margin-left: 40px">
+            View Books for Sale in Library</p>
+        <p style="margin-left: 80px">
+            <asp:Button ID="Button1" runat="server" OnClick="Button1_Click" Text="Button" />
+        </p>
+        <p>
+            &nbsp;</p>
+        <p style="margin-left: 40px">
+            View Purchased Books</p>
+        <p style="margin-left: 80px">
+            <asp:Button ID="Button2" runat="server" OnClick="Button2_Click" Text="Button" />
+        </p>
+        <p style="margin-left: 80px">
+            &nbsp;</p>
     </form>
 </body>
 </html>

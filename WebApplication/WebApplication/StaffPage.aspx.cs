@@ -39,21 +39,23 @@ namespace WebApplication
         {
           //Check for the cookie, if it DNE redirect the user to the Login Page
             if(Request.Cookies["staffLoggedIn"] != null){
+              
               //False value, redirect 
                 if(Request.Cookies["staffLoggedIn"].Value == "false"){Response.Redirect("LoginPage.aspx");}
-              //Else, do nothing (allow the user to stay on the page)
+
+              //Else, display the username of the staff member via a Cookie
+                Label3.Text = Request.Cookies["accountUsername"].Value;
             }
           //Cookie DNE & credentials are bad, redirect
             else{Response.Redirect("LoginPage.aspx");}
         }
 
 
-        //[Button]: Add new books to the Library/Store
+        //[Button]: Add & Manage books in the Library/Store
         protected void Button1_Click(object sender, EventArgs e)
         {
 
         }
-
 
 
       //---------------------------------------------------------------------------------------------------
