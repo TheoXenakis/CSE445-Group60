@@ -121,6 +121,74 @@ namespace WebApplication
             }
         }
 
+<<<<<<< Updated upstream
+=======
+        private void ProcessPurchase()
+        {
+            try
+            {
+                string userName = Request.Cookies["accountUsername"]?.Value;
+
+                if (string.IsNullOrEmpty(userName))
+                {
+                    Response.Redirect("Login.aspx");
+                    return;
+                }
+
+                List<SimpleCartItem> cart = GetCartFromCookies();
+
+                if (cart == null || cart.Count == 0)
+                {
+                    return;
+                }
+
+                bool allPurchasesSuccessful = true;
+
+                foreach (SimpleCartItem item in cart)
+                {
+                    string purchaseDate = DateTime.Now.ToString("yyyy-MM-dd");
+
+                    for (int i = 0; i < item.Quantity; i++)
+                    {
+                        bool purchaseSuccess = dbSvcClient.addUserPurchase(
+                            userName,
+                            item.Title,
+                            Convert.ToDecimal(item.Price),
+                            purchaseDate
+                        );
+
+                        if (!purchaseSuccess)
+                        {
+                            allPurchasesSuccessful = false;
+                            System.Diagnostics.Debug.WriteLine($"Failed to store purchase for {item.Title}");
+                        }
+                    }
+                }
+
+                if (allPurchasesSuccessful)
+                {
+                    // Clear cart by expiring the cookie
+                    HttpCookie cartCookie = new HttpCookie(CART_COOKIE_NAME);
+                    cartCookie.Expires = DateTime.Now.AddDays(-1); // Set expiration in the past
+                    Response.Cookies.Add(cartCookie);
+
+                    ScriptManager.RegisterStartupScript(this, GetType(), "alert",
+                        "alert('Purchase completed successfully!');", true);
+                }
+                else
+                {
+                    ScriptManager.RegisterStartupScript(this, GetType(), "alert",
+                        "alert('There was an issue processing your purchase. Please try again.');", true);
+                }
+            }
+            catch (Exception ex)
+            {
+                ScriptManager.RegisterStartupScript(this, GetType(), "alert",
+                    $"alert('Error processing purchase: {ex.Message}');", true);
+            }
+        }
+
+>>>>>>> Stashed changes
         private List<SimpleCartItem> GetCartFromCookies()
         {
             HttpCookie cartCookie = Request.Cookies[CART_COOKIE_NAME];

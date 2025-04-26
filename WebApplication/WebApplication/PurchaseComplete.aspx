@@ -6,7 +6,7 @@
 <head runat="server">
     <title>Thank You</title>
 
-            <style type="text/css">
+        <style type="text/css">
         body {
             font-family: Arial, Helvetica, sans-serif;
             margin: 20px;

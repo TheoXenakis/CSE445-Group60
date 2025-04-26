@@ -45,6 +45,23 @@
     <Password>pYyzmOe/wmgVFOH7YlvTZg==</Password>
     <AccountType>Member</AccountType>
     <LoggedIn>false</LoggedIn>
+    <UserPurchases>
+      <Purchase>
+        <BookTitle>Sample Book 1</BookTitle>
+        <Price>10.00</Price>
+        <PurchaseDate>2025-04-26</PurchaseDate>
+      </Purchase>
+      <Purchase>
+        <BookTitle>Sample Book 2</BookTitle>
+        <Price>15.00</Price>
+        <PurchaseDate>2025-04-26</PurchaseDate>
+      </Purchase>
+      <Purchase>
+        <BookTitle>Sample Book 2</BookTitle>
+        <Price>15.00</Price>
+        <PurchaseDate>2025-04-26</PurchaseDate>
+      </Purchase>
+    </UserPurchases>
   </User>
   <User>
     <Username>theoxen</Username>
