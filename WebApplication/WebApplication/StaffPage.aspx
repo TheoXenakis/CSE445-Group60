@@ -37,6 +37,10 @@
                     <asp:Label runat="server" Text="Genre:" AssociatedControlID="txtGenre"></asp:Label>
                     <asp:TextBox ID="txtGenre" runat="server" CssClass="form-control"></asp:TextBox>
                 </div>
+                <div>
+                    <asp:Label runat="server" Text="Price:" AssociatedControlID="txtPrice"></asp:Label>
+                    <asp:TextBox ID="txtPrice" runat="server" CssClass="form-control"></asp:TextBox>
+                </div>
                 <asp:Button ID="btnAddBook" runat="server" Text="Add Book" 
                     OnClick="btnAddBook_Click" />
             </div>
@@ -51,6 +55,7 @@
                         <asp:BoundField DataField="Author" HeaderText="Author" />
                         <asp:BoundField DataField="Year" HeaderText="Year" />
                         <asp:BoundField DataField="Genre" HeaderText="Genre" />
+                        <asp:BoundField DataField="Price" HeaderText="Price" />
                         <asp:CommandField ShowDeleteButton="True" ButtonType="Button" 
                             DeleteText="Delete" ControlStyle-CssClass="btn btn-danger" />
                     </Columns>

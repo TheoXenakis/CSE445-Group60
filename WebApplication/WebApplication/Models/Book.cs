@@ -7,19 +7,21 @@
         public string Author { get; set; }
         public string Year { get; set; }
         public string Genre { get; set; }
+        public string Price { get; set; }
 
         public Book()
         {
             // Default constructor
         }
 
-        public Book(int id, string title, string author, string year, string genre)
+        public Book(int id, string title, string author, string year, string genre, string price)
         {
             Id = id;
             Title = title;
             Author = author;
             Year = year;
             Genre = genre;
+            Price = price;
         }
     }
 }

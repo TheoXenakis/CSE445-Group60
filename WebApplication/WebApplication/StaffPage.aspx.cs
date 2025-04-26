@@ -37,14 +37,16 @@ namespace WebApplication
             if (!string.IsNullOrEmpty(txtTitle.Text) &&
                 !string.IsNullOrEmpty(txtAuthor.Text) &&
                 !string.IsNullOrEmpty(txtYear.Text) &&
-                !string.IsNullOrEmpty(txtGenre.Text))
+                !string.IsNullOrEmpty(txtGenre.Text) &&
+                !string.IsNullOrEmpty(txtPrice.Text))
             {
                 var newBook = new Book
                 {
                     Title = txtTitle.Text,
                     Author = txtAuthor.Text,
                     Year = txtYear.Text,
-                    Genre = txtGenre.Text
+                    Genre = txtGenre.Text,
+                    Price = txtPrice.Text
                 };
 
                 _bookService.AddBook(newBook);
@@ -58,19 +60,20 @@ namespace WebApplication
             }
         }
 
-        // New helper method
+        //Method for displaying Success or Error Notificaiton
         private void ShowNotification(string message, bool isError)
         {
             lblNotification.Text = message;
             lblNotification.ForeColor = isError ? System.Drawing.Color.Red : System.Drawing.Color.Green;
             lblNotification.Visible = true;
 
-            // Optional: Hide after 3 seconds
+            //Hide after 3 seconds
             ScriptManager.RegisterStartupScript(this, GetType(), "hideNotification",
                 "setTimeout(function(){ document.getElementById('" + lblNotification.ClientID + "').style.display = 'none'; }, 3000);",
                 true);
         }
 
+        //Handle Deleting Books
         protected void gvBooks_RowDeleting(object sender, GridViewDeleteEventArgs e)
         {
             int bookId = (int)gvBooks.DataKeys[e.RowIndex].Value;
@@ -84,9 +87,9 @@ namespace WebApplication
             txtAuthor.Text = string.Empty;
             txtYear.Text = string.Empty;
             txtGenre.Text = string.Empty;
+            txtPrice.Text = string.Empty;
         }
 
-        // Existing button handlers remain unchanged
         protected void Button1_Click(object sender, EventArgs e)
         {
             // Original button logic preserved
