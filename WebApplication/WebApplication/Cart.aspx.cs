@@ -155,15 +155,27 @@ namespace WebApplication
 
         protected void GridViewCart_RowCommand(object sender, GridViewCommandEventArgs e)
         {
+            //if (e.CommandName == "RemoveItem")
+            //{
+            //    int bookId = Convert.ToInt32(e.CommandArgument);
+
+            //    List<SimpleCartItem> cart = GetCartFromCookies();
+            //    SimpleCartItem itemToRemove = cart?.Find(item => item.Id == bookId);
+            //    if (itemToRemove != null)
+            //    {
+            //        cart.Remove(itemToRemove);
+            //        SaveCartToCookies(cart);
+            //    }
+
+            //    // Rebind the updated cart right now
+            //    LoadCartItems();
+            //}
+
             if (e.CommandName == "RemoveItem")
             {
                 int bookId = Convert.ToInt32(e.CommandArgument);
-
                 RemoveFromCart(bookId);
-
-                GridViewCart.EditIndex = -1;
-
-                LoadCartItems();
+                Response.Redirect(Request.RawUrl); // Refresh the page
             }
         }
 
@@ -182,6 +194,9 @@ namespace WebApplication
                     SaveCartToCookies(cart);
                 }
             }
+
+            // Rebind immediately after updating cart
+            LoadCartItems();
         }
 
         protected void ButtonContinueShopping_Click(object sender, EventArgs e)
