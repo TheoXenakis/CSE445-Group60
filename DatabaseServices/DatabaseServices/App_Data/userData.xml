@@ -52,4 +52,10 @@
     <AccountType>Staff</AccountType>
     <LoggedIn>false</LoggedIn>
   </User>
+  <User>
+    <Username>test_staff</Username>
+    <Password>jyI3vsMZbuk=</Password>
+    <AccountType>Staff</AccountType>
+    <LoggedIn>false</LoggedIn>
+  </User>
 </Accounts>
