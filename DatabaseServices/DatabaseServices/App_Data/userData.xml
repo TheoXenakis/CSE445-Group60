@@ -22,4 +22,10 @@
     <AccountType>Member</AccountType>
     <LoggedIn>false</LoggedIn>
   </User>
+  <User>
+    <Username>txenakis</Username>
+    <Password>krLHj56EM+MDrSQaIwIOmA==</Password>
+    <AccountType>Staff</AccountType>
+    <LoggedIn>false</LoggedIn>
+  </User>
 </Accounts>

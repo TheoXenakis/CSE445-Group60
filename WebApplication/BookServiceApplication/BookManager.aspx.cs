@@ -1,6 +1,7 @@
 ﻿using BookServiceApplication.Models;
 using BookServiceApplication.Services;
 using System;
+using System.Web.UI.WebControls;
 
 //Author: Theo Xenakis
 
@@ -26,7 +27,9 @@ namespace BookServiceApplication
             Book newBook = new Book
             {
                 Title = TextBoxTitle.Text,
-                Author = TextBoxAuthor.Text
+                Author = TextBoxAuthor.Text,
+                Year = TextBoxYear.Text,
+                Genre = TextBoxGenre.Text
             };
 
             //Add book via service
@@ -35,10 +38,24 @@ namespace BookServiceApplication
             //Clear entries
             TextBoxTitle.Text = string.Empty;
             TextBoxAuthor.Text = string.Empty;
+            TextBoxYear.Text = string.Empty;
+            TextBoxGenre.Text = string.Empty;
 
             //Refresh
             BindBooksData();
         }
+        protected void ButtonRemoveBook_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        protected void GridViewBooks_RowDeleting(object sender, GridViewDeleteEventArgs e)
+        {
+            int bookId = (int)GridViewBooks.DataKeys[e.RowIndex].Value;
+            _bookService.RemoveBook(bookId);
+            BindBooksData();
+        }
+
 
         private void BindBooksData()
         {

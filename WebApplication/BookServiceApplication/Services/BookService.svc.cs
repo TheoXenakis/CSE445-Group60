@@ -1,5 +1,6 @@
 ﻿using BookServiceApplication.Models;
 using System.Collections.Generic;
+using System.Linq;
 
 namespace BookServiceApplication.Services
 {
@@ -23,6 +24,14 @@ namespace BookServiceApplication.Services
             }
 
             _books.Add(book);
+        }
+        public void RemoveBook(int id)
+        {
+            var bookToRemove = _books.Find(b => b.Id == id);
+            if (bookToRemove != null)
+            {
+                _books.Remove(bookToRemove);
+            }
         }
     }
 }

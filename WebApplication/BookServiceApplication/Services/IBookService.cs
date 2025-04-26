@@ -13,5 +13,8 @@ namespace BookServiceApplication.Services
 
         [OperationContract]
         void AddBook(Book book);
+
+        [OperationContract]
+        void RemoveBook(int id);
     }
 }

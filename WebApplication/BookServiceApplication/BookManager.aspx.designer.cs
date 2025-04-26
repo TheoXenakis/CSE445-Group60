@@ -60,6 +60,42 @@ namespace BookServiceApplication
         protected global::System.Web.UI.WebControls.TextBox TextBoxAuthor;
 
         /// <summary>
+        /// LabelYear control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label LabelYear;
+
+        /// <summary>
+        /// TextBoxYear control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox TextBoxYear;
+
+        /// <summary>
+        /// LabelGenre control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label LabelGenre;
+
+        /// <summary>
+        /// TextBoxGenre control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox TextBoxGenre;
+
+        /// <summary>
         /// ButtonAddBook control.
         /// </summary>
         /// <remarks>
@@ -67,6 +103,15 @@ namespace BookServiceApplication
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Button ButtonAddBook;
+
+        /// <summary>
+        ///  ButtonRemoveBook control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button ButtonRemoveBook;
 
         /// <summary>
         /// GridViewBooks control.

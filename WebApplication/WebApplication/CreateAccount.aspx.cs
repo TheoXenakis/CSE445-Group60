@@ -113,7 +113,7 @@ namespace WebApplication
 
               //Successful Account Creation
                 if(accountCreation){
-                  //Notify the user
+                  //Notify the user 
                     Label2.Text = "Account Succesfully Created, Proceed to the Login Page";
 
                   //Create Cookies & Set them to be used in "LoginPage.aspx" for entering the user's credentials for them

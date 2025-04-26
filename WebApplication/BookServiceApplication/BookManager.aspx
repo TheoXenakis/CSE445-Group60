@@ -20,17 +20,45 @@
                     <asp:TextBox ID="TextBoxAuthor" runat="server"></asp:TextBox>
                 </div>
                 <div>
+                    <asp:Label ID="LabelYear" runat="server" Text="Year:"></asp:Label>
+                    <asp:TextBox ID="TextBoxYear" runat="server"></asp:TextBox>
+                </div>
+                <div>
+                    <asp:Label ID="LabelGenre" runat="server" Text="Genre:"></asp:Label>
+                    <asp:TextBox ID="TextBoxGenre" runat="server"></asp:TextBox>
+                </div>
+
+
+                <div>
                     <asp:Button ID="ButtonAddBook" runat="server" Text="Add Book" OnClick="ButtonAddBook_Click" />
+                </div>
+                <div>
+                    <asp:Button ID="ButtonRemoveBook" runat="server" Text="Remove Book" OnClick="ButtonRemoveBook_Click" />
                 </div>
             </div>
             
             <div>
                 <h2>Books</h2>
-                <asp:GridView ID="GridViewBooks" runat="server" AutoGenerateColumns="False">
+                <asp:GridView ID="GridViewBooks" runat="server" AutoGenerateColumns="False" DataKeyNames="Id" OnRowDeleting="GridViewBooks_RowDeleting">
                     <Columns>
                         <asp:BoundField DataField="Id" HeaderText="ID" />
                         <asp:BoundField DataField="Title" HeaderText="Title" />
                         <asp:BoundField DataField="Author" HeaderText="Author" />
+                        <asp:BoundField DataField="Year" HeaderText="Year" />
+                        <asp:BoundField DataField="Genre" HeaderText="Genre" />
+
+                        <asp:TemplateField>
+                            <ItemTemplate>
+                                <asp:LinkButton
+                                    ID="btnDelete"
+                                    runat="server"
+                                    CommandName="Delete"
+                                    Text="X"
+                                    ToolTip="Delete this book"
+                                    OnClientClick="return confirm('Deleted Book')"
+                                    CssClass="delete-button" />
+                            </ItemTemplate>
+                        </asp:TemplateField>
                     </Columns>
                 </asp:GridView>
             </div>
