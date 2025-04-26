@@ -19,3 +19,10 @@ C:\Users\roenw\source\repos\CSE445-Group602\DatabaseServices\DatabaseServices\ob
 C:\Users\roenw\source\repos\CSE445-Group602\DatabaseServices\DatabaseServices\obj\Debug\DatabaseServices.csproj.CoreCompileInputs.cache
 C:\Users\roenw\source\repos\CSE445-Group602\DatabaseServices\DatabaseServices\obj\Debug\DatabaseServices.dll
 C:\Users\roenw\source\repos\CSE445-Group602\DatabaseServices\DatabaseServices\obj\Debug\DatabaseServices.pdb
+C:\Users\Theo\Documents\GitHub\CSE445-Group60\DatabaseServices\DatabaseServices\bin\DatabaseServices.dll.config
+C:\Users\Theo\Documents\GitHub\CSE445-Group60\DatabaseServices\DatabaseServices\bin\DatabaseServices.dll
+C:\Users\Theo\Documents\GitHub\CSE445-Group60\DatabaseServices\DatabaseServices\bin\DatabaseServices.pdb
+C:\Users\Theo\Documents\GitHub\CSE445-Group60\DatabaseServices\DatabaseServices\obj\Debug\DatabaseServices.csproj.AssemblyReference.cache
+C:\Users\Theo\Documents\GitHub\CSE445-Group60\DatabaseServices\DatabaseServices\obj\Debug\DatabaseServices.csproj.CoreCompileInputs.cache
+C:\Users\Theo\Documents\GitHub\CSE445-Group60\DatabaseServices\DatabaseServices\obj\Debug\DatabaseServices.dll
+C:\Users\Theo\Documents\GitHub\CSE445-Group60\DatabaseServices\DatabaseServices\obj\Debug\DatabaseServices.pdb
