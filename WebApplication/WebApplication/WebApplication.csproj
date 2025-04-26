@@ -114,17 +114,26 @@
       <Generator>WCF Proxy Generator</Generator>
       <LastGenOutput>Reference.cs</LastGenOutput>
     </None>
+    <None Include="Connected Services\TotalAndTaxSR\Service1.disco" />
+    <None Include="Connected Services\TotalAndTaxSR\configuration91.svcinfo" />
+    <None Include="Connected Services\TotalAndTaxSR\configuration.svcinfo" />
+    <None Include="Connected Services\TotalAndTaxSR\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
     <Content Include="CreateAccount.aspx" />
     <Content Include="Default.aspx" />
     <Content Include="Global.asax" />
     <Content Include="LoginPage.aspx" />
     <Content Include="MemberPage.aspx" />
     <Content Include="MyPurchases.aspx" />
+    <Content Include="PurchaseComplete.aspx" />
     <Content Include="StaffPage.aspx" />
     <Content Include="TryItDatabaseJohn.aspx" />
     <Content Include="TryItGlobalFuncts.aspx" />
     <Content Include="TryItCaptchaTheo.aspx" />
     <Content Include="TryItEncryptionJohn.aspx" />
+    <Content Include="TryItTotalTaxRoen.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -158,6 +167,11 @@
       <DependentUpon>Reference.svcmap</DependentUpon>
     </Compile>
     <Compile Include="Connected Services\ServiceReference2\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Connected Services\TotalAndTaxSR\Reference.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>Reference.svcmap</DependentUpon>
@@ -201,6 +215,13 @@
       <DependentUpon>MyPurchases.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="PurchaseComplete.aspx.cs">
+      <DependentUpon>PurchaseComplete.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PurchaseComplete.aspx.designer.cs">
+      <DependentUpon>PurchaseComplete.aspx</DependentUpon>
+    </Compile>
     <Compile Include="StaffPage.aspx.cs">
       <DependentUpon>StaffPage.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -236,6 +257,13 @@
     <Compile Include="TryItEncryptionJohn.aspx.designer.cs">
       <DependentUpon>TryItEncryptionJohn.aspx</DependentUpon>
     </Compile>
+    <Compile Include="TryItTotalTaxRoen.aspx.cs">
+      <DependentUpon>TryItTotalTaxRoen.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="TryItTotalTaxRoen.aspx.designer.cs">
+      <DependentUpon>TryItTotalTaxRoen.aspx</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <None Include="Connected Services\ServiceReference1\Service.xsd">
@@ -252,6 +280,16 @@
     <None Include="Connected Services\ServiceReference2\Service11.xsd">
       <SubType>Designer</SubType>
     </None>
+    <None Include="Connected Services\TotalAndTaxSR\Service1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Connected Services\TotalAndTaxSR\Service11.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Connected Services\TotalAndTaxSR\Service12.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Connected Services\TotalAndTaxSR\TotalAndTaxService.wsdl" />
     <None Include="packages.config" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
@@ -268,6 +306,7 @@
     <WCFMetadataStorage Include="Connected Services\CaptchaService\" />
     <WCFMetadataStorage Include="Connected Services\ServiceReference1\" />
     <WCFMetadataStorage Include="Connected Services\ServiceReference2\" />
+    <WCFMetadataStorage Include="Connected Services\TotalAndTaxSR\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

@@ -7,16 +7,26 @@
       "RelativeMoniker": "D:0:0:{89C935D7-54F0-4054-9BA5-C61075415548}|WebApplication\\WebApplication.csproj|solutionrelative:webapplication\\cart.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{89C935D7-54F0-4054-9BA5-C61075415548}|WebApplication\\WebApplication.csproj|c:\\users\\roenw\\source\\repos\\cse445-group602\\webapplication\\webapplication\\booklibrary.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{89C935D7-54F0-4054-9BA5-C61075415548}|WebApplication\\WebApplication.csproj|solutionrelative:webapplication\\booklibrary.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{89C935D7-54F0-4054-9BA5-C61075415548}|WebApplication\\WebApplication.csproj|c:\\users\\roenw\\source\\repos\\cse445-group602\\webapplication\\webapplication\\cart.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
       "RelativeMoniker": "D:0:0:{89C935D7-54F0-4054-9BA5-C61075415548}|WebApplication\\WebApplication.csproj|solutionrelative:webapplication\\cart.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{89C935D7-54F0-4054-9BA5-C61075415548}|WebApplication\\WebApplication.csproj|c:\\users\\roenw\\source\\repos\\cse445-group602\\webapplication\\webapplication\\booklibrary.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
-      "RelativeMoniker": "D:0:0:{89C935D7-54F0-4054-9BA5-C61075415548}|WebApplication\\WebApplication.csproj|solutionrelative:webapplication\\booklibrary.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
+      "AbsoluteMoniker": "D:0:0:{89C935D7-54F0-4054-9BA5-C61075415548}|WebApplication\\WebApplication.csproj|c:\\users\\roenw\\source\\repos\\cse445-group602\\webapplication\\webapplication\\purchasecomplete.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "RelativeMoniker": "D:0:0:{89C935D7-54F0-4054-9BA5-C61075415548}|WebApplication\\WebApplication.csproj|solutionrelative:webapplication\\purchasecomplete.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{89C935D7-54F0-4054-9BA5-C61075415548}|WebApplication\\WebApplication.csproj|c:\\users\\roenw\\source\\repos\\cse445-group602\\webapplication\\webapplication\\purchasecomplete.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{89C935D7-54F0-4054-9BA5-C61075415548}|WebApplication\\WebApplication.csproj|solutionrelative:webapplication\\purchasecomplete.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{89C935D7-54F0-4054-9BA5-C61075415548}|WebApplication\\WebApplication.csproj|c:\\users\\roenw\\source\\repos\\cse445-group602\\webapplication\\webapplication\\tryittotaltaxroen.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{89C935D7-54F0-4054-9BA5-C61075415548}|WebApplication\\WebApplication.csproj|solutionrelative:webapplication\\tryittotaltaxroen.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{478DA518-DD25-4A07-A41A-DB464EAFF850}|..\\DatabaseServices\\DatabaseServices\\DatabaseServices.csproj|c:\\users\\roenw\\source\\repos\\cse445-group602\\databaseservices\\databaseservices\\iservice1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{478DA518-DD25-4A07-A41A-DB464EAFF850}|..\\DatabaseServices\\DatabaseServices\\DatabaseServices.csproj|c:\\users\\roenw\\source\\repos\\cse445-group602\\databaseservices\\databaseservices\\service1.svc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -30,28 +40,28 @@
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "BookLibrary.aspx.cs",
-              "DocumentMoniker": "C:\\Users\\roenw\\source\\repos\\CSE445-Group602\\WebApplication\\WebApplication\\BookLibrary.aspx.cs",
-              "RelativeDocumentMoniker": "WebApplication\\BookLibrary.aspx.cs",
-              "ToolTip": "C:\\Users\\roenw\\source\\repos\\CSE445-Group602\\WebApplication\\WebApplication\\BookLibrary.aspx.cs",
-              "RelativeToolTip": "WebApplication\\BookLibrary.aspx.cs",
-              "ViewState": "AgIAABUAAAAAAAAAAAAAAD4AAAA0AAAAAAAAAA==",
+              "DocumentIndex": 3,
+              "Title": "PurchaseComplete.aspx.cs",
+              "DocumentMoniker": "C:\\Users\\roenw\\source\\repos\\CSE445-Group602\\WebApplication\\WebApplication\\PurchaseComplete.aspx.cs",
+              "RelativeDocumentMoniker": "WebApplication\\PurchaseComplete.aspx.cs",
+              "ToolTip": "C:\\Users\\roenw\\source\\repos\\CSE445-Group602\\WebApplication\\WebApplication\\PurchaseComplete.aspx.cs",
+              "RelativeToolTip": "WebApplication\\PurchaseComplete.aspx.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAyAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-26T06:36:38.787Z",
+              "WhenOpened": "2025-04-26T21:42:53.674Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "BookLibrary.aspx",
-              "DocumentMoniker": "C:\\Users\\roenw\\source\\repos\\CSE445-Group602\\WebApplication\\WebApplication\\BookLibrary.aspx",
-              "RelativeDocumentMoniker": "WebApplication\\BookLibrary.aspx",
-              "ToolTip": "C:\\Users\\roenw\\source\\repos\\CSE445-Group602\\WebApplication\\WebApplication\\BookLibrary.aspx",
-              "RelativeToolTip": "WebApplication\\BookLibrary.aspx",
+              "DocumentIndex": 2,
+              "Title": "PurchaseComplete.aspx",
+              "DocumentMoniker": "C:\\Users\\roenw\\source\\repos\\CSE445-Group602\\WebApplication\\WebApplication\\PurchaseComplete.aspx",
+              "RelativeDocumentMoniker": "WebApplication\\PurchaseComplete.aspx",
+              "ToolTip": "C:\\Users\\roenw\\source\\repos\\CSE445-Group602\\WebApplication\\WebApplication\\PurchaseComplete.aspx",
+              "RelativeToolTip": "WebApplication\\PurchaseComplete.aspx",
               "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
-              "WhenOpened": "2025-04-26T06:34:32.315Z",
+              "WhenOpened": "2025-04-26T21:40:35.958Z",
               "EditorCaption": ""
             },
             {
@@ -62,14 +72,59 @@
               "RelativeDocumentMoniker": "WebApplication\\Cart.aspx.cs",
               "ToolTip": "C:\\Users\\roenw\\source\\repos\\CSE445-Group602\\WebApplication\\WebApplication\\Cart.aspx.cs",
               "RelativeToolTip": "WebApplication\\Cart.aspx.cs",
-              "ViewState": "AgIAAEoAAAAAAAAAAAAAAGsAAAAoAAAAAAAAAA==",
+              "ViewState": "AgIAAFYAAAAAAAAAAAAwwHoAAAAsAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-26T06:29:16.734Z",
+              "WhenOpened": "2025-04-26T21:02:23.136Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 6,
+              "Title": "Service1.svc.cs",
+              "DocumentMoniker": "C:\\Users\\roenw\\source\\repos\\CSE445-Group602\\DatabaseServices\\DatabaseServices\\Service1.svc.cs",
+              "RelativeDocumentMoniker": "..\\DatabaseServices\\DatabaseServices\\Service1.svc.cs",
+              "ToolTip": "C:\\Users\\roenw\\source\\repos\\CSE445-Group602\\DatabaseServices\\DatabaseServices\\Service1.svc.cs",
+              "RelativeToolTip": "..\\DatabaseServices\\DatabaseServices\\Service1.svc.cs",
+              "ViewState": "AgIAANAAAAAAAAAAAAAQwPAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-26T20:55:53.217Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "IService1.cs",
+              "DocumentMoniker": "C:\\Users\\roenw\\source\\repos\\CSE445-Group602\\DatabaseServices\\DatabaseServices\\IService1.cs",
+              "RelativeDocumentMoniker": "..\\DatabaseServices\\DatabaseServices\\IService1.cs",
+              "ToolTip": "C:\\Users\\roenw\\source\\repos\\CSE445-Group602\\DatabaseServices\\DatabaseServices\\IService1.cs",
+              "RelativeToolTip": "..\\DatabaseServices\\DatabaseServices\\IService1.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-26T20:55:49.21Z",
+              "EditorCaption": ""
+            }
+          ]
+        },
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "TryItTotalTaxRoen.aspx.cs",
+              "DocumentMoniker": "C:\\Users\\roenw\\source\\repos\\CSE445-Group602\\WebApplication\\WebApplication\\TryItTotalTaxRoen.aspx.cs",
+              "RelativeDocumentMoniker": "WebApplication\\TryItTotalTaxRoen.aspx.cs",
+              "ToolTip": "C:\\Users\\roenw\\source\\repos\\CSE445-Group602\\WebApplication\\WebApplication\\TryItTotalTaxRoen.aspx.cs",
+              "RelativeToolTip": "WebApplication\\TryItTotalTaxRoen.aspx.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABwAAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-26T21:04:11.755Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "Cart.aspx",
               "DocumentMoniker": "C:\\Users\\roenw\\source\\repos\\CSE445-Group602\\WebApplication\\WebApplication\\Cart.aspx",
               "RelativeDocumentMoniker": "WebApplication\\Cart.aspx",
@@ -77,7 +132,7 @@
               "RelativeToolTip": "WebApplication\\Cart.aspx",
               "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
-              "WhenOpened": "2025-04-26T06:26:23.734Z",
+              "WhenOpened": "2025-04-26T20:57:15.58Z",
               "EditorCaption": ""
             }
           ]

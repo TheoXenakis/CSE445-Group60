@@ -44,6 +44,14 @@
             border: none;
             cursor: pointer;
         }
+        .button_blue {
+            padding: 8px 16px;
+            margin-right: 10px;
+            background-color: #3399ff;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
         .cart-link {
             display: inline-block;
             margin-top: 20px;
@@ -91,8 +99,38 @@
                 OnClick="ButtonContinueShopping_Click" CssClass="button" />
             <asp:Button ID="ButtonClearCart" runat="server" Text="Clear Cart" 
                 OnClick="ButtonClearCart_Click" CssClass="button" />
-            <asp:Button ID="ButtonCheckout" runat="server" Text="Proceed to Checkout" 
-                OnClick="ButtonCheckout_Click" CssClass="button" />
+        </div>
+
+        <div class="header" style="margin-top:20px;">
+            <h2>Checkout</h2>
+            <p>If your cart looks good, purchase your books here</p>
+        </div>
+
+        Subtotal: $<asp:Label ID="CartTotalLabel" runat="server"></asp:Label> <br />
+        Total with Tax (4.712%): $<asp:Label ID="CartTaxTotalLabel" runat="server"></asp:Label>
+
+        <div style="margin-top:20px">
+            <h3>Select Payment Method</h3>
+
+            <label>
+                <input type="radio" name="paymentMethod" checked="checked" value="creditCard" />
+                <span>Credit Card</span>
+            </label>
+
+            <label>
+                <input type="radio" name="paymentMethod" value="check" />
+                <span>Check</span>
+            </label>
+
+            <label>
+                <input type="radio" name="paymentMethod" value="paypal" />
+                <span>PayPal</span>
+            </label>
+
+            <br /> <br />
+
+            <asp:Button runat="server" ID="PurchaseBtn" Text="Complete Purchase" 
+                OnClick="BuyNowButton_Click" CssClass="button_blue" />
         </div>
     </form>
 </body>

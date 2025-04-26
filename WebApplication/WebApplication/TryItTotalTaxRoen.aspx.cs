@@ -31,7 +31,7 @@ namespace WebApplication
                 }
 
                 object[] prices = pricesList.ToArray();
-                TotalAndTaxSvcRef.TotalAndTaxServiceInterfaceClient service = new TotalAndTaxSvcRef.TotalAndTaxServiceInterfaceClient();
+                TotalAndTaxSR.TotalAndTaxServiceInterfaceClient service = new TotalAndTaxSR.TotalAndTaxServiceInterfaceClient();
                 float total = service.CalculateTotal(prices);
 
                 lblTotal.Text = "$" + total.ToString("F2");
@@ -58,7 +58,7 @@ namespace WebApplication
                     return;
                 }
 
-                TotalAndTaxSvcRef.TotalAndTaxServiceInterfaceClient service = new TotalAndTaxSvcRef.TotalAndTaxServiceInterfaceClient();
+                TotalAndTaxSR.TotalAndTaxServiceInterfaceClient service = new TotalAndTaxSR.TotalAndTaxServiceInterfaceClient();
                 float totalWithTax = service.CalculateTax(subtotal, taxRate);
 
                 lblTotalWithTax.Text = "$" + totalWithTax.ToString("F2");

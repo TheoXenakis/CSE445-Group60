@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://tempuri.org/" elementFormDefault="qualified" targetNamespace="http://tempuri.org/" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://localhost:53929/Service1.svc?xsd=xsd2" namespace="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+  <xs:element name="CalculateTotal">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="prices" nillable="true" type="q1:ArrayOfanyType" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CalculateTotalResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="CalculateTotalResult" type="xs:float" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CalculateTax">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="subtotal" type="xs:float" />
+        <xs:element minOccurs="0" name="taxRate" type="xs:float" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CalculateTaxResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="CalculateTaxResult" type="xs:float" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

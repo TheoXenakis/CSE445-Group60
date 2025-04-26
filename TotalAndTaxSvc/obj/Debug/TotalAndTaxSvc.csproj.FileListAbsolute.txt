@@ -5,3 +5,10 @@ C:\Users\roenw\source\repos\CSE445-Group60\TotalAndTaxSvc\obj\Debug\TotalAndTaxS
 C:\Users\roenw\source\repos\CSE445-Group60\TotalAndTaxSvc\obj\Debug\TotalAndTaxSvc.csproj.CoreCompileInputs.cache
 C:\Users\roenw\source\repos\CSE445-Group60\TotalAndTaxSvc\obj\Debug\TotalAndTaxSvc.dll
 C:\Users\roenw\source\repos\CSE445-Group60\TotalAndTaxSvc\obj\Debug\TotalAndTaxSvc.pdb
+C:\Users\roenw\source\repos\CSE445-Group602\TotalAndTaxSvc\bin\TotalAndTaxSvc.dll.config
+C:\Users\roenw\source\repos\CSE445-Group602\TotalAndTaxSvc\bin\TotalAndTaxSvc.dll
+C:\Users\roenw\source\repos\CSE445-Group602\TotalAndTaxSvc\bin\TotalAndTaxSvc.pdb
+C:\Users\roenw\source\repos\CSE445-Group602\TotalAndTaxSvc\obj\Debug\TotalAndTaxSvc.csproj.AssemblyReference.cache
+C:\Users\roenw\source\repos\CSE445-Group602\TotalAndTaxSvc\obj\Debug\TotalAndTaxSvc.csproj.CoreCompileInputs.cache
+C:\Users\roenw\source\repos\CSE445-Group602\TotalAndTaxSvc\obj\Debug\TotalAndTaxSvc.dll
+C:\Users\roenw\source\repos\CSE445-Group602\TotalAndTaxSvc\obj\Debug\TotalAndTaxSvc.pdb

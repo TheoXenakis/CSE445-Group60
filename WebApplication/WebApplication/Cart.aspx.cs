@@ -5,12 +5,17 @@ using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 using System.Web.Script.Serialization;
+using System.Collections;
 
 namespace WebApplication
 {
     public partial class Cart : System.Web.UI.Page
     {
         private const string CART_COOKIE_NAME = "BookCart";
+        private double CART_SUBTOTAL = 0.00;
+        private double CART_TOTAL = 0.00;
+
+        TotalAndTaxSR.TotalAndTaxServiceInterfaceClient totalTaxSvc = new TotalAndTaxSR.TotalAndTaxServiceInterfaceClient();
 
         protected void Page_Load(object sender, EventArgs e)
         {
@@ -18,6 +23,67 @@ namespace WebApplication
             {
                 LoadCartItems();
             }
+
+            CART_SUBTOTAL = CalcTotals();
+            CART_TOTAL = CalcTaxTotal(CART_SUBTOTAL);
+        }
+
+        private double CalcTotals()
+        {
+            try
+            {
+                List<SimpleCartItem> cart = GetCartFromCookies();
+
+                if (cart == null || cart.Count == 0)
+                {
+                    CartTotalLabel.Text = "0.00";
+                    return 0.00;
+                }
+
+                List<float> pricesList = new List<float>();
+                foreach (SimpleCartItem item in cart)
+                {
+                    float itemPrice = Convert.ToSingle(item.Price);
+                    for (int i = 0; i < item.Quantity; i++)
+                    {
+                        pricesList.Add(itemPrice);
+                    }
+                }
+
+                object[] prices = Array.ConvertAll(pricesList.ToArray(), item => (object)item);
+
+                float total = totalTaxSvc.CalculateTotal(prices);
+
+                CartTotalLabel.Text = total.ToString("F2");
+
+                return (double)total;
+            }
+            catch (Exception ex)
+            {
+                CartTotalLabel.Text = "Error: " + ex.Message;
+                return 0.00;
+            }
+        }
+
+        private double CalcTaxTotal(double subtotal)
+        {
+            try
+            {
+                float taxTotal = totalTaxSvc.CalculateTax((float)subtotal, (float)0.04712);
+                CartTaxTotalLabel.Text = taxTotal.ToString("F2");
+                return taxTotal;
+            }
+            catch (Exception ex)
+            {
+                CartTaxTotalLabel.Text = "Error: " + ex.Message;
+                return 0.00;
+            }
+
+        }
+
+        protected void BuyNowButton_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("PurchaseComplete.aspx");
         }
 
         private void LoadCartItems()
@@ -51,7 +117,7 @@ namespace WebApplication
                 GridViewCart.DataSource = null;
                 GridViewCart.DataBind();
 
-                ButtonCheckout.Enabled = false;
+                PurchaseBtn.Enabled = false;
                 ButtonClearCart.Enabled = false;
             }
         }
@@ -130,16 +196,6 @@ namespace WebApplication
             Response.Cookies.Add(cartCookie);
 
             LoadCartItems();
-        }
-
-        protected void ButtonCheckout_Click(object sender, EventArgs e)
-        {
-            List<SimpleCartItem> cart = GetCartFromCookies();
-
-            if (cart != null && cart.Count > 0)
-            {
-                Response.Redirect("Checkout.aspx");
-            }
         }
     }
 }
