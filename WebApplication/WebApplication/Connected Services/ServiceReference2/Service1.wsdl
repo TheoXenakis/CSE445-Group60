@@ -4,6 +4,7 @@
     <xsd:schema targetNamespace="http://tempuri.org/Imports">
       <xsd:import schemaLocation="http://localhost:64223/Service1.svc?xsd=xsd0" namespace="http://tempuri.org/" />
       <xsd:import schemaLocation="http://localhost:64223/Service1.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import schemaLocation="http://localhost:64223/Service1.svc?xsd=xsd2" namespace="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
     </xsd:schema>
   </wsdl:types>
   <wsdl:message name="IService1_createUser_InputMessage">
@@ -30,6 +31,18 @@
   <wsdl:message name="IService1_getUserType_OutputMessage">
     <wsdl:part name="parameters" element="tns:getUserTypeResponse" />
   </wsdl:message>
+  <wsdl:message name="IService1_addUserPurchase_InputMessage">
+    <wsdl:part name="parameters" element="tns:addUserPurchase" />
+  </wsdl:message>
+  <wsdl:message name="IService1_addUserPurchase_OutputMessage">
+    <wsdl:part name="parameters" element="tns:addUserPurchaseResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_getUserPurchases_InputMessage">
+    <wsdl:part name="parameters" element="tns:getUserPurchases" />
+  </wsdl:message>
+  <wsdl:message name="IService1_getUserPurchases_OutputMessage">
+    <wsdl:part name="parameters" element="tns:getUserPurchasesResponse" />
+  </wsdl:message>
   <wsdl:message name="IService1_debugFunct_InputMessage">
     <wsdl:part name="parameters" element="tns:debugFunct" />
   </wsdl:message>
@@ -52,6 +65,14 @@
     <wsdl:operation name="getUserType">
       <wsdl:input wsaw:Action="http://tempuri.org/IService1/getUserType" message="tns:IService1_getUserType_InputMessage" />
       <wsdl:output wsaw:Action="http://tempuri.org/IService1/getUserTypeResponse" message="tns:IService1_getUserType_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="addUserPurchase">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/addUserPurchase" message="tns:IService1_addUserPurchase_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/addUserPurchaseResponse" message="tns:IService1_addUserPurchase_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="getUserPurchases">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/getUserPurchases" message="tns:IService1_getUserPurchases_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/getUserPurchasesResponse" message="tns:IService1_getUserPurchases_OutputMessage" />
     </wsdl:operation>
     <wsdl:operation name="debugFunct">
       <wsdl:input wsaw:Action="http://tempuri.org/IService1/debugFunct" message="tns:IService1_debugFunct_InputMessage" />
@@ -89,6 +110,24 @@
     </wsdl:operation>
     <wsdl:operation name="getUserType">
       <soap:operation soapAction="http://tempuri.org/IService1/getUserType" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="addUserPurchase">
+      <soap:operation soapAction="http://tempuri.org/IService1/addUserPurchase" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getUserPurchases">
+      <soap:operation soapAction="http://tempuri.org/IService1/getUserPurchases" style="document" />
       <wsdl:input>
         <soap:body use="literal" />
       </wsdl:input>

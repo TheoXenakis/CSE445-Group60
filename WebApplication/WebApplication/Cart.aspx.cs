@@ -16,9 +16,13 @@ namespace WebApplication
         private double CART_TOTAL = 0.00;
 
         TotalAndTaxSR.TotalAndTaxServiceInterfaceClient totalTaxSvc = new TotalAndTaxSR.TotalAndTaxServiceInterfaceClient();
+        ServiceReference2.Service1Client dbSvcClient = new ServiceReference2.Service1Client();
 
         protected void Page_Load(object sender, EventArgs e)
         {
+            if (Request.Cookies["memberLoggedIn"] == null || Request.Cookies["memberLoggedIn"].Value != "true")
+                Response.Redirect("LoginPage.aspx");
+
             if (!IsPostBack)
             {
                 LoadCartItems();
@@ -83,6 +87,7 @@ namespace WebApplication
 
         protected void BuyNowButton_Click(object sender, EventArgs e)
         {
+            ProcessPurchase();
             Response.Redirect("PurchaseComplete.aspx");
         }
 
@@ -118,6 +123,68 @@ namespace WebApplication
                 GridViewCart.DataBind();
 
                 PurchaseBtn.Enabled = false;
+            }
+        }
+
+        private void ProcessPurchase()
+        {
+            try
+            {
+                string userName = Request.Cookies["accountUsername"]?.Value;
+
+                if (string.IsNullOrEmpty(userName))
+                {
+                    Response.Redirect("Login.aspx");
+                    return;
+                }
+
+                List<SimpleCartItem> cart = GetCartFromCookies();
+
+                if (cart == null || cart.Count == 0)
+                {
+                    return;
+                }
+
+                bool allPurchasesSuccessful = true;
+
+                foreach (SimpleCartItem item in cart)
+                {
+                    string purchaseDate = DateTime.Now.ToString("yyyy-MM-dd");
+
+                    bool purchaseSuccess = dbSvcClient.addUserPurchase(
+                        userName,
+                        item.Title,
+                        Convert.ToDecimal(item.Price),
+                        purchaseDate
+                    );
+
+                    if (!purchaseSuccess)
+                    {
+                        allPurchasesSuccessful = false;
+                        System.Diagnostics.Debug.WriteLine($"Failed to store purchase for {item.Title}");
+                    }
+                }
+
+                if (allPurchasesSuccessful)
+                {
+                    // Clear the cart by expiring the cookie
+                    HttpCookie cartCookie = new HttpCookie(CART_COOKIE_NAME);
+                    cartCookie.Expires = DateTime.Now.AddDays(-1); // Set expiration in the past
+                    Response.Cookies.Add(cartCookie);
+
+                    ScriptManager.RegisterStartupScript(this, GetType(), "alert",
+                        "alert('Purchase completed successfully!');", true);
+                }
+                else
+                {
+                    ScriptManager.RegisterStartupScript(this, GetType(), "alert",
+                        "alert('There was an issue processing your purchase. Please try again.');", true);
+                }
+            }
+            catch (Exception ex)
+            {
+                ScriptManager.RegisterStartupScript(this, GetType(), "alert",
+                    $"alert('Error processing purchase: {ex.Message}');", true);
             }
         }
 

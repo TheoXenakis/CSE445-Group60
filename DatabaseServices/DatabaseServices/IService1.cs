@@ -53,6 +53,12 @@ namespace DatabaseServices
         [OperationContract]
         string getUserType(string userName);
 
+        [OperationContract]
+        bool addUserPurchase(string userName, string bookTitle, decimal price, string purchaseDate);
+
+        [OperationContract]
+        List<string[]> getUserPurchases(string userName);
+
       //DEBUG FUNCTION!!  [Remove for final version/after developments]
         [OperationContract]
         string debugFunct();

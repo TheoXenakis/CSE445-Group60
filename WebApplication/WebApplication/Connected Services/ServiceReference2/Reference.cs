@@ -39,6 +39,18 @@ namespace WebApplication.ServiceReference2 {
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/getUserType", ReplyAction="http://tempuri.org/IService1/getUserTypeResponse")]
         System.Threading.Tasks.Task<string> getUserTypeAsync(string userName);
         
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/addUserPurchase", ReplyAction="http://tempuri.org/IService1/addUserPurchaseResponse")]
+        bool addUserPurchase(string userName, string bookTitle, decimal price, string purchaseDate);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/addUserPurchase", ReplyAction="http://tempuri.org/IService1/addUserPurchaseResponse")]
+        System.Threading.Tasks.Task<bool> addUserPurchaseAsync(string userName, string bookTitle, decimal price, string purchaseDate);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/getUserPurchases", ReplyAction="http://tempuri.org/IService1/getUserPurchasesResponse")]
+        string[][] getUserPurchases(string userName);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/getUserPurchases", ReplyAction="http://tempuri.org/IService1/getUserPurchasesResponse")]
+        System.Threading.Tasks.Task<string[][]> getUserPurchasesAsync(string userName);
+        
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/debugFunct", ReplyAction="http://tempuri.org/IService1/debugFunctResponse")]
         string debugFunct();
         
@@ -103,6 +115,22 @@ namespace WebApplication.ServiceReference2 {
         
         public System.Threading.Tasks.Task<string> getUserTypeAsync(string userName) {
             return base.Channel.getUserTypeAsync(userName);
+        }
+        
+        public bool addUserPurchase(string userName, string bookTitle, decimal price, string purchaseDate) {
+            return base.Channel.addUserPurchase(userName, bookTitle, price, purchaseDate);
+        }
+        
+        public System.Threading.Tasks.Task<bool> addUserPurchaseAsync(string userName, string bookTitle, decimal price, string purchaseDate) {
+            return base.Channel.addUserPurchaseAsync(userName, bookTitle, price, purchaseDate);
+        }
+        
+        public string[][] getUserPurchases(string userName) {
+            return base.Channel.getUserPurchases(userName);
+        }
+        
+        public System.Threading.Tasks.Task<string[][]> getUserPurchasesAsync(string userName) {
+            return base.Channel.getUserPurchasesAsync(userName);
         }
         
         public string debugFunct() {

@@ -222,7 +222,119 @@ namespace DatabaseServices
             return "UserNotFoundError";
         }
 
+        public bool addUserPurchase(string userName, string bookTitle, decimal price, string purchaseDate)
+        {
+            if (userNameExists(userName))
+            {
+                try
+                {
+                    XmlDocument xmlDoc = new XmlDocument();
 
+                    xmlDoc.Load(xmlPath);
+
+                    XmlNode userNode = null;
+                    XmlNodeList userNodes = xmlDoc.SelectNodes("/Accounts/User");
+
+                    foreach (XmlNode parsedUser in userNodes)
+                    {
+                        string accountUsername = parsedUser.SelectSingleNode("Username").InnerText;
+                        if (accountUsername == userName)
+                        {
+                            userNode = parsedUser;
+                            break;
+                        }
+                    }
+
+                    if (userNode != null)
+                    {
+                        XmlNode purchasesNode = userNode.SelectSingleNode("UserPurchases");
+                        if (purchasesNode == null)
+                        {
+                            purchasesNode = xmlDoc.CreateElement("UserPurchases");
+                            userNode.AppendChild(purchasesNode);
+                        }
+
+                        XmlElement newPurchase = xmlDoc.CreateElement("Purchase");
+
+                        XmlElement bookElement = xmlDoc.CreateElement("BookTitle");
+                        bookElement.InnerText = bookTitle;
+
+                        XmlElement priceElement = xmlDoc.CreateElement("Price");
+                        priceElement.InnerText = price.ToString();
+
+                        XmlElement dateElement = xmlDoc.CreateElement("PurchaseDate");
+                        dateElement.InnerText = purchaseDate;
+
+                        newPurchase.AppendChild(bookElement);
+                        newPurchase.AppendChild(priceElement);
+                        newPurchase.AppendChild(dateElement);
+
+                        purchasesNode.AppendChild(newPurchase);
+
+                        xmlDoc.Save(xmlPath);
+
+                        return true;
+                    }
+                }
+                catch (Exception e)
+                {
+                    Console.WriteLine($"Error adding purchase: {e.Message}");
+                }
+            }
+
+            return false;
+        }
+
+        public List<string[]> getUserPurchases(string userName)
+        {
+            List<string[]> purchases = new List<string[]>();
+
+            if (userNameExists(userName))
+            {
+                try
+                {
+                    XmlDocument xmlDoc = new XmlDocument();
+                    xmlDoc.Load(xmlPath);
+
+                    XmlNode userNode = null;
+                    XmlNodeList userNodes = xmlDoc.SelectNodes("/Accounts/User");
+
+                    // Find the specific user
+                    foreach (XmlNode parsedUser in userNodes)
+                    {
+                        string accountUsername = parsedUser.SelectSingleNode("Username").InnerText;
+                        if (accountUsername == userName)
+                        {
+                            userNode = parsedUser;
+                            break;
+                        }
+                    }
+
+                    if (userNode != null)
+                    {
+                        XmlNode purchasesNode = userNode.SelectSingleNode("UserPurchases");
+                        if (purchasesNode != null)
+                        {
+                            XmlNodeList purchaseNodes = purchasesNode.SelectNodes("Purchase");
+                            foreach (XmlNode purchase in purchaseNodes)
+                            {
+                                string title = purchase.SelectSingleNode("BookTitle").InnerText;
+                                string price = purchase.SelectSingleNode("Price").InnerText;
+                                string date = purchase.SelectSingleNode("PurchaseDate").InnerText;
+
+                                purchases.Add(new string[] { title, price, date });
+                            }
+                        }
+                    }
+                }
+                catch (Exception e)
+                {
+                    Console.WriteLine($"Error retrieving purchases: {e.Message}");
+                }
+            }
+
+            return purchases;
+        }
 
 
         //DEBUG FUNCTION` [Delete before final version/before developments]
