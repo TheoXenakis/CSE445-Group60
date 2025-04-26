@@ -45,23 +45,6 @@
     <Password>pYyzmOe/wmgVFOH7YlvTZg==</Password>
     <AccountType>Member</AccountType>
     <LoggedIn>false</LoggedIn>
-    <UserPurchases>
-      <Purchase>
-        <BookTitle>Sample Book 1</BookTitle>
-        <Price>10.00</Price>
-        <PurchaseDate>2025-04-26</PurchaseDate>
-      </Purchase>
-      <Purchase>
-        <BookTitle>Sample Book 2</BookTitle>
-        <Price>15.00</Price>
-        <PurchaseDate>2025-04-26</PurchaseDate>
-      </Purchase>
-      <Purchase>
-        <BookTitle>Sample Book 3</BookTitle>
-        <Price>30.00</Price>
-        <PurchaseDate>2025-04-26</PurchaseDate>
-      </Purchase>
-    </UserPurchases>
   </User>
   <User>
     <Username>theoxen</Username>
@@ -70,8 +53,8 @@
     <LoggedIn>false</LoggedIn>
   </User>
   <User>
-    <Username>theo_bitch</Username>
-    <Password>pYyzmOe/wmgVFOH7YlvTZg==</Password>
+    <Username>test_staff</Username>
+    <Password>jyI3vsMZbuk=</Password>
     <AccountType>Staff</AccountType>
     <LoggedIn>false</LoggedIn>
   </User>

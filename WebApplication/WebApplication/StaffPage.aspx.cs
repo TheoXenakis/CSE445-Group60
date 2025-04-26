@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Web.UI;
 using System.Web.UI.WebControls;
 using WebApplication.BookServiceReference; // Service reference namespace
 //using BookServiceApplication.Models; // Original model namespace
@@ -32,17 +33,42 @@ namespace WebApplication
 
         protected void btnAddBook_Click(object sender, EventArgs e)
         {
-            var newBook = new Book
+            // Fixed validation logic (use AND instead of OR)
+            if (!string.IsNullOrEmpty(txtTitle.Text) &&
+                !string.IsNullOrEmpty(txtAuthor.Text) &&
+                !string.IsNullOrEmpty(txtYear.Text) &&
+                !string.IsNullOrEmpty(txtGenre.Text))
             {
-                Title = txtTitle.Text,
-                Author = txtAuthor.Text,
-                Year = txtYear.Text,
-                Genre = txtGenre.Text
-            };
+                var newBook = new Book
+                {
+                    Title = txtTitle.Text,
+                    Author = txtAuthor.Text,
+                    Year = txtYear.Text,
+                    Genre = txtGenre.Text
+                };
 
-            _bookService.AddBook(newBook);
-            ClearForm();
-            BindBooksData();
+                _bookService.AddBook(newBook);
+                ClearForm();
+                BindBooksData();
+                ShowNotification("Book added successfully!", isError: false);
+            }
+            else
+            {
+                ShowNotification("All fields are required!", isError: true);
+            }
+        }
+
+        // New helper method
+        private void ShowNotification(string message, bool isError)
+        {
+            lblNotification.Text = message;
+            lblNotification.ForeColor = isError ? System.Drawing.Color.Red : System.Drawing.Color.Green;
+            lblNotification.Visible = true;
+
+            // Optional: Hide after 3 seconds
+            ScriptManager.RegisterStartupScript(this, GetType(), "hideNotification",
+                "setTimeout(function(){ document.getElementById('" + lblNotification.ClientID + "').style.display = 'none'; }, 3000);",
+                true);
         }
 
         protected void gvBooks_RowDeleting(object sender, GridViewDeleteEventArgs e)

@@ -56,6 +56,9 @@
                     </Columns>
                 </asp:GridView>
             </div>
+            <div class="notification">
+                <asp:Label ID="lblNotification" runat="server" ForeColor="Red" Visible="false" />
+            </div>
         </div>
     </form>
 </body>
