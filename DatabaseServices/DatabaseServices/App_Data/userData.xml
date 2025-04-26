@@ -28,4 +28,22 @@
     <AccountType>Staff</AccountType>
     <LoggedIn>false</LoggedIn>
   </User>
+  <User>
+    <Username>TA12345678910</Username>
+    <Password>AAXb3a31klo=</Password>
+    <AccountType>Member</AccountType>
+    <LoggedIn>false</LoggedIn>
+  </User>
+  <User>
+    <Username>test_roen</Username>
+    <Password>pYyzmOe/wmgVFOH7YlvTZg==</Password>
+    <AccountType>Staff</AccountType>
+    <LoggedIn>false</LoggedIn>
+  </User>
+  <User>
+    <Username>test_member</Username>
+    <Password>pYyzmOe/wmgVFOH7YlvTZg==</Password>
+    <AccountType>Member</AccountType>
+    <LoggedIn>false</LoggedIn>
+  </User>
 </Accounts>

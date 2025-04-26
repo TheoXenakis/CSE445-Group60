@@ -1,12 +1,12 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="BookLibrary.aspx.cs" Inherits="WebApplication.BookLibrary" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Cart.aspx.cs" Inherits="WebApplication.Cart" %>
 
 <!DOCTYPE html>
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
-    <title>Book Library</title>
+    <title>Shopping Cart</title>
 
-    <style type="text/css">
+        <style type="text/css">
         body {
             font-family: Arial, Helvetica, sans-serif;
             margin: 20px;
@@ -32,9 +32,6 @@
         .book-grid td {
             padding: 12px;
             border: none;
-        }
-        .book-grid tr:nth-child(even) {
-            background-color: #F8F8F8;
         }
         .navigation {
             margin-top: 20px;
@@ -62,39 +59,40 @@
 <body>
     <form id="form1" runat="server">
         <div class="header">
-            <h2>Book Library</h2>
-            <p>View all books in the library available for purchase</p>
+            <h2>Your Shopping Cart</h2>
+            <p>Review the books in your cart before checkout</p>
         </div>
         
-        <div>
-            <asp:GridView ID="GridViewBooks" runat="server" AutoGenerateColumns="False" 
-                GridLines="None" OnRowCommand="GridViewBooks_RowCommand" CellPadding="10" CellSpacing="5"
-                CssClass="book-grid" AlternatingRowStyle-BackColor="#F8F8F8">
-                <HeaderStyle HorizontalAlign="Left" BackColor="#3D7169" ForeColor="#FFFFFF" />
+        <div id="cartContent" runat="server">
+            <asp:GridView ID="GridViewCart" runat="server" AutoGenerateColumns="False" 
+                CssClass="cart-grid" GridLines="None" OnRowCommand="GridViewCart_RowCommand"
+                ShowFooter="true" EmptyDataText="Your cart is empty">
                 <Columns>
                     <asp:BoundField DataField="Id" HeaderText="ID" />
                     <asp:BoundField DataField="Title" HeaderText="Title" />
-                    <asp:BoundField DataField="Author" HeaderText="Author" />
                     <asp:BoundField DataField="Price" HeaderText="Price" DataFormatString="{0:C}" />
+                    <asp:BoundField DataField="Quantity" HeaderText="Quantity" />
+
                     <asp:TemplateField HeaderText="Actions">
                         <ItemTemplate>
-                            <asp:Button ID="ButtonAddToCart" runat="server" 
-                                CommandName="AddToCart" 
-                                CommandArgument='<%# Eval("Id") %>' 
-                                Text="Add to Cart" CssClass="button" />
-                            <asp:Button ID="Button2" runat="server" 
-                                CommandName="RemoveFromCart" 
+                            <asp:Button ID="ButtonRemove" runat="server" 
+                                CommandName="RemoveItem" 
                                 CommandArgument='<%# Eval("Id") %>' 
                                 Text="Remove" CssClass="button" />
                         </ItemTemplate>
                     </asp:TemplateField>
                 </Columns>
+                <FooterStyle CssClass="total-row" />
             </asp:GridView>
         </div>
-
+        
         <div class="navigation">
-            <asp:LinkButton ID="bookServiceBtn" runat="server" OnClick="ViewCartBtn_Click" 
-                CssClass="cart-link">View Shopping Cart</asp:LinkButton>
+            <asp:Button ID="ButtonContinueShopping" runat="server" Text="Continue Shopping" 
+                OnClick="ButtonContinueShopping_Click" CssClass="button" />
+            <asp:Button ID="ButtonClearCart" runat="server" Text="Clear Cart" 
+                OnClick="ButtonClearCart_Click" CssClass="button" />
+            <asp:Button ID="ButtonCheckout" runat="server" Text="Proceed to Checkout" 
+                OnClick="ButtonCheckout_Click" CssClass="button" />
         </div>
     </form>
 </body>

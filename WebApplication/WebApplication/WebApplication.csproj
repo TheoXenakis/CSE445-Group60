@@ -82,6 +82,8 @@
     <None Include="Connected Services\BookServices\BookService2.xsd">
       <SubType>Designer</SubType>
     </None>
+    <Content Include="BookLibrary.aspx" />
+    <Content Include="Cart.aspx" />
     <Content Include="Connected Services\BookServices\WebApplication.BookServices.Book.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </Content>
@@ -117,6 +119,7 @@
     <Content Include="Global.asax" />
     <Content Include="LoginPage.aspx" />
     <Content Include="MemberPage.aspx" />
+    <Content Include="MyPurchases.aspx" />
     <Content Include="StaffPage.aspx" />
     <Content Include="TryItDatabaseJohn.aspx" />
     <Content Include="TryItGlobalFuncts.aspx" />
@@ -125,6 +128,20 @@
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BookLibrary.aspx.cs">
+      <DependentUpon>BookLibrary.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BookLibrary.aspx.designer.cs">
+      <DependentUpon>BookLibrary.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Cart.aspx.cs">
+      <DependentUpon>Cart.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Cart.aspx.designer.cs">
+      <DependentUpon>Cart.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Connected Services\BookServices\Reference.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -175,6 +192,13 @@
     </Compile>
     <Compile Include="MemberPage.aspx.designer.cs">
       <DependentUpon>MemberPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MyPurchases.aspx.cs">
+      <DependentUpon>MyPurchases.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MyPurchases.aspx.designer.cs">
+      <DependentUpon>MyPurchases.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="StaffPage.aspx.cs">
