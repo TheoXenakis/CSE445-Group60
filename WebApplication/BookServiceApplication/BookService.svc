@@ -1,0 +1,5 @@
+﻿<%@ ServiceHost 
+    Language="C#" 
+    Service="BookServiceApplication.Services.BookService" 
+    CodeBehind="BookService.svc.cs" 
+%>

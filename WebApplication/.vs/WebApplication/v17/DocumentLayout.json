@@ -3,12 +3,31 @@
   "WorkspaceRootPath": "D:\\GitHub Projects\\CSE445-Group60\\WebApplication\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{B8A5847C-6A25-4F2D-8390-35C0DE8DA9A4}|BookServiceApplication\\BookServiceApplication.csproj|D:\\GitHub Projects\\CSE445-Group60\\WebApplication\\bookserviceapplication\\bookmanager.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
-      "RelativeMoniker": "D:0:0:{B8A5847C-6A25-4F2D-8390-35C0DE8DA9A4}|BookServiceApplication\\BookServiceApplication.csproj|solutionrelative:bookserviceapplication\\bookmanager.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
+      "AbsoluteMoniker": "D:0:0:{00000000-0000-0000-0000-000000000000}|\u003CSolution\u003E|BookServiceApplication||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{89C935D7-54F0-4054-9BA5-C61075415548}|WebApplication\\WebApplication.csproj|D:\\GitHub Projects\\CSE445-Group60\\WebApplication\\webapplication\\web.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{89C935D7-54F0-4054-9BA5-C61075415548}|WebApplication\\WebApplication.csproj|solutionrelative:webapplication\\web.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B8A5847C-6A25-4F2D-8390-35C0DE8DA9A4}|BookServiceApplication\\BookServiceApplication.csproj|d:\\github projects\\cse445-group60\\webapplication\\bookserviceapplication\\bookservice.svc||{FB9167C9-D3B8-4EDA-8083-9AF6B6F6DA62}",
+      "RelativeMoniker": "D:0:0:{B8A5847C-6A25-4F2D-8390-35C0DE8DA9A4}|BookServiceApplication\\BookServiceApplication.csproj|solutionrelative:bookserviceapplication\\bookservice.svc||{FB9167C9-D3B8-4EDA-8083-9AF6B6F6DA62}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B8A5847C-6A25-4F2D-8390-35C0DE8DA9A4}|BookServiceApplication\\BookServiceApplication.csproj|D:\\GitHub Projects\\CSE445-Group60\\WebApplication\\bookserviceapplication\\bookmanager.aspx.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B8A5847C-6A25-4F2D-8390-35C0DE8DA9A4}|BookServiceApplication\\BookServiceApplication.csproj|solutionrelative:bookserviceapplication\\bookmanager.aspx.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B8A5847C-6A25-4F2D-8390-35C0DE8DA9A4}|BookServiceApplication\\BookServiceApplication.csproj|D:\\GitHub Projects\\CSE445-Group60\\WebApplication\\bookserviceapplication\\models\\book.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B8A5847C-6A25-4F2D-8390-35C0DE8DA9A4}|BookServiceApplication\\BookServiceApplication.csproj|solutionrelative:bookserviceapplication\\models\\book.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{B8A5847C-6A25-4F2D-8390-35C0DE8DA9A4}|BookServiceApplication\\BookServiceApplication.csproj|D:\\GitHub Projects\\CSE445-Group60\\WebApplication\\bookserviceapplication\\bookmanager.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{B8A5847C-6A25-4F2D-8390-35C0DE8DA9A4}|BookServiceApplication\\BookServiceApplication.csproj|solutionrelative:bookserviceapplication\\bookmanager.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B8A5847C-6A25-4F2D-8390-35C0DE8DA9A4}|BookServiceApplication\\BookServiceApplication.csproj|D:\\GitHub Projects\\CSE445-Group60\\WebApplication\\bookserviceapplication\\bookmanager.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "RelativeMoniker": "D:0:0:{B8A5847C-6A25-4F2D-8390-35C0DE8DA9A4}|BookServiceApplication\\BookServiceApplication.csproj|solutionrelative:bookserviceapplication\\bookmanager.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{B8A5847C-6A25-4F2D-8390-35C0DE8DA9A4}|BookServiceApplication\\BookServiceApplication.csproj|D:\\GitHub Projects\\CSE445-Group60\\WebApplication\\bookserviceapplication\\services\\bookservice.svc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -17,10 +36,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{B8A5847C-6A25-4F2D-8390-35C0DE8DA9A4}|BookServiceApplication\\BookServiceApplication.csproj|D:\\GitHub Projects\\CSE445-Group60\\WebApplication\\bookserviceapplication\\services\\ibookservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{B8A5847C-6A25-4F2D-8390-35C0DE8DA9A4}|BookServiceApplication\\BookServiceApplication.csproj|solutionrelative:bookserviceapplication\\services\\ibookservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B8A5847C-6A25-4F2D-8390-35C0DE8DA9A4}|BookServiceApplication\\BookServiceApplication.csproj|D:\\GitHub Projects\\CSE445-Group60\\WebApplication\\bookserviceapplication\\models\\book.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B8A5847C-6A25-4F2D-8390-35C0DE8DA9A4}|BookServiceApplication\\BookServiceApplication.csproj|solutionrelative:bookserviceapplication\\models\\book.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{478DA518-DD25-4A07-A41A-DB464EAFF850}|..\\DatabaseServices\\DatabaseServices\\DatabaseServices.csproj|d:\\github projects\\cse445-group60\\databaseservices\\databaseservices\\service1.svc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
@@ -82,23 +97,12 @@
       "RelativeMoniker": "D:0:0:{89C935D7-54F0-4054-9BA5-C61075415548}|WebApplication\\WebApplication.csproj|solutionrelative:webapplication\\loginpage.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{89C935D7-54F0-4054-9BA5-C61075415548}|WebApplication\\WebApplication.csproj|D:\\GitHub Projects\\CSE445-Group60\\WebApplication\\webapplication\\web.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
-      "RelativeMoniker": "D:0:0:{89C935D7-54F0-4054-9BA5-C61075415548}|WebApplication\\WebApplication.csproj|solutionrelative:webapplication\\web.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{00000000-0000-0000-0000-000000000000}|\u003CSolution\u003E|BookServiceApplication||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{89C935D7-54F0-4054-9BA5-C61075415548}|WebApplication\\WebApplication.csproj|D:\\GitHub Projects\\CSE445-Group60\\WebApplication\\webapplication\\tryitdatabasejohn.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
       "RelativeMoniker": "D:0:0:{89C935D7-54F0-4054-9BA5-C61075415548}|WebApplication\\WebApplication.csproj|solutionrelative:webapplication\\tryitdatabasejohn.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{89C935D7-54F0-4054-9BA5-C61075415548}|WebApplication\\WebApplication.csproj|D:\\GitHub Projects\\CSE445-Group60\\WebApplication\\webapplication\\tryitencryptionjohn.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
       "RelativeMoniker": "D:0:0:{89C935D7-54F0-4054-9BA5-C61075415548}|WebApplication\\WebApplication.csproj|solutionrelative:webapplication\\tryitencryptionjohn.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B8A5847C-6A25-4F2D-8390-35C0DE8DA9A4}|BookServiceApplication\\BookServiceApplication.csproj|D:\\GitHub Projects\\CSE445-Group60\\WebApplication\\bookserviceapplication\\bookmanager.aspx.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B8A5847C-6A25-4F2D-8390-35C0DE8DA9A4}|BookServiceApplication\\BookServiceApplication.csproj|solutionrelative:bookserviceapplication\\bookmanager.aspx.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{B8A5847C-6A25-4F2D-8390-35C0DE8DA9A4}|BookServiceApplication\\BookServiceApplication.csproj|D:\\GitHub Projects\\CSE445-Group60\\WebApplication\\bookserviceapplication\\web.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
@@ -109,6 +113,9 @@
     },
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\roenw\\source\\repos\\CSE445-Group60\\DatabaseServices\\DatabaseServices\\Service1.svc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B8A5847C-6A25-4F2D-8390-35C0DE8DA9A4}|BookServiceApplication\\BookServiceApplication.csproj|d:\\github projects\\cse445-group60\\webapplication\\bookserviceapplication\\||{B270807C-D8C6-49EB-8EBE-8E8D566637A1}|909d16b3-c8e8-43d1-a2b8-26ea0d4b6b57"
     }
   ],
   "DocumentGroupContainers": [
@@ -118,11 +125,24 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 17,
+          "SelectedChildIndex": 14,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 2,
+              "Title": "BookService.svc",
+              "DocumentMoniker": "D:\\GitHub Projects\\CSE445-Group60\\WebApplication\\BookServiceApplication\\BookService.svc",
+              "RelativeDocumentMoniker": "BookServiceApplication\\BookService.svc",
+              "ToolTip": "D:\\GitHub Projects\\CSE445-Group60\\WebApplication\\BookServiceApplication\\BookService.svc",
+              "RelativeToolTip": "BookServiceApplication\\BookService.svc",
+              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003504|",
+              "WhenOpened": "2025-04-26T00:34:13.998Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
               "Title": "Service1.svc.cs",
               "DocumentMoniker": "D:\\GitHub Projects\\CSE445-Group60\\DatabaseServices\\DatabaseServices\\Service1.svc.cs",
               "RelativeDocumentMoniker": "..\\DatabaseServices\\DatabaseServices\\Service1.svc.cs",
@@ -139,7 +159,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 18,
               "Title": "Default.aspx",
               "DocumentMoniker": "D:\\GitHub Projects\\CSE445-Group60\\WebApplication\\WebApplication\\Default.aspx",
               "RelativeDocumentMoniker": "WebApplication\\Default.aspx",
@@ -152,7 +172,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 10,
               "Title": "MemberPage.aspx",
               "DocumentMoniker": "D:\\GitHub Projects\\CSE445-Group60\\WebApplication\\WebApplication\\MemberPage.aspx",
               "RelativeDocumentMoniker": "WebApplication\\MemberPage.aspx",
@@ -165,7 +185,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 19,
               "Title": "StaffPage.aspx",
               "DocumentMoniker": "D:\\GitHub Projects\\CSE445-Group60\\WebApplication\\WebApplication\\StaffPage.aspx",
               "RelativeDocumentMoniker": "WebApplication\\StaffPage.aspx",
@@ -177,7 +197,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 20,
               "Title": "StaffPage.aspx.designer.cs",
               "DocumentMoniker": "D:\\GitHub Projects\\CSE445-Group60\\WebApplication\\WebApplication\\StaffPage.aspx.designer.cs",
               "RelativeDocumentMoniker": "WebApplication\\StaffPage.aspx.designer.cs",
@@ -189,7 +209,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 27,
+              "DocumentIndex": 28,
               "Title": "Service1.svc.cs",
               "DocumentMoniker": "C:\\Users\\roenw\\source\\repos\\CSE445-Group60\\DatabaseServices\\DatabaseServices\\Service1.svc.cs",
               "ToolTip": "C:\\Users\\roenw\\source\\repos\\CSE445-Group60\\DatabaseServices\\DatabaseServices\\Service1.svc.cs",
@@ -198,7 +218,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 26,
+              "DocumentIndex": 27,
               "Title": "IService1.cs",
               "DocumentMoniker": "C:\\Users\\roenw\\source\\repos\\CSE445-Group60\\DatabaseServices\\DatabaseServices\\IService1.cs",
               "ToolTip": "C:\\Users\\roenw\\source\\repos\\CSE445-Group60\\DatabaseServices\\DatabaseServices\\IService1.cs",
@@ -207,7 +227,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 22,
               "Title": "Global.asax.cs",
               "DocumentMoniker": "D:\\GitHub Projects\\CSE445-Group60\\WebApplication\\WebApplication\\Global.asax.cs",
               "RelativeDocumentMoniker": "WebApplication\\Global.asax.cs",
@@ -219,7 +239,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 21,
               "Title": "Default.aspx.cs",
               "DocumentMoniker": "D:\\GitHub Projects\\CSE445-Group60\\WebApplication\\WebApplication\\Default.aspx.cs",
               "RelativeDocumentMoniker": "WebApplication\\Default.aspx.cs",
@@ -231,20 +251,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 1,
               "Title": "Web.config",
               "DocumentMoniker": "D:\\GitHub Projects\\CSE445-Group60\\WebApplication\\WebApplication\\Web.config",
               "RelativeDocumentMoniker": "WebApplication\\Web.config",
               "ToolTip": "D:\\GitHub Projects\\CSE445-Group60\\WebApplication\\WebApplication\\Web.config",
               "RelativeToolTip": "WebApplication\\Web.config",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAAACYAAAAQAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
               "WhenOpened": "2025-04-20T23:11:22.758Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 22,
+              "DocumentIndex": 24,
               "Title": "TryItDatabaseJohn.aspx",
               "DocumentMoniker": "D:\\GitHub Projects\\CSE445-Group60\\WebApplication\\WebApplication\\TryItDatabaseJohn.aspx",
               "RelativeDocumentMoniker": "WebApplication\\TryItDatabaseJohn.aspx",
@@ -256,7 +276,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 23,
+              "DocumentIndex": 25,
               "Title": "TryItEncryptionJohn.aspx",
               "DocumentMoniker": "D:\\GitHub Projects\\CSE445-Group60\\WebApplication\\WebApplication\\TryItEncryptionJohn.aspx",
               "RelativeDocumentMoniker": "WebApplication\\TryItEncryptionJohn.aspx",
@@ -268,18 +288,19 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 0,
               "Title": "BookServiceApplication",
               "DocumentMoniker": "D:\\GitHub Projects\\CSE445-Group60\\WebApplication\\BookServiceApplication\\BookServiceApplication.csproj",
               "RelativeDocumentMoniker": "BookServiceApplication\\BookServiceApplication.csproj",
               "ToolTip": "D:\\GitHub Projects\\CSE445-Group60\\WebApplication\\BookServiceApplication\\BookServiceApplication.csproj",
               "RelativeToolTip": "BookServiceApplication\\BookServiceApplication.csproj",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
-              "WhenOpened": "2025-04-20T22:53:40.171Z"
+              "WhenOpened": "2025-04-20T22:53:40.171Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 24,
+              "DocumentIndex": 3,
               "Title": "BookManager.aspx.designer.cs",
               "DocumentMoniker": "D:\\GitHub Projects\\CSE445-Group60\\WebApplication\\BookServiceApplication\\BookManager.aspx.designer.cs",
               "RelativeDocumentMoniker": "BookServiceApplication\\BookManager.aspx.designer.cs",
@@ -292,7 +313,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 25,
+              "DocumentIndex": 26,
               "Title": "Web.config",
               "DocumentMoniker": "D:\\GitHub Projects\\CSE445-Group60\\WebApplication\\BookServiceApplication\\Web.config",
               "RelativeDocumentMoniker": "BookServiceApplication\\Web.config",
@@ -305,20 +326,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 5,
               "Title": "BookManager.aspx.cs",
               "DocumentMoniker": "D:\\GitHub Projects\\CSE445-Group60\\WebApplication\\BookServiceApplication\\BookManager.aspx.cs",
               "RelativeDocumentMoniker": "BookServiceApplication\\BookManager.aspx.cs",
               "ToolTip": "D:\\GitHub Projects\\CSE445-Group60\\WebApplication\\BookServiceApplication\\BookManager.aspx.cs",
               "RelativeToolTip": "BookServiceApplication\\BookManager.aspx.cs",
-              "ViewState": "AgIAABMAAAAAAAAAAAAgwEAAAAAJAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAEAAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-04-20T22:03:44.817Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 6,
               "Title": "BookManager.aspx",
               "DocumentMoniker": "D:\\GitHub Projects\\CSE445-Group60\\WebApplication\\BookServiceApplication\\BookManager.aspx",
               "RelativeDocumentMoniker": "BookServiceApplication\\BookManager.aspx",
@@ -331,7 +352,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 7,
               "Title": "BookService.svc.cs",
               "DocumentMoniker": "D:\\GitHub Projects\\CSE445-Group60\\WebApplication\\BookServiceApplication\\Services\\BookService.svc.cs",
               "RelativeDocumentMoniker": "BookServiceApplication\\Services\\BookService.svc.cs",
@@ -344,13 +365,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 8,
               "Title": "IBookService.cs",
               "DocumentMoniker": "D:\\GitHub Projects\\CSE445-Group60\\WebApplication\\BookServiceApplication\\Services\\IBookService.cs",
               "RelativeDocumentMoniker": "BookServiceApplication\\Services\\IBookService.cs",
               "ToolTip": "D:\\GitHub Projects\\CSE445-Group60\\WebApplication\\BookServiceApplication\\Services\\IBookService.cs",
               "RelativeToolTip": "BookServiceApplication\\Services\\IBookService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAqwA0AAAAbAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwBMAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-04-20T22:02:12.892Z",
               "EditorCaption": ""
@@ -363,14 +384,14 @@
               "RelativeDocumentMoniker": "BookServiceApplication\\Models\\Book.cs",
               "ToolTip": "D:\\GitHub Projects\\CSE445-Group60\\WebApplication\\BookServiceApplication\\Models\\Book.cs",
               "RelativeToolTip": "BookServiceApplication\\Models\\Book.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAoAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAUAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-04-20T22:02:04.116Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 17,
               "Title": "CreateAccount.aspx.cs",
               "DocumentMoniker": "D:\\GitHub Projects\\CSE445-Group60\\WebApplication\\WebApplication\\CreateAccount.aspx.cs",
               "RelativeDocumentMoniker": "WebApplication\\CreateAccount.aspx.cs",
@@ -383,7 +404,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 16,
               "Title": "CreateAccount.aspx",
               "DocumentMoniker": "D:\\GitHub Projects\\CSE445-Group60\\WebApplication\\WebApplication\\CreateAccount.aspx",
               "RelativeDocumentMoniker": "WebApplication\\CreateAccount.aspx",
@@ -396,7 +417,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 15,
               "Title": "TryItCaptchaTheo.aspx.cs",
               "DocumentMoniker": "D:\\GitHub Projects\\CSE445-Group60\\WebApplication\\WebApplication\\TryItCaptchaTheo.aspx.cs",
               "RelativeDocumentMoniker": "WebApplication\\TryItCaptchaTheo.aspx.cs",
@@ -409,7 +430,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 14,
               "Title": "TryItCaptchaTheo.aspx",
               "DocumentMoniker": "D:\\GitHub Projects\\CSE445-Group60\\WebApplication\\WebApplication\\TryItCaptchaTheo.aspx",
               "RelativeDocumentMoniker": "WebApplication\\TryItCaptchaTheo.aspx",
@@ -422,7 +443,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 13,
               "Title": "LoginPage.aspx.cs",
               "DocumentMoniker": "D:\\GitHub Projects\\CSE445-Group60\\WebApplication\\WebApplication\\LoginPage.aspx.cs",
               "RelativeDocumentMoniker": "WebApplication\\LoginPage.aspx.cs",
@@ -435,7 +456,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 12,
               "Title": "MemberPage.aspx.cs",
               "DocumentMoniker": "D:\\GitHub Projects\\CSE445-Group60\\WebApplication\\WebApplication\\MemberPage.aspx.cs",
               "RelativeDocumentMoniker": "WebApplication\\MemberPage.aspx.cs",
@@ -448,7 +469,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 11,
               "Title": "StaffPage.aspx.cs",
               "DocumentMoniker": "D:\\GitHub Projects\\CSE445-Group60\\WebApplication\\WebApplication\\StaffPage.aspx.cs",
               "RelativeDocumentMoniker": "WebApplication\\StaffPage.aspx.cs",
@@ -461,7 +482,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 23,
               "Title": "LoginPage.aspx",
               "DocumentMoniker": "D:\\GitHub Projects\\CSE445-Group60\\WebApplication\\WebApplication\\LoginPage.aspx",
               "RelativeDocumentMoniker": "WebApplication\\LoginPage.aspx",
