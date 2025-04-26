@@ -116,11 +116,6 @@
             </label>
 
             <label>
-                <input type="radio" name="paymentMethod" value="check" />
-                <span>Check</span>
-            </label>
-
-            <label>
                 <input type="radio" name="paymentMethod" value="paypal" />
                 <span>PayPal</span>
             </label>
