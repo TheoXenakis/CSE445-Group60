@@ -72,7 +72,7 @@
         </div>
         
         <div id="cartContent" runat="server">
-            <asp:GridView ID="GridViewCart" runat="server" AutoGenerateColumns="False" 
+            <asp:GridView CellPadding="5" CellSpacing="20" ID="GridViewCart" runat="server" AutoGenerateColumns="False" 
                 CssClass="cart-grid" GridLines="None" OnRowCommand="GridViewCart_RowCommand"
                 ShowFooter="true" EmptyDataText="Your cart is empty">
                 <Columns>
@@ -97,8 +97,6 @@
         <div class="navigation">
             <asp:Button ID="ButtonContinueShopping" runat="server" Text="Continue Shopping" 
                 OnClick="ButtonContinueShopping_Click" CssClass="button" />
-            <asp:Button ID="ButtonClearCart" runat="server" Text="Clear Cart" 
-                OnClick="ButtonClearCart_Click" CssClass="button" />
         </div>
 
         <div class="header" style="margin-top:20px;">

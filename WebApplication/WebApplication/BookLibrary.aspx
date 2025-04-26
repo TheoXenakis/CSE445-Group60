@@ -70,7 +70,7 @@
         
         <div>
             <asp:GridView ID="GridViewBooks" runat="server" AutoGenerateColumns="False" 
-                GridLines="None" OnRowCommand="GridViewBooks_RowCommand" CellPadding="10" CellSpacing="5"
+                GridLines="None" OnRowCommand="GridViewBooks_RowCommand" CellPadding="20" CellSpacing="5"
                 CssClass="book-grid" AlternatingRowStyle-BackColor="#F8F8F8">
                 <HeaderStyle HorizontalAlign="Left" BackColor="#3D7169" ForeColor="#FFFFFF" />
                 <Columns>
@@ -84,10 +84,6 @@
                                 CommandName="AddToCart" 
                                 CommandArgument='<%# Eval("Id") %>' 
                                 Text="Add to Cart" CssClass="button" />
-                            <asp:Button ID="Button2" runat="server" 
-                                CommandName="RemoveFromCart" 
-                                CommandArgument='<%# Eval("Id") %>' 
-                                Text="Remove" CssClass="button" />
                         </ItemTemplate>
                     </asp:TemplateField>
                 </Columns>

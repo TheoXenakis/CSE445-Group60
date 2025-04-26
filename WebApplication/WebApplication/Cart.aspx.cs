@@ -118,7 +118,6 @@ namespace WebApplication
                 GridViewCart.DataBind();
 
                 PurchaseBtn.Enabled = false;
-                ButtonClearCart.Enabled = false;
             }
         }
 
@@ -155,27 +154,11 @@ namespace WebApplication
 
         protected void GridViewCart_RowCommand(object sender, GridViewCommandEventArgs e)
         {
-            //if (e.CommandName == "RemoveItem")
-            //{
-            //    int bookId = Convert.ToInt32(e.CommandArgument);
-
-            //    List<SimpleCartItem> cart = GetCartFromCookies();
-            //    SimpleCartItem itemToRemove = cart?.Find(item => item.Id == bookId);
-            //    if (itemToRemove != null)
-            //    {
-            //        cart.Remove(itemToRemove);
-            //        SaveCartToCookies(cart);
-            //    }
-
-            //    // Rebind the updated cart right now
-            //    LoadCartItems();
-            //}
-
             if (e.CommandName == "RemoveItem")
             {
                 int bookId = Convert.ToInt32(e.CommandArgument);
                 RemoveFromCart(bookId);
-                Response.Redirect(Request.RawUrl); // Refresh the page
+                Response.Redirect(Request.RawUrl); // Refresh the page (so the user doesn't have to click remove twice)
             }
         }
 
@@ -202,15 +185,6 @@ namespace WebApplication
         protected void ButtonContinueShopping_Click(object sender, EventArgs e)
         {
             Response.Redirect("BookLibrary.aspx");
-        }
-
-        protected void ButtonClearCart_Click(object sender, EventArgs e)
-        {
-            HttpCookie cartCookie = new HttpCookie(CART_COOKIE_NAME);
-            cartCookie.Expires = DateTime.Now.AddDays(-1); // Set expiration in the past
-            Response.Cookies.Add(cartCookie);
-
-            LoadCartItems();
         }
     }
 }
