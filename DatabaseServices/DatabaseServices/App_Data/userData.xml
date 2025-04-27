@@ -61,6 +61,26 @@
         <Price>15.00</Price>
         <PurchaseDate>2025-04-26</PurchaseDate>
       </Purchase>
+      <Purchase>
+        <BookTitle>Sample Book 3</BookTitle>
+        <Price>30.00</Price>
+        <PurchaseDate>2025-04-26</PurchaseDate>
+      </Purchase>
+      <Purchase>
+        <BookTitle>Sample Book 1</BookTitle>
+        <Price>10.00</Price>
+        <PurchaseDate>2025-04-26</PurchaseDate>
+      </Purchase>
+      <Purchase>
+        <BookTitle>Sample Book 2</BookTitle>
+        <Price>15.00</Price>
+        <PurchaseDate>2025-04-26</PurchaseDate>
+      </Purchase>
+      <Purchase>
+        <BookTitle>Sample Book 3</BookTitle>
+        <Price>30.00</Price>
+        <PurchaseDate>2025-04-26</PurchaseDate>
+      </Purchase>
     </UserPurchases>
   </User>
   <User>

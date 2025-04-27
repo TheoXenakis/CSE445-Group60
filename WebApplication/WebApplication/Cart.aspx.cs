@@ -84,6 +84,7 @@ namespace WebApplication
 
         protected void BuyNowButton_Click(object sender, EventArgs e)
         {
+            ProcessPurchase();
             Response.Redirect("PurchaseComplete.aspx");
         }
 
@@ -130,7 +131,7 @@ namespace WebApplication
 
                 if (string.IsNullOrEmpty(userName))
                 {
-                    Response.Redirect("Login.aspx");
+                    Response.Redirect("LoginPage.aspx");
                     return;
                 }
 
