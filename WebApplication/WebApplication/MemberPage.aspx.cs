@@ -57,6 +57,10 @@ namespace WebApplication
         {
             Response.Redirect("MyPurchases.aspx");
         }
+        protected void Logout_Clicked(object sender, EventArgs e)
+        {
+            Response.Redirect("Logout.aspx");
+        }
 
 
         //----------------------------------------------------------------------------------

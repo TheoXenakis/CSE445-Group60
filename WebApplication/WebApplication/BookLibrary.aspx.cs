@@ -40,6 +40,7 @@ namespace WebApplication
         }
         private void LoadBooksFromSvc()
         {
+            System.Diagnostics.Debug.WriteLine("Entered LoadBookFromSVC");
             try
             {
                 var books = bookServiceClient.GetAllBooks();
@@ -163,6 +164,10 @@ namespace WebApplication
         protected void Logout_Click(object sender, EventArgs e)
         {
             Response.Redirect("Logout.aspx");
+        }
+        protected void Back_Clicked(object sender, EventArgs e)
+        {
+            Response.Redirect("MemberPage.aspx");
         }
     }
 

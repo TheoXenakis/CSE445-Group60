@@ -55,6 +55,15 @@
             padding: 20px;
             border-bottom: 1px solid #eee;
         }
+        .logout {
+            padding: 8px 16px;
+            margin-right: 10px;
+            background-color: #D32F2F;
+            color: white;
+            border: none;
+            cursor: pointer;
+            border-radius: 4px;
+        }
     </style>
 </head>
 <body>
@@ -64,6 +73,10 @@
             <div class="member-info">
                 Welcome back, <strong><asp:Label ID="Label4" runat="server"></asp:Label></strong>
             </div>
+            <asp:Button ID="Logout_Button" runat="server" 
+                OnClick="Logout_Clicked" 
+                Text="Logout" 
+                CssClass="logout" />
         </div>
 
         <div class="dashboard-section">

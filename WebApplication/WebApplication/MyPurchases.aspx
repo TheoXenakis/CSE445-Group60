@@ -48,6 +48,15 @@
             cursor: pointer;
             border-radius: 4px;
         }
+        .back_button {
+            padding: 8px 16px;
+            margin-right: 10px;
+            background-color: #BDBDBD;
+            color: white;
+            border: none;
+            cursor: pointer;
+            border-radius: 4px;
+        }
         .cart-link {
             display: inline-block;
             margin-top: 20px;
@@ -81,6 +90,8 @@
             <div class="header">
                 <h2>My Purchases</h2>
                 <p>View all your purchases here</p>
+                <asp:Button ID="BackButton" runat="server" Text="Back"
+    OnClick="Back_Clicked" CssClass="back_button" />
             </div>
             
             <asp:GridView ID="GridViewPurchases" runat="server" AutoGenerateColumns="False" 

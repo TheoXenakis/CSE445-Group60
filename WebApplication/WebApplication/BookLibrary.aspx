@@ -68,16 +68,25 @@
             border-radius: 4px;
 
         }
+        .back_button {
+            padding: 8px 16px;
+            margin-right: 10px;
+            background-color: #BDBDBD;
+            color: white;
+            border: none;
+            cursor: pointer;
+            border-radius: 4px;
+        }
     </style>
 
 </head>
 <body>
     <form id="form1" runat="server">
-        <a href="Default.aspx">← Back to Default.aspx</a> <br /> <br />
-
         <div class="header">
             <h2>Book Library</h2>
             <p>View all books in the library available for purchase</p>
+            <asp:Button ID="BackButton" runat="server" Text="Back"
+                OnClick="Back_Clicked" CssClass="back_button" />
         </div>
         
         <div>

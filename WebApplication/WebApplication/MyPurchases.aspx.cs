@@ -94,5 +94,9 @@ namespace WebApplication
         {
             Response.Redirect("Logout.aspx");
         }
+        protected void Back_Clicked(object sender, EventArgs e)
+        {
+            Response.Redirect("MemberPage.aspx");
+        }
     }
 }
