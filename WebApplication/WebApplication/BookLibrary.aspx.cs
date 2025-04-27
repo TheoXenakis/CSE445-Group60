@@ -12,11 +12,13 @@ namespace WebApplication
     {
         private const string CART_COOKIE_NAME = "BookCart";
 
+        BookServiceReference.BookServiceClient bookServiceClient = new BookServiceReference.BookServiceClient();
+
         protected void Page_Load(object sender, EventArgs e)
         {
             if (!IsPostBack)
             {
-                LoadSampleBooks();
+                LoadBooksFromSvc();
             }
         }
 
@@ -35,6 +37,31 @@ namespace WebApplication
 
             GridViewBooks.DataSource = dt;
             GridViewBooks.DataBind();
+        }
+        private void LoadBooksFromSvc()
+        {
+            try
+            {
+                var books = bookServiceClient.GetAllBooks();
+
+                System.Data.DataTable dt = new System.Data.DataTable();
+                dt.Columns.Add("Id", typeof(int));
+                dt.Columns.Add("Title", typeof(string));
+                dt.Columns.Add("Author", typeof(string));
+                dt.Columns.Add("Price", typeof(decimal));
+
+                foreach (var book in books)
+                {
+                    dt.Rows.Add(book.Id, book.Title, book.Author, book.Price);
+                }
+
+                GridViewBooks.DataSource = dt;
+                GridViewBooks.DataBind();
+            }
+            catch (Exception ex)
+            {
+                System.Diagnostics.Debug.WriteLine("Error loading books from service: " + ex.Message);
+            }
         }
 
         protected void GridViewBooks_RowCommand(object sender, GridViewCommandEventArgs e)
