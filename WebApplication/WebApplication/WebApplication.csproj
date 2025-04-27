@@ -153,6 +153,7 @@
     <Content Include="Default.aspx" />
     <Content Include="Global.asax" />
     <Content Include="LoginPage.aspx" />
+    <Content Include="Logout.aspx" />
     <Content Include="MemberPage.aspx" />
     <Content Include="MyPurchases.aspx" />
     <Content Include="PurchaseComplete.aspx" />
@@ -232,6 +233,13 @@
     </Compile>
     <Compile Include="LoginPage.aspx.designer.cs">
       <DependentUpon>LoginPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Logout.aspx.cs">
+      <DependentUpon>Logout.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Logout.aspx.designer.cs">
+      <DependentUpon>Logout.aspx</DependentUpon>
     </Compile>
     <Compile Include="MemberPage.aspx.cs">
       <DependentUpon>MemberPage.aspx</DependentUpon>

@@ -9,6 +9,14 @@
       {
         "Path": "..\\DatabaseServices\\DatabaseServices\\DatabaseServices.csproj",
         "Action": "StartWithoutDebugging"
+      },
+      {
+        "Path": "BookServiceApplication\\BookServiceApplication.csproj",
+        "Action": "StartWithoutDebugging"
+      },
+      {
+        "Path": "..\\TotalAndTaxSvc\\TotalAndTaxSvc.csproj",
+        "Action": "StartWithoutDebugging"
       }
     ]
   }
