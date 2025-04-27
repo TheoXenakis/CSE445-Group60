@@ -139,6 +139,9 @@
       <Generator>WCF Proxy Generator</Generator>
       <LastGenOutput>Reference.cs</LastGenOutput>
     </None>
+    <None Include="Connected Services\ServiceReference2\Service12.xsd">
+      <SubType>Designer</SubType>
+    </None>
     <None Include="Connected Services\TotalAndTaxSR\Service1.disco" />
     <None Include="Connected Services\TotalAndTaxSR\configuration91.svcinfo" />
     <None Include="Connected Services\TotalAndTaxSR\configuration.svcinfo" />

@@ -16,6 +16,7 @@ namespace WebApplication
         private double CART_TOTAL = 0.00;
 
         TotalAndTaxSR.TotalAndTaxServiceInterfaceClient totalTaxSvc = new TotalAndTaxSR.TotalAndTaxServiceInterfaceClient();
+        ServiceReference2.Service1Client dbSvc2 = new ServiceReference2.Service1Client();
 
         protected void Page_Load(object sender, EventArgs e)
         {
@@ -121,8 +122,6 @@ namespace WebApplication
             }
         }
 
-<<<<<<< Updated upstream
-=======
         private void ProcessPurchase()
         {
             try
@@ -150,7 +149,7 @@ namespace WebApplication
 
                     for (int i = 0; i < item.Quantity; i++)
                     {
-                        bool purchaseSuccess = dbSvcClient.addUserPurchase(
+                        bool purchaseSuccess = dbSvc2.addUserPurchase(
                             userName,
                             item.Title,
                             Convert.ToDecimal(item.Price),
@@ -188,7 +187,6 @@ namespace WebApplication
             }
         }
 
->>>>>>> Stashed changes
         private List<SimpleCartItem> GetCartFromCookies()
         {
             HttpCookie cartCookie = Request.Cookies[CART_COOKIE_NAME];

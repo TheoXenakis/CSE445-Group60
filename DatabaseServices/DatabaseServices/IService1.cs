@@ -46,6 +46,11 @@ namespace DatabaseServices
         [OperationContract]
         bool userNameExists(string userName);
 
+        [OperationContract]
+        List<string[]> getUserPurchases(string userName);
+
+        [OperationContract]
+        bool addUserPurchase(string userName, string bookTitle, decimal price, string purchaseDate);
 
         [OperationContract]
         bool userLogin(string userName, string encryptedPassword);

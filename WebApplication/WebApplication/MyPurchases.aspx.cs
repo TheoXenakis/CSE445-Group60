@@ -9,7 +9,7 @@ namespace WebApplication
 {
     public partial class MyPurchases : System.Web.UI.Page
     {
-        ServiceReference2.Service1Client dbSvcClient = new ServiceReference2.Service1Client();
+        ServiceReference2.Service1Client dbSvc2 = new ServiceReference2.Service1Client();
 
         protected void Page_Load(object sender, EventArgs e)
         {
@@ -42,7 +42,8 @@ namespace WebApplication
                 }
 
                 // Call the service to get user purchases
-                string[][] purchasesArray = dbSvcClient.getUserPurchases(userName);
+                string[][] purchasesArray = dbSvc2.getUserPurchases(userName);
+
                 List<string[]> purchases = new List<string[]>(purchasesArray);
 
                 if (purchases != null && purchases.Count > 0)

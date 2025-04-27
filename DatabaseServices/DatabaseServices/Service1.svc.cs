@@ -189,6 +189,135 @@ namespace DatabaseServices
             return false;
         }
 
+        // Add a method to store user purchase data
+        public bool addUserPurchase(string userName, string bookTitle, decimal price, string purchaseDate)
+        {
+            // Only proceed if the username exists
+            if (userNameExists(userName))
+            {
+                try
+                {
+                    // Create an XML Document Object
+                    XmlDocument xmlDoc = new XmlDocument();
+
+                    // Load the XML doc via the Path
+                    xmlDoc.Load(xmlPath);
+
+                    // Find the user node
+                    XmlNode userNode = null;
+                    XmlNodeList userNodes = xmlDoc.SelectNodes("/Accounts/User");
+
+                    // Find the specific user
+                    foreach (XmlNode parsedUser in userNodes)
+                    {
+                        string accountUsername = parsedUser.SelectSingleNode("Username").InnerText;
+                        if (accountUsername == userName)
+                        {
+                            userNode = parsedUser;
+                            break;
+                        }
+                    }
+
+                    // If user found, add purchase data
+                    if (userNode != null)
+                    {
+                        // Check if UserPurchases node exists, create if not
+                        XmlNode purchasesNode = userNode.SelectSingleNode("UserPurchases");
+                        if (purchasesNode == null)
+                        {
+                            purchasesNode = xmlDoc.CreateElement("UserPurchases");
+                            userNode.AppendChild(purchasesNode);
+                        }
+
+                        // Create a new Purchase element
+                        XmlElement newPurchase = xmlDoc.CreateElement("Purchase");
+
+                        // Create and set the purchase details
+                        XmlElement bookElement = xmlDoc.CreateElement("BookTitle");
+                        bookElement.InnerText = bookTitle;
+
+                        XmlElement priceElement = xmlDoc.CreateElement("Price");
+                        priceElement.InnerText = price.ToString();
+
+                        XmlElement dateElement = xmlDoc.CreateElement("PurchaseDate");
+                        dateElement.InnerText = purchaseDate;
+
+                        // Append details to the purchase
+                        newPurchase.AppendChild(bookElement);
+                        newPurchase.AppendChild(priceElement);
+                        newPurchase.AppendChild(dateElement);
+
+                        // Add the purchase to the user's purchases
+                        purchasesNode.AppendChild(newPurchase);
+
+                        // Save the changes to the XML file
+                        xmlDoc.Save(xmlPath);
+
+                        return true;
+                    }
+                }
+                catch (Exception e)
+                {
+                    Console.WriteLine($"Error adding purchase: {e.Message}");
+                }
+            }
+
+            // If username doesn't exist or there was an error
+            return false;
+        }
+
+        // Add a method to retrieve user purchase history
+        public List<string[]> getUserPurchases(string userName)
+        {
+            List<string[]> purchases = new List<string[]>();
+
+            if (userNameExists(userName))
+            {
+                try
+                {
+                    XmlDocument xmlDoc = new XmlDocument();
+                    xmlDoc.Load(xmlPath);
+
+                    XmlNode userNode = null;
+                    XmlNodeList userNodes = xmlDoc.SelectNodes("/Accounts/User");
+
+                    // Find the specific user
+                    foreach (XmlNode parsedUser in userNodes)
+                    {
+                        string accountUsername = parsedUser.SelectSingleNode("Username").InnerText;
+                        if (accountUsername == userName)
+                        {
+                            userNode = parsedUser;
+                            break;
+                        }
+                    }
+
+                    if (userNode != null)
+                    {
+                        XmlNode purchasesNode = userNode.SelectSingleNode("UserPurchases");
+                        if (purchasesNode != null)
+                        {
+                            XmlNodeList purchaseNodes = purchasesNode.SelectNodes("Purchase");
+                            foreach (XmlNode purchase in purchaseNodes)
+                            {
+                                string title = purchase.SelectSingleNode("BookTitle").InnerText;
+                                string price = purchase.SelectSingleNode("Price").InnerText;
+                                string date = purchase.SelectSingleNode("PurchaseDate").InnerText;
+
+                                purchases.Add(new string[] { title, price, date });
+                            }
+                        }
+                    }
+                }
+                catch (Exception e)
+                {
+                    Console.WriteLine($"Error retrieving purchases: {e.Message}");
+                }
+            }
+
+            return purchases;
+        }
+
         public string getUserType(string userName)
         {
             try
