@@ -13,13 +13,14 @@ namespace WebApplication
                 BindRecentRequests();
             }
         }
-
+        //Retreive information when refreshing
         protected void btnRefresh_Click(object sender, EventArgs e)
         {
             UpdateCounts();
             BindRecentRequests();
         }
 
+        //Update active visitor and total request counts
         private void UpdateCounts()
         {
             try
@@ -36,7 +37,7 @@ namespace WebApplication
                 Console.WriteLine(ex.ToString());
             }
         }
-
+        //Bind recent requests for display purposes
         private void BindRecentRequests()
         {
             try

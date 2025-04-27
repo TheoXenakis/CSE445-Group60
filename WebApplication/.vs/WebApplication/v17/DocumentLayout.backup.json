@@ -86,23 +86,11 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 9,
+          "SelectedChildIndex": 8,
           "Children": [
             {
               "$type": "Bookmark",
               "Name": "ST:1:0:{d212f56b-c48a-434c-a121-1c5d80b59b9f}"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "BookLibrary.aspx.designer.cs",
-              "DocumentMoniker": "C:\\Users\\roenw\\source\\repos\\CSE445-Group602\\WebApplication\\WebApplication\\BookLibrary.aspx.designer.cs",
-              "RelativeDocumentMoniker": "WebApplication\\BookLibrary.aspx.designer.cs",
-              "ToolTip": "C:\\Users\\roenw\\source\\repos\\CSE445-Group602\\WebApplication\\WebApplication\\BookLibrary.aspx.designer.cs",
-              "RelativeToolTip": "WebApplication\\BookLibrary.aspx.designer.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAD4AAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-27T20:47:20.354Z"
             },
             {
               "$type": "Document",
@@ -200,6 +188,18 @@
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-04-27T00:42:41.097Z",
               "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "BookLibrary.aspx.designer.cs",
+              "DocumentMoniker": "C:\\Users\\roenw\\source\\repos\\CSE445-Group602\\WebApplication\\WebApplication\\BookLibrary.aspx.designer.cs",
+              "RelativeDocumentMoniker": "WebApplication\\BookLibrary.aspx.designer.cs",
+              "ToolTip": "C:\\Users\\roenw\\source\\repos\\CSE445-Group602\\WebApplication\\WebApplication\\BookLibrary.aspx.designer.cs",
+              "RelativeToolTip": "WebApplication\\BookLibrary.aspx.designer.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAD4AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-27T20:47:20.354Z"
             },
             {
               "$type": "Document",

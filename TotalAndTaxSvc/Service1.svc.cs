@@ -15,11 +15,11 @@ namespace TotalAndTaxSvc
     {
         public float CalculateTotal(ArrayList prices) // Takes in an ArrayList of prices and returns the sum of them
         {
-            float total = 0;
+            float total = 0; // Starts the total at zero
 
-            foreach (var item in prices)
+            foreach (var item in prices) // Iterate through the prices
             {
-                if (item is float || item is double || item is int || item is decimal)
+                if (item is float || item is double || item is int || item is decimal) // Type validation
                 {
                     total += Convert.ToSingle(item);
                 }
@@ -29,19 +29,19 @@ namespace TotalAndTaxSvc
                 }
             }
 
-            return total;
+            return total; // Return the calculated total
         }
 
         public float CalculateTax(float subtotal, float taxRate) // Takes 2 floats, subtotal and tax rate and turns the subtotal into the regular total (with tax)
         {
-            float totalWithTax;
+            float totalWithTax; // Initialize variables
             totalWithTax = subtotal;
 
-            float tax = subtotal * taxRate;
+            float tax = subtotal * taxRate; // Apply the tax
 
-            totalWithTax += tax;
+            totalWithTax += tax; // Add the tax to the subtotal
 
-            return totalWithTax;
+            return totalWithTax; // Return the post-tax total
         }
     }
 }

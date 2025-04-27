@@ -85,15 +85,17 @@ namespace WebApplication
             }
         }
 
+        //Button to redirect users to BookLibrary page to continue shopping
         protected void ButtonContinueShopping_Click(object sender, EventArgs e)
         {
             Response.Redirect("BookLibrary.aspx");
         }
-
+        //Logs the user out of their account
         protected void Logout_Click(object sender, EventArgs e)
         {
             Response.Redirect("Logout.aspx");
         }
+        //Redirects the user to the previous page (member.aspx)
         protected void Back_Clicked(object sender, EventArgs e)
         {
             Response.Redirect("MemberPage.aspx");

@@ -22,27 +22,29 @@ namespace WebApplication
         {
             if (!IsPostBack)
             {
-                LoadCartItems();
+                LoadCartItems(); // Load cart on page load
             }
 
+            // Calculate total and tax on page load
             CART_SUBTOTAL = CalcTotals();
             CART_TOTAL = CalcTaxTotal(CART_SUBTOTAL);
         }
 
-        private double CalcTotals()
+        private double CalcTotals() // Calls TotalAndTaxSvc to calculate cart subtotal and final total (with tax)
         {
             try
             {
-                List<SimpleCartItem> cart = GetCartFromCookies();
+                List<SimpleCartItem> cart = GetCartFromCookies(); // Retrieves cart
 
-                if (cart == null || cart.Count == 0)
+                if (cart == null || cart.Count == 0) // If cart is empty
                 {
                     CartTotalLabel.Text = "0.00";
                     return 0.00;
                 }
 
                 List<float> pricesList = new List<float>();
-                foreach (SimpleCartItem item in cart)
+
+                foreach (SimpleCartItem item in cart) // Build prices list to send to cart service
                 {
                     float itemPrice = Convert.ToSingle(item.Price);
                     for (int i = 0; i < item.Quantity; i++)
@@ -53,31 +55,31 @@ namespace WebApplication
 
                 object[] prices = Array.ConvertAll(pricesList.ToArray(), item => (object)item);
 
-                float total = totalTaxSvc.CalculateTotal(prices);
+                float total = totalTaxSvc.CalculateTotal(prices); // Calls service to calculate the totals
 
-                CartTotalLabel.Text = total.ToString("F2");
+                CartTotalLabel.Text = total.ToString("F2"); // Show floating point precision to 2 decimal places
 
-                return (double)total;
+                return (double)total; // Also return the total so we can use it later in execution (not currently needed but helpful for future)
             }
             catch (Exception ex)
             {
                 CartTotalLabel.Text = "Error: " + ex.Message;
-                return 0.00;
+                return 0.00; // Else put $0.00 as total and return error
             }
         }
 
-        private double CalcTaxTotal(double subtotal)
+        private double CalcTaxTotal(double subtotal) // Calls tax service to calculate post-tax total
         {
             try
             {
-                float taxTotal = totalTaxSvc.CalculateTax((float)subtotal, (float)0.04712);
-                CartTaxTotalLabel.Text = taxTotal.ToString("F2");
-                return taxTotal;
+                float taxTotal = totalTaxSvc.CalculateTax((float)subtotal, (float)0.04712); // 4.712% tax rate
+                CartTaxTotalLabel.Text = taxTotal.ToString("F2"); // Updates UI
+                return taxTotal; // Also return the total so we can use it later in execution (not currently needed but helpful for future)
             }
             catch (Exception ex)
             {
                 CartTaxTotalLabel.Text = "Error: " + ex.Message;
-                return 0.00;
+                return 0.00; // Else put $0.00 as total and return error
             }
 
         }

@@ -1,45 +1,47 @@
 ﻿using System;
 using System.Web.UI;
 using System.Web.UI.WebControls;
-using WebApplication.BookServiceReference; // Service reference namespace
-//using BookServiceApplication.Models; // Original model namespace
+using WebApplication.BookServiceReference;
+
 
 namespace WebApplication
 {
     public partial class StaffPage : System.Web.UI.Page
     {
-        // Existing global variables remain unchanged
         private BookServiceClient _bookService = new BookServiceClient();
 
         protected void Page_Load(object sender, EventArgs e)
         {
-            // Existing auth check remains first
+            //Check if the user is logged in, redirect to login page if necessary
             if (Request.Cookies["staffLoggedIn"]?.Value != "true")
                 Response.Redirect("LoginPage.aspx");
 
-            // Existing username display
+            //Display username
             Label3.Text = Request.Cookies["accountUsername"]?.Value;
 
-            // New book data binding
+            //Book data binding
             if (!IsPostBack)
                 BindBooksData();
         }
 
+        //Binds data from all books from the books service to the gridview for display purposes
         private void BindBooksData()
         {
             gvBooks.DataSource = _bookService.GetAllBooks();
             gvBooks.DataBind();
         }
 
+        //Button to add the book to the book list
         protected void btnAddBook_Click(object sender, EventArgs e)
         {
-            // Fixed validation logic (use AND instead of OR)
+            //Check data fields in the book
             if (!string.IsNullOrEmpty(txtTitle.Text) &&
                 !string.IsNullOrEmpty(txtAuthor.Text) &&
                 !string.IsNullOrEmpty(txtYear.Text) &&
                 !string.IsNullOrEmpty(txtGenre.Text) &&
                 !string.IsNullOrEmpty(txtPrice.Text))
             {
+                //create new book object with necessary properties
                 var newBook = new Book
                 {
                     Title = txtTitle.Text,
@@ -48,7 +50,7 @@ namespace WebApplication
                     Genre = txtGenre.Text,
                     Price = txtPrice.Text
                 };
-
+                //add the book and handle user feedback
                 _bookService.AddBook(newBook);
                 ClearForm();
                 BindBooksData();
@@ -56,7 +58,7 @@ namespace WebApplication
             }
             else
             {
-                ShowNotification("All fields are required!", isError: true);
+                ShowNotification("All fields are required!", isError: true); //handle invalid fields
             }
         }
 
@@ -81,6 +83,7 @@ namespace WebApplication
             BindBooksData();
         }
 
+        //Helper function to clear the fields of the form
         private void ClearForm()
         {
             txtTitle.Text = string.Empty;
@@ -92,8 +95,9 @@ namespace WebApplication
 
         protected void Button1_Click(object sender, EventArgs e)
         {
-            // Original button logic preserved
+            //add if necessary
         }
+        //Button to log the user out of their account
         protected void Logout_Click(object sender, EventArgs e)
         {
             Response.Redirect("Logout.aspx");
