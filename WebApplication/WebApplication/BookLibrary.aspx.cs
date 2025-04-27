@@ -159,6 +159,11 @@ namespace WebApplication
         {
             Response.Redirect("Cart.aspx");
         }
+
+        protected void Logout_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("Logout.aspx");
+        }
     }
 
     [Serializable]

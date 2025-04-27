@@ -36,25 +36,37 @@
         .book-grid tr:nth-child(even) {
             background-color: #F8F8F8;
         }
+
         .navigation {
             margin-top: 20px;
+            display: flex;
+            gap: 10px;
+            align-items: center;
         }
-        .button {
-            padding: 8px 16px;
-            margin-right: 10px;
-            background-color: #4CAF50;
+
+        .logout, .cart-link {
+            padding: 10px 20px;
+            font-size: 14px;
+            display: inline-block;
+            text-align: center;
+            box-sizing: border-box;
+            text-decoration: none;
+            line-height: 1.5;
+        }
+
+        .logout {
+            background-color: #D32F2F;
             color: white;
             border: none;
             cursor: pointer;
+            border-radius: 4px;
         }
+
         .cart-link {
-            display: inline-block;
-            margin-top: 20px;
-            padding: 10px 15px;
             background-color: #6C6B66;
             color: white;
-            text-decoration: none;
             border-radius: 4px;
+
         }
     </style>
 
@@ -93,6 +105,8 @@
         <div class="navigation">
             <asp:LinkButton ID="bookServiceBtn" runat="server" OnClick="ViewCartBtn_Click" 
                 CssClass="cart-link">View Shopping Cart</asp:LinkButton>
+            <asp:Button ID="LogoutButton" runat="server" Text="Logout"
+                OnClick="Logout_Click" CssClass="logout" />
         </div>
     </form>
 </body>

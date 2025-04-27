@@ -89,5 +89,10 @@ namespace WebApplication
         {
             Response.Redirect("BookLibrary.aspx");
         }
+
+        protected void Logout_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("Logout.aspx");
+        }
     }
 }

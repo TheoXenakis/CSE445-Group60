@@ -94,5 +94,10 @@ namespace WebApplication
         {
             // Original button logic preserved
         }
+        protected void Logout_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("Logout.aspx");
+        }
+
     }
 }

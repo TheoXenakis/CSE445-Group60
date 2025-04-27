@@ -72,6 +72,15 @@
             margin: 8px 0;
             font-weight: bold;
         }
+        .logout {
+            padding: 8px 16px;
+            margin-right: 10px;
+            background-color: #D32F2F;
+            color: white;
+            border: none;
+            cursor: pointer;
+            border-radius: 4px;
+        }
     </style>
 </head>
 <body>
@@ -79,6 +88,10 @@
         <div class="header">
             <h2>Staff Portal</h2>
             <p>Welcome, <asp:Label ID="Label3" runat="server" Text=""></asp:Label></p>
+            <div class="navigation">
+    <asp:Button ID="LogoutButton" runat="server" Text="Logout"
+        OnClick="Logout_Click" CssClass="logout" />
+</div>
         </div>
 
         <div class="book-section">

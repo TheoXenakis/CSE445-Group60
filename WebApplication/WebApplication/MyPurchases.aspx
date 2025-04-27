@@ -46,6 +46,7 @@
             color: white;
             border: none;
             cursor: pointer;
+            border-radius: 4px;
         }
         .cart-link {
             display: inline-block;
@@ -62,6 +63,15 @@
             border-radius: 5px;
             text-align: center;
             margin: 20px 0;
+        }
+        .logout {
+            padding: 8px 16px;
+            margin-right: 10px;
+            background-color: #D32F2F;
+            color: white;
+            border: none;
+            cursor: pointer;
+            border-radius: 4px;
         }
     </style>
 </head>
@@ -87,6 +97,8 @@
             <div class="navigation">
                 <asp:Button ID="ButtonContinueShopping" runat="server" Text="Continue Shopping" 
                     OnClick="ButtonContinueShopping_Click" CssClass="button" />
+                <asp:Button ID="LogoutButton" runat="server" Text="Logout"
+                    OnClick="Logout_Click" CssClass="logout" />
             </div>
         </div>
     </form>
