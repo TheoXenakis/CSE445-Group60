@@ -75,4 +75,10 @@
     <AccountType>Staff</AccountType>
     <LoggedIn>false</LoggedIn>
   </User>
+  <User>
+    <Username>cacct_tester</Username>
+    <Password>jyI3vsMZbuk=</Password>
+    <AccountType>Member</AccountType>
+    <LoggedIn>false</LoggedIn>
+  </User>
 </Accounts>
